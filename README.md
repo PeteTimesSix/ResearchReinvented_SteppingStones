@@ -16,7 +16,7 @@
 <!----------------------------------------------------------------------------->
 
 [RimWorld]: https://store.steampowered.com/app/294100/RimWorld/
-[Xml_Extensions]: https://github.com/15adhami/XmlExtensions
+[Xml_Extensions]: https://github.com/15adhami/XmlExtensions/
 
 [License]: LICENSE
 
