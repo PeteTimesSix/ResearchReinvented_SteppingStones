@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="XmlExtensions.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Electricity"]</xpath>
+		<value>
+			<baseCost>500</baseCost>
+			<label>circuitry</label>
+			<description>Build devices that require more complex components and circuitry.</description>
+			<prerequisites>
+			  <li>RR_ElectricityBasics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="WatermillGenerator"]</xpath>
+		<value>
+			<label>renewable energy</label>
+			<description>Build generators that rely on renewable power sources instead of consumable fuel.</description>
+			<prerequisites>
+			  <li>RR_PowerGenerators</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="SolarPanels"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>WatermillGenerator</li>
+			  <li>ColoredLights</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="GeothermalPower"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>WatermillGenerator</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ColoredLights"]</xpath>
+		<value>
+			<label>semiconductor lights</label>
+			<description>Build lights using semiconductors that have light emitting properties when subjected to an electric current (commonly known as LEDs).</description>
+			<prerequisites>
+			  <li>RR_ElectricityBasics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="SterileMaterials"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Smithing</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="TubeTelevision"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_ElectricityBasics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Hydroponics"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>NutrientPaste</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="AirConditioning"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_HeatingElements</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="BiofuelRefining"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_HeatingElements</li>
+			  <li>RR_PowerGenerators</li>
+			</prerequisites>
+		</value>
+	</Operation>
+</Patch>

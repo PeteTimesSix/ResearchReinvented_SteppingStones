@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="XmlExtensions.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="LightBall"]</xpath>
+		<value>
+			<researchPrerequisites>
+			  <li>ColoredLights</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+</Patch>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>RR_ElectricityBasics</defName>
+    <label>electricity</label>
+    <description>Harness the power of electricity.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tags>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>4.00</researchViewX>
+  <researchViewY>2.90</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_HeatingElements</defName>
+    <label>heating elements</label>
+    <description>Learn how to effectively use the power of electricity to generate heat.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tags>
+      <li>ClassicStart</li>
+    </tags>
+	<prerequisites>
+	  <li>RR_ElectricityBasics</li>
+	</prerequisites>
+  <researchViewX>5.00</researchViewX>
+  <researchViewY>1.35</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_PowerGenerators</defName>
+    <label>dynamos</label>
+    <description>Build electricity generators based on the simple principle of converting motive power into electrical power.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tags>
+      <li>ClassicStart</li>
+    </tags>
+	<prerequisites>
+	  <li>RR_ElectricityBasics</li>
+	</prerequisites>
+  <researchViewX>5.00</researchViewX>
+  <researchViewY>1.80</researchViewY>
+  </ResearchProjectDef>
+  
+</Defs>

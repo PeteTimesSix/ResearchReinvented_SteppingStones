@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="WakeUpProduction"]</xpath>
+  <researchViewX>4.00</researchViewX>
+  <researchViewY>0.90</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="GoJuiceProduction"]</xpath>
+  <researchViewX>4.00</researchViewX>
+  <researchViewY>1.35</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="PenoxycylineProduction"]</xpath>
+  <researchViewX>4.00</researchViewX>
+  <researchViewY>1.80</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Electricity"]</xpath>
+  <researchViewX>5.00</researchViewX>
+  <researchViewY>2.90</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Batteries"]</xpath>
+  <researchViewX>7.00</researchViewX>
+  <researchViewY>2.70</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="BiofuelRefining"]</xpath>
+  <researchViewX>6.00</researchViewX>
+  <researchViewY>1.35</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="WatermillGenerator"]</xpath>
+  <researchViewX>6.00</researchViewX>
+  <researchViewY>1.80</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="NutrientPaste"]</xpath>
+  <researchViewX>8.00</researchViewX>
+  <researchViewY>2.25</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="SolarPanels"]</xpath>
+  <researchViewX>7.00</researchViewX>
+  <researchViewY>1.80</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="AirConditioning"]</xpath>
+  <researchViewX>6.00</researchViewX>
+  <researchViewY>0.90</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Autodoors"]</xpath>
+  <researchViewX>7.00</researchViewX>
+  <researchViewY>2.25</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Hydroponics"]</xpath>
+  <researchViewX>9.00</researchViewX>
+  <researchViewY>2.25</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="TubeTelevision"]</xpath>
+  <researchViewX>5.00</researchViewX>
+  <researchViewY>0.40</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="PackagedSurvivalMeal"]</xpath>
+  <researchViewX>9.00</researchViewX>
+  <researchViewY>1.65</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Firefoam"]</xpath>
+  <researchViewX>8.00</researchViewX>
+  <researchViewY>2.70</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="IEDs"]</xpath>
+  <researchViewX>6.00</researchViewX>
+  <researchViewY>2.70</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="GeothermalPower"]</xpath>
+  <researchViewX>7.00</researchViewX>
+  <researchViewY>1.35</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="SterileMaterials"]</xpath>
+  <researchViewX>2.00</researchViewX>
+  <researchViewY>4.25</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ColoredLights"]</xpath>
+  <researchViewX>5.00</researchViewX>
+  <researchViewY>2.25</researchViewY>
+	</Operation>
+
+</Patch>
