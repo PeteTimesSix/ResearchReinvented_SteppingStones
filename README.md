@@ -8,7 +8,7 @@
 ## Dependencies
 
 - **[Harmony]**
-- **[Xml_Extensions]**
+- **[Xml Extensions]**
 
 <br>
 
@@ -16,7 +16,8 @@
 <!----------------------------------------------------------------------------->
 
 [RimWorld]: https://store.steampowered.com/app/294100/RimWorld/
-[Xml_Extensions]: https://github.com/15adhami/XmlExtensions/
+[Harmony]: https://github.com/pardeike/HarmonyRimWorld
+[Xml Extensions]: https://github.com/15adhami/XmlExtensions
 
 [License]: LICENSE
 
