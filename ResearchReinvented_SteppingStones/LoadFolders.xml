@@ -4,4 +4,9 @@
 		<li>v1.3</li>
 		<li IfModActive="ludeon.rimworld.ideology">ModSpecific/v1.3/Ideology</li>
 	</v1.3>
+	<v1.4>
+		<li>/</li>
+		<li>v1.4</li>
+		<li IfModActive="ludeon.rimworld.ideology">ModSpecific/v1.4/Ideology</li>
+	</v1.4>
 </loadFolders>

@@ -2,7 +2,7 @@ Electricity project split into Heating elements, Dynamos, Electricity (basics) a
 Colored lights project renamed to Semiconductor lights
 Watermill generator project renamed to Renewable energy
 Hydroponics now has Nutrient paste as a prerequisite
-Buifuel refining project now has Dynamos and Heating elements as a prerequisite
+Biofuel refining project now has Dynamos and Heating elements as a prerequisite
 Renewable energy project now has Dynamos as a prerequisite
 Air conditioning project now has Heating elements as a prerequisite
 Solar panels project now has Renewable energy and Semiconductor lights as a prerequisite
