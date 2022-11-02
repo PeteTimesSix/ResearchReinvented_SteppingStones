@@ -10,7 +10,10 @@
       <li>ClassicStart</li>
     </tags>
   <researchViewX>4.00</researchViewX>
-  <researchViewY>2.90</researchViewY>
+  <researchViewY>3.00</researchViewY>
+	<prerequisites>
+	  <li>Smithing</li>
+	</prerequisites>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -26,7 +29,7 @@
 	  <li>RR_ElectricityBasics</li>
 	</prerequisites>
   <researchViewX>5.00</researchViewX>
-  <researchViewY>1.35</researchViewY>
+  <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -42,7 +45,7 @@
 	  <li>RR_ElectricityBasics</li>
 	</prerequisites>
   <researchViewX>5.00</researchViewX>
-  <researchViewY>1.80</researchViewY>
+  <researchViewY>1.50</researchViewY>
   </ResearchProjectDef>
   
 </Defs>

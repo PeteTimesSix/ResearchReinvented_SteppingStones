@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_SS_organization_man</defName>
+		<opportunityType>Analyse</opportunityType>
+		<originalProject>RR_Organization</originalProject>
+		<alternates>
+			<li>Human</li>
+		</alternates>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+	
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_SS_organization_dirt</defName>
+		<opportunityType>AnalyseTerrain</opportunityType>
+		<originalProject>RR_Organization</originalProject>
+		<alternateTerrains>
+			<li>Soil</li>
+			<li>Sand</li>
+			<li>Ice</li>
+		</alternateTerrains>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+	
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_SS_badForAgriculture</defName>
+		<opportunityType>AnalysePlant</opportunityType>
+		<originalProject>RR_Agriculture</originalProject>
+		<alternates>
+			<li>Plant_Grass</li>
+			<li>Plant_Bush</li>
+			<li>Plant_Brambles</li>
+		</alternates>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+	
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_SS_goodForAgriculture</defName>
+		<opportunityType>AnalysePlant</opportunityType>
+		<originalProject>RR_Agriculture</originalProject>
+		<alternates>
+			<li>Plant_Berry</li>
+			<li>Plant_Agave</li>
+		</alternates>
+		<importanceMultiplier>2.0</importanceMultiplier>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+	
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_SS_melee</defName>
+		<opportunityType>Analyse</opportunityType>
+		<originalProject>RR_BasicMeleeWeapons</originalProject>
+		<alternates>
+			<li>WoodLog</li>
+		</alternates>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+</Defs>

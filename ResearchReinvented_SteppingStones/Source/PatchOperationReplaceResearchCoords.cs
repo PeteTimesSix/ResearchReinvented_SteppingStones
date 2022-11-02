@@ -9,9 +9,27 @@ using Verse;
 namespace RR
 {
     public class PatchOperationReplaceResearchCoords : PatchOperationPathed
-    {
+	{
+		public string doesRequire;
+
+		public XmlContainer researchViewX;
+		public XmlContainer researchViewY;
+
 		protected override bool ApplyWorker(XmlDocument xml)
 		{
+			if (!string.IsNullOrWhiteSpace(doesRequire))
+			{
+				var split = doesRequire.Split(',');
+				foreach (var mod in split)
+				{
+					if (!ModsConfig.IsActive(mod.Trim()))
+					{
+						return true; //a required mod isnt loaded, so we dont apply the patch
+					}
+				}
+			}
+
+
 			string valueX = researchViewX.node.InnerText;
 			string valueY = researchViewY.node.InnerText;
 			//Log.Message($"running research coord replace patch on {xpath}, values: {valueX} {valueY}");
@@ -46,8 +64,5 @@ namespace RR
 		public PatchOperationReplaceResearchCoords()
 		{
 		}
-
-        private XmlContainer researchViewX;
-        private XmlContainer researchViewY;
 	}
 }

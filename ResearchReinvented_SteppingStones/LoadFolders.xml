@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <loadFolders>
 	<v1.3>
 		<li>/</li>
@@ -7,6 +8,7 @@
 	<v1.4>
 		<li>/</li>
 		<li>v1.4</li>
+		<li IfModActive="petetimessix.researchreinvented">ModSpecific/v1.4/RR_Main</li>
 		<li IfModActive="ludeon.rimworld.ideology">ModSpecific/v1.4/Ideology</li>
 	</v1.4>
 </loadFolders>

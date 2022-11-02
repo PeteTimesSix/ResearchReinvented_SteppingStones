@@ -1,6 +1,133 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+
+	<!-- Neolithic/Medieval -->
+
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_Agriculture</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_Agriculture</li>
+			  <li>RR_BasicHerbLore</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Devilstrand"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_Agriculture</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_Agriculture</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_BasicRangedWeapons</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Pemmican"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_BasicFoodPrep</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_BasicApparel</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_BasicFurniture</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Smithing"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_BasicCraftingFacilities</li>
+			  <li>RR_BasicMeleeWeapons</li>
+			  <li>RR_BasicRangedWeapons</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_BasicCraftingFacilities</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_BasicFurniture</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_BasicCraftingFacilities</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="DrugProduction"]</xpath>
+		<value>
+			<hiddenPrerequisites>
+			  <li>RR_BasicHerbLore</li>
+			</hiddenPrerequisites>
+		</value>
+	</Operation>
+	
+	
+	<!-- Early industrial -->
+
 	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ResearchProjectDef[defName="Electricity"]</xpath>
 		<value>
@@ -47,7 +174,7 @@
 		<xpath>Defs/ResearchProjectDef[defName="ColoredLights"]</xpath>
 		<value>
 			<label>semiconductor lights</label>
-			<description>Build lights using semiconductors that have light emitting properties when subjected to an electric current (commonly known as LEDs), reducing their power draw by half. Unlike incandescent bulbs, LEDs emit light of a specific wavelength, enabling them to be colored. Also unlocks sunlamps, which provide relatively efficient source of high-intensity full-spectrum light that enables plants to grow in roofed conditions.</description>
+			<description>Build lights using semiconductors that have light emitting properties when subjected to an electric current (commonly known as LEDs), reducing their power draw by half. Unlike incandescent bulbs, LEDs emit light of a specific wavelength, allowing them to be colored. Also unlocks sunlamps, which are a relatively efficient source of high-intensity full-spectrum light that enables plants to grow in roofed conditions.</description>
 			<prerequisites>
 			  <li>RR_ElectricityBasics</li>
 			</prerequisites>
@@ -64,11 +191,33 @@
 	</Operation>
 	
 	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="FertilityProcedures"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>SterileMaterials</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ResearchProjectDef[defName="TubeTelevision"]</xpath>
 		<value>
 			<prerequisites>
 			  <li>RR_ElectricityBasics</li>
 			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="FlatscreenTelevision"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>MicroelectronicsBasics</li>
+			</prerequisites>
+			<hiddenPrerequisites>
+			  <li>TubeTelevision</li>
+			</hiddenPrerequisites>
 		</value>
 	</Operation>
 	
@@ -96,6 +245,390 @@
 			<prerequisites>
 			  <li>RR_HeatingElements</li>
 			  <li>RR_PowerGenerators</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="ToxifierGenerator"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_PowerGenerators</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="ToxGas"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Gunsmithing</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="GeneProcessor"]</xpath>
+		<value>
+			<techLevel>Spacer</techLevel>
+		</value>
+	</Operation>
+	
+	
+	<!-- Advanced industrial -->
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Fabrication"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Machining</li>
+			  <li>MicroelectronicsBasics</li>
+			</prerequisites>
+			<requiredResearchFacilities></requiredResearchFacilities>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="MultiAnalyzer"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Fabrication</li>
+			  <li>MicroelectronicsBasics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="AdvancedFabrication"]</xpath>
+		<value>
+			<techLevel>Spacer</techLevel>
+			<prerequisites>
+			  <li>Fabrication</li>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="MedicineProduction"]</xpath>
+		<value>
+			<requiredResearchBuilding></requiredResearchBuilding>
+			<prerequisites>
+			  <li>Electricity</li>
+			  <li>SterileMaterials</li>
+			  <li>DrugProduction</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Prosthetics"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Machining</li>
+			  <li>SterileMaterials</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="Xenogermination"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>MedicineProduction</li>
+			  <li>Machining</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="JumpPack"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>TransportPod</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="VitalsMonitor"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>HospitalBed</li>
+			  <li>Fabrication</li>
+			</prerequisites>
+			<requiredResearchFacilities></requiredResearchFacilities>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.ideology</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="Biosculpting"]</xpath>
+		<value>
+			<techLevel>Spacer</techLevel>
+			<prerequisites>
+			  <li>HospitalBed</li>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+			<requiredResearchFacilities>
+				<li>MultiAnalyzer</li>
+			</requiredResearchFacilities>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.ideology</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]</xpath>
+		<value>
+			<techLevel>Spacer</techLevel>
+			<prerequisites>
+			  <li>Biosculpting</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>HospitalBed</li>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="LongRangeMineralScanner"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>DeepDrilling</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="CompactWeaponry"]</xpath>
+		<value>
+			<hiddenPrerequisites>
+			  <li>LongBlades</li>
+			</hiddenPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Fabrication</li>
+			</prerequisites>
+			<requiredResearchFacilities></requiredResearchFacilities>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Fabrication</li>
+			</prerequisites>
+			<requiredResearchFacilities></requiredResearchFacilities>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ReconArmor"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="PoweredArmor"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>ReconArmor</li>
+			  <li>AdvancedFabrication</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="BasicMechtech"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Batteries</li>
+			</prerequisites>
+			<hiddenPrerequisites>
+			  <li>Machining</li>
+			</hiddenPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="StandardMechtech"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>BasicMechtech</li>
+			  <li>MicroelectronicsBasics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="HighMechtech"]</xpath>
+		<value>
+			<techLevel>Spacer</techLevel>
+			<prerequisites>
+			  <li>StandardMechtech</li>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="UltraMechtech"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>HighMechtech</li>
+			  <li>AdvancedFabrication</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="Archogenetics"]</xpath>
+		<value>
+			<techLevel>Ultra</techLevel>
+			<prerequisites>
+			  <li>GeneProcessor</li>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="WastepackAtomizer"]</xpath>
+		<value>
+			<baseCost>5000</baseCost>
+			<techLevel>Spacer</techLevel>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="Bionics"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Bionics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="ArtificialMetabolism"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Bionics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="MolecularAnalysis"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>ArtificialMetabolism</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="CircadianInfluence"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Bionics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="NeuralComputation"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>CircadianInfluence</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="FleshShaping"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Bionics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="SkinHardening"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>FleshShaping</li>
+			  <li>AdvancedFabrication</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="HealingFactors"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>FleshShaping</li>
+			  <li>AdvancedFabrication</li>
 			</prerequisites>
 		</value>
 	</Operation>

@@ -12,10 +12,29 @@ namespace RR
 
     public class PatchOperationAddOrReplace : PatchOperationPathed
     {
+        public string doesRequire;
+
         public XmlContainer value;
+
+        public override void Complete(string modIdentifier)
+        {
+            base.Complete(modIdentifier);
+        }
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
+            if (!string.IsNullOrWhiteSpace(doesRequire)) 
+            {
+                var split = doesRequire.Split(',');
+                foreach(var mod in split)
+                {
+                    if (!ModsConfig.IsActive(mod.Trim()))
+                    {
+                        return true; //a required mod isnt loaded, so we dont apply the patch
+                    }
+                }
+            }
+
             XmlNode node = value.node;
             XmlNode foundNode = null;
             bool matched = false;

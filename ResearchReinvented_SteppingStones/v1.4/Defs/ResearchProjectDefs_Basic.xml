@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ResearchProjectDef>
+    <defName>RR_Organization</defName>
+    <label>organization</label>
+    <description>Fundamentals of organization.</description>
+    <baseCost>1</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-2.00</researchViewX>
+  <researchViewY>4.00</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_Agriculture</defName>
+    <label>agriculture</label>
+    <description>Fundamentals of agriculture.</description>
+    <baseCost>10</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>0.50</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicHerbLore</defName>
+    <label>medicinal herbs</label>
+    <description>Utilization of basic medicinal herbs.</description>
+    <baseCost>25</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>1.50</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicFoodPrep</defName>
+    <label>food preparation</label>
+    <description>Preparation of food.</description>
+    <baseCost>20</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>2.00</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicApparel</defName>
+    <label>simple apparel</label>
+    <description>Crafting of simple apparel.</description>
+    <baseCost>20</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>2.50</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicRangedWeapons</defName>
+    <label>ranged weapons</label>
+    <description>Crafting of simple ranged weapons.</description>
+    <baseCost>25</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>3.00</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicMeleeWeapons</defName>
+    <label>melee weapons</label>
+    <description>Crafting of simple melee weapons.</description>
+    <baseCost>25</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>3.50</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicCraftingFacilities</defName>
+    <label>crafting facilities</label>
+    <description>Basic crafting facilities.</description>
+    <baseCost>50</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>4.00</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicStructures</defName>
+    <label>structures</label>
+    <description>Stable, solid foundations and reliable walls.</description>
+    <baseCost>20</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>5.00</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicFurniture</defName>
+    <label>simple furniture</label>
+    <description>Simple, but reliable furniture.</description>
+    <baseCost>25</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>4.50</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+  </ResearchProjectDef>
+</Defs>

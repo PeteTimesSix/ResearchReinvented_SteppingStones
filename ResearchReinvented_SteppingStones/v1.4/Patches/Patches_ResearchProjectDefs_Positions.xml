@@ -1,100 +1,593 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
+	<!-- Neolithic/Medieval -->
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]</xpath>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Devilstrand"]</xpath>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]</xpath>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Pemmican"]</xpath>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Greatbow"]</xpath>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="NobleApparel"]</xpath>
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="RoyalApparel"]</xpath>
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="PlateArmor"]</xpath>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Harp"]</xpath>
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Harpsichord"]</xpath>
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Piano"]</xpath>
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</Operation>
+	
+	
+	<!-- Early industrial -->
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="DrugProduction"]</xpath>
+  <researchViewX>3.00</researchViewX>
+  <researchViewY>4.00</researchViewY>
+	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="WakeUpProduction"]</xpath>
   <researchViewX>4.00</researchViewX>
-  <researchViewY>0.90</researchViewY>
+  <researchViewY>4.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="GoJuiceProduction"]</xpath>
-  <researchViewX>4.00</researchViewX>
-  <researchViewY>1.35</researchViewY>
+  <researchViewX>5.00</researchViewX>
+  <researchViewY>4.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="PenoxycylineProduction"]</xpath>
+  <researchViewX>5.00</researchViewX>
+  <researchViewY>4.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="PsychiteRefining"]</xpath>
   <researchViewX>4.00</researchViewX>
-  <researchViewY>1.80</researchViewY>
+  <researchViewY>4.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="MedicineProduction"]</xpath>
+  <researchViewX>6.00</researchViewX>
+  <researchViewY>4.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Electricity"]</xpath>
-  <researchViewX>5.00</researchViewX>
-  <researchViewY>2.90</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<xpath>Defs/ResearchProjectDef[defName="Batteries"]</xpath>
-  <researchViewX>7.00</researchViewX>
-  <researchViewY>2.70</researchViewY>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="BiofuelRefining"]</xpath>
-  <researchViewX>6.00</researchViewX>
-  <researchViewY>1.35</researchViewY>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="WatermillGenerator"]</xpath>
-  <researchViewX>6.00</researchViewX>
-  <researchViewY>1.80</researchViewY>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="NutrientPaste"]</xpath>
-  <researchViewX>8.00</researchViewX>
-  <researchViewY>1.80</researchViewY>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="SolarPanels"]</xpath>
-  <researchViewX>7.00</researchViewX>
-  <researchViewY>1.80</researchViewY>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="AirConditioning"]</xpath>
-  <researchViewX>6.00</researchViewX>
-  <researchViewY>0.90</researchViewY>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>0.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Autodoors"]</xpath>
-  <researchViewX>7.00</researchViewX>
-  <researchViewY>2.25</researchViewY>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Hydroponics"]</xpath>
-  <researchViewX>9.00</researchViewX>
-  <researchViewY>2.25</researchViewY>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="TubeTelevision"]</xpath>
-  <researchViewX>5.00</researchViewX>
-  <researchViewY>0.40</researchViewY>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>0.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="PackagedSurvivalMeal"]</xpath>
-  <researchViewX>9.00</researchViewX>
-  <researchViewY>1.65</researchViewY>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>1.35</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Firefoam"]</xpath>
-  <researchViewX>8.00</researchViewX>
-  <researchViewY>2.25</researchViewY>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="IEDs"]</xpath>
-  <researchViewX>6.00</researchViewX>
-  <researchViewY>2.70</researchViewY>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Batteries"]</xpath>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="GeothermalPower"]</xpath>
-  <researchViewX>7.00</researchViewX>
-  <researchViewY>1.35</researchViewY>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="SterileMaterials"]</xpath>
-  <researchViewX>2.00</researchViewX>
-  <researchViewY>4.25</researchViewY>
+  <researchViewX>4.00</researchViewX>
+  <researchViewY>5.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="ColoredLights"]</xpath>
-  <researchViewX>5.00</researchViewX>
-  <researchViewY>2.25</researchViewY>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
 	</Operation>
-
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="SmokepopBelt"]</xpath>
+  <researchViewX>8.00</researchViewX>
+  <researchViewY>5.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="FertilityProcedures"]</xpath>
+  <researchViewX>5.00</researchViewX>
+  <researchViewY>5.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="ToxGas"]</xpath>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Prosthetics"]</xpath>
+  <researchViewX>7.00</researchViewX>
+  <researchViewY>5.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]</xpath>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="FlakArmor"]</xpath>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Mortars"]</xpath>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]</xpath>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="GasOperation"]</xpath>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="FoamTurret"]</xpath>
+  <researchViewX>10.00</researchViewX>
+  <researchViewY>4.50</researchViewY>
+	</Operation>
+	
+	
+	<!-- Late industrial -->
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Fabrication"]</xpath>
+		<researchViewX>13.00</researchViewX>
+		<researchViewY>3.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="MultiAnalyzer"]</xpath>
+		<researchViewX>14.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]</xpath>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="FlatscreenTelevision"]</xpath>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="MoisturePump"]</xpath>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="DeepDrilling"]</xpath>
+		<researchViewX>12.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="HospitalBed"]</xpath>
+		<researchViewX>13.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="GroundPenetratingScanner"]</xpath>
+		<researchViewX>13.00</researchViewX>
+		<researchViewY>2.35</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="TransportPod"]</xpath>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="LongRangeMineralScanner"]</xpath>
+		<researchViewX>13.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ShieldBelt"]</xpath>
+		<researchViewX>12.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="GrowthVats"]</xpath>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="VitalsMonitor"]</xpath>
+		<researchViewX>14.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="PrecisionRifling"]</xpath>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="HeavyTurrets"]</xpath>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]</xpath>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.ideology</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="NeuralSupercharger"]</xpath>
+		<researchViewX>12.00</researchViewX>
+		<researchViewY>0.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="JumpPack"]</xpath>
+		<researchViewX>12.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="ToxifierGenerator"]</xpath>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="BasicMechtech"]</xpath>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="Xenogermination"]</xpath>
+  <researchViewX>7.00</researchViewX>
+  <researchViewY>5.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="GeneProcessor"]</xpath>
+		<researchViewX>12.00</researchViewX>
+		<researchViewY>5.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="BrainWiring"]</xpath>
+		<researchViewX>12.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="SpecializedLimbs"]</xpath>
+		<researchViewX>12.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="CompactWeaponry"]</xpath>
+		<researchViewX>12.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]</xpath>
+		<researchViewX>13.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</Operation>
+	
+	
+	<!-- Spacer/Ultra -->
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="AdvancedFabrication"]</xpath>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>3.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ReconArmor"]</xpath>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="PoweredArmor"]</xpath>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="CataphractArmor"]</xpath>
+		<researchViewX>17.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Bionics"]</xpath>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]</xpath>
+		<researchViewX>14.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]</xpath>
+		<researchViewX>14.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Gunlink"]</xpath>
+		<researchViewX>14.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.ideology</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="Biosculpting"]</xpath>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.ideology</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]</xpath>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="StandardMechtech"]</xpath>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="UltraMechtech"]</xpath>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="WastepackAtomizer"]</xpath>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ShipBasics"]</xpath>
+		<researchViewX>17.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ShipCryptosleep"]</xpath>
+		<researchViewX>18.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ShipReactor"]</xpath>
+		<researchViewX>18.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ShipEngine"]</xpath>
+		<researchViewX>18.00</researchViewX>
+		<researchViewY>2.35</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ShipComputerCore"]</xpath>
+		<researchViewX>18.00</researchViewX>
+		<researchViewY>0.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]</xpath>
+		<researchViewX>18.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="HighMechtech"]</xpath>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="Archogenetics"]</xpath>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>5.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]</xpath>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>5.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="ArtificialMetabolism"]</xpath>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="NeuralComputation"]</xpath>
+		<researchViewX>17.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="SkinHardening"]</xpath>
+		<researchViewX>18.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="HealingFactors"]</xpath>
+		<researchViewX>18.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="FleshShaping"]</xpath>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="MolecularAnalysis"]</xpath>
+		<researchViewX>17.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
+		<xpath>Defs/ResearchProjectDef[defName="CircadianInfluence"]</xpath>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+	</Operation>
 </Patch>

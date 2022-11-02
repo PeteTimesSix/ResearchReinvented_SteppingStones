@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+	<PeteTimesSix.ResearchReinvented.Defs.AlternateResearchSubjectsDef>
+		<defName>RR_SS_healrootAlt</defName>
+		<originals>
+			<li>Plant_Healroot</li>
+		</originals>
+		<alternates>
+			<li>Plant_HealrootWild</li>
+		</alternates>
+	</PeteTimesSix.ResearchReinvented.Defs.AlternateResearchSubjectsDef>
+</Defs>

@@ -8,16 +8,24 @@ using UnityEngine;
 using HarmonyLib;
 using System.Reflection;
 using RimWorld;
+using PeteTimesSix.ResearchReinvented_SteppingStones.Extensions;
+using PeteTimesSix.ResearchReinvented_SteppingStones.DefOfs;
+using PeteTimesSix.ResearchReinvented_SteppingStones.Patches;
+using PeteTimesSix.ResearchReinvented_SteppingStones.Utility;
 
 namespace PeteTimesSix.ResearchReinvented_SteppingStones
 {
     public class ResearchReinvented_SteppingStonesMod : Mod
     {
         public static ResearchReinvented_SteppingStonesMod ModSingleton { get; private set; }
+        public static Harmony Harmony { get; internal set; }
 
         public ResearchReinvented_SteppingStonesMod(ModContentPack content) : base(content)
         {
             ModSingleton = this;
+
+            Harmony = new Harmony("PeteTimesSix.ResearchReinvented_SteppingStones");
+            Harmony.PatchAll();
         }
 
         /*public override string SettingsCategory()
@@ -27,8 +35,12 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones
 	}
 
     [StaticConstructorOnStartup]
-    public static class ResearchReinvented_PostInit
+    public static class ResearchReinventedSteppingStones_PostInit
     {
-
+        static ResearchReinventedSteppingStones_PostInit() 
+        {
+            PreregRebuilder.SetPrerequisitesOnOprhans();
+            MainTabWindow_Research_OffsetHacks.BuildTabOffsets();
+        }
     }
 }

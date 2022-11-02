@@ -30,8 +30,6 @@
 		<li>imranfish.xmlextensions</li>
 	</loadAfter>
 	<description>
-Restructures the vanilla research so that electrical devices dont all have to be invented at the same time.
-
- &lt;i&gt;More to come ...?&lt;/i&gt;
+Restructures the vanilla research tree to follow a more logical progression.
 	</description>
 </ModMetaData>

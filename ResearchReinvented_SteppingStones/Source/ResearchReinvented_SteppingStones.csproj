@@ -39,10 +39,21 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefOfs\ThingDefOf_Custom.cs" />
+    <Compile Include="Extensions\RecipeDefExtensions.cs" />
+    <Compile Include="Extensions\ResearchProjectDefExtensions.cs" />
+    <Compile Include="Extensions\ThingDefExtensions.cs" />
+    <Compile Include="Patches\MainTabWindow_Research_OffsetHacks.cs" />
+    <Compile Include="Patches\ResearchProjectDef_Patches.cs" />
+    <Compile Include="Patches\Zone_Growing_Patches.cs" />
     <Compile Include="PatchOperationAddOrReplace.cs" />
+    <Compile Include="PatchOperationCompactResearchCoords.cs" />
     <Compile Include="PatchOperationReplaceResearchCoords.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResearchReinvented_SteppingStonesMod.cs" />
+    <Compile Include="DefOfs\ResearchProjectDefOf_Custom.cs" />
+    <Compile Include="Utility\PreregRebuilder.cs" />
+    <Compile Include="Utility\TechLevelColor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Install.bat" />
@@ -50,7 +61,7 @@
   <ItemGroup />
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.3.3326</Version>
+      <Version>1.4.*-*</Version>
       <ExcludeAssets>runtime</ExcludeAssets>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -64,7 +75,7 @@
   <PropertyGroup>
     <PostBuildEvent>PATH
 
-"$(ProjectDir)Install.bat" $(ConfigurationName) "$(ProjectDir)" "$(ProjectName)" "About Assemblies ModSpecific Defs Languages Textures v1.3 v1.4" "LoadFolders.xml"
+"$(ProjectDir)Install.bat" $(ConfigurationName) "$(ProjectDir)" "$(ProjectName)" "About Assemblies Defs Languages Textures v1.3 v1.4 ModSpecific" "LoadFolders.xml"
 
 </PostBuildEvent>
   </PropertyGroup>
