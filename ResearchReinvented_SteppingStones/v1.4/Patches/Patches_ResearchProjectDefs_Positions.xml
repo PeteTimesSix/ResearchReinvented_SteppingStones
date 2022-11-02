@@ -467,6 +467,7 @@
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Gunlink"]</xpath>
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
 		<researchViewX>14.00</researchViewX>
 		<researchViewY>2.00</researchViewY>
 	</Operation>
