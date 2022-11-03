@@ -227,6 +227,9 @@
 			<prerequisites>
 			  <li>NutrientPaste</li>
 			</prerequisites>
+			<hiddenPrerequisites>
+			  <li>RR_Agriculture</li>
+			</hiddenPrerequisites>
 		</value>
 	</Operation>
 

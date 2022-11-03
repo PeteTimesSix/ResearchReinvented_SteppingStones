@@ -168,7 +168,10 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
             {
                 var projects = DefDatabase<ResearchProjectDef>.AllDefsListForReading.Where(p => p.tab == tab || p.tab == null);
                 if (!projects.Any())
+                {
+                    TabOffsets[tab] = new Vector2(0, 0);
                     continue;
+                }
                 var minX = projects.Min(p => fieldX(p));
                 var minY = projects.Min(p => fieldY(p));
                 var offsetX = Math.Min(0, minX);
