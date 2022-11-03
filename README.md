@@ -1,7 +1,7 @@
 
 # Research Reinvented: Stepping Stones    [![Badge License]][License]   [![Badge Mod]][RimWorld]
 
-*A companion mod for Research Reinvented that modifies the vanilla research tree to one with a more discreet, logical progression for the Electricity research project.*
+*A companion mod for Research Reinvented that modifies the vanilla research tree to one with a more discreet, logical progression.*
 
 <br>
 
