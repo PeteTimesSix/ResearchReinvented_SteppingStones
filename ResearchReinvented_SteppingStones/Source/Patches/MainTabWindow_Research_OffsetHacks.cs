@@ -167,6 +167,8 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
             foreach (var tab in DefDatabase<ResearchTabDef>.AllDefsListForReading)
             {
                 var projects = DefDatabase<ResearchProjectDef>.AllDefsListForReading.Where(p => p.tab == tab || p.tab == null);
+                if (!projects.Any())
+                    continue;
                 var minX = projects.Min(p => fieldX(p));
                 var minY = projects.Min(p => fieldY(p));
                 var offsetX = Math.Min(0, minX);

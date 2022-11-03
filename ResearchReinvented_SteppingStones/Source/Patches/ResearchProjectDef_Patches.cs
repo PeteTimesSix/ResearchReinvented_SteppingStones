@@ -9,7 +9,7 @@ using static HarmonyLib.AccessTools;
 
 namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
 {
-    [HarmonyPatch(typeof(ResearchProjectDef), nameof(ResearchProjectDef.GenerateNonOverlappingCoordinates))]
+    /*[HarmonyPatch(typeof(ResearchProjectDef), nameof(ResearchProjectDef.GenerateNonOverlappingCoordinates))]
     public static class ResearchProjectDef_GenerateNonOverlappingCoordinates_Patches
     {
         private static FieldRef<ResearchProjectDef, float> fieldX = AccessTools.FieldRefAccess<ResearchProjectDef, float>("x");
@@ -24,6 +24,16 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
                 fieldX(researchProjectDef) = researchProjectDef.researchViewX;
                 fieldY(researchProjectDef) = researchProjectDef.researchViewY;
             }
+            return false;
+        }
+    }*/
+
+    [HarmonyPatch(typeof(ResearchProjectDef), "ClampInCoordinateLimits")]
+    public static class ResearchProjectDef_ClampInCoordinateLimits_Patches
+    {
+        [HarmonyPrefix]
+        public static bool Prefix()
+        {
             return false;
         }
     }

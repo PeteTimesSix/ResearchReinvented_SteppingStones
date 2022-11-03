@@ -28,6 +28,7 @@
 	<loadAfter>
 		<li>brrainz.harmony</li>
 		<li>imranfish.xmlextensions</li>
+		<li>petetimessix.researchreinvented</li>
 	</loadAfter>
 	<description>
 Restructures the vanilla research tree to follow a more logical progression.
