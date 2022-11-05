@@ -571,7 +571,7 @@
 	</Operation>
 	
 	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
 		<xpath>Defs/ResearchProjectDef[defName="ArtificialMetabolism"]</xpath>
 		<value>
 			<prerequisites>
@@ -580,7 +580,7 @@
 		</value>
 	</Operation>
 	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
 		<xpath>Defs/ResearchProjectDef[defName="MolecularAnalysis"]</xpath>
 		<value>
 			<prerequisites>
@@ -589,7 +589,7 @@
 		</value>
 	</Operation>
 	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
 		<xpath>Defs/ResearchProjectDef[defName="CircadianInfluence"]</xpath>
 		<value>
 			<prerequisites>
@@ -598,7 +598,7 @@
 		</value>
 	</Operation>
 	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
 		<xpath>Defs/ResearchProjectDef[defName="NeuralComputation"]</xpath>
 		<value>
 			<prerequisites>
@@ -607,7 +607,7 @@
 		</value>
 	</Operation>
 	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
 		<xpath>Defs/ResearchProjectDef[defName="FleshShaping"]</xpath>
 		<value>
 			<prerequisites>
@@ -616,7 +616,7 @@
 		</value>
 	</Operation>
 	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
 		<xpath>Defs/ResearchProjectDef[defName="SkinHardening"]</xpath>
 		<value>
 			<prerequisites>
@@ -626,7 +626,7 @@
 		</value>
 	</Operation>
 	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
+		<doesRequire>ludeon.rimworld.royalty</doesRequire>
 		<xpath>Defs/ResearchProjectDef[defName="HealingFactors"]</xpath>
 		<value>
 			<prerequisites>
