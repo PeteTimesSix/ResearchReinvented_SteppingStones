@@ -92,6 +92,7 @@
 	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
 		<value>
+			<techLevel>Neolithic</techLevel>
 			<prerequisites>
 			  <li>RR_BasicCraftingFacilities</li>
 			</prerequisites>
