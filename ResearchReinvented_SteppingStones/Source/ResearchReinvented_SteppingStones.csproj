@@ -49,10 +49,16 @@
     <Compile Include="PatchOperationAddOrReplace.cs" />
     <Compile Include="PatchOperationCompactResearchCoords.cs" />
     <Compile Include="PatchOperationReplaceResearchCoords.cs" />
+    <Compile Include="PreregRebuilders\PreregRebuilder_Buildables.cs" />
+    <Compile Include="PreregRebuilders\PreregRebuilder_Plants.cs" />
+    <Compile Include="PreregRebuilders\PreregRebuilder_Recipes.cs" />
+    <Compile Include="PreregRebuilders\PreregRebuilder_Projects.cs" />
+    <Compile Include="PreregRebuilders\PreregRebuilder_Terrain.cs" />
+    <Compile Include="PreregRebuilders\PrereqRebuilder_Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResearchReinvented_SteppingStonesMod.cs" />
     <Compile Include="DefOfs\ResearchProjectDefOf_Custom.cs" />
-    <Compile Include="Utility\PreregRebuilder.cs" />
+    <Compile Include="PreregRebuilders\PreregRebuilder.cs" />
     <Compile Include="Utility\TechLevelColor.cs" />
   </ItemGroup>
   <ItemGroup>

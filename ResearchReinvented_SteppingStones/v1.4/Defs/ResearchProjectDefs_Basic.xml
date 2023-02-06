@@ -2,6 +2,16 @@
 <Defs>
   
   <ResearchProjectDef>
+    <defName>RR_LateralThinking</defName>
+    <label>lateral thinking</label>
+    <description>Consideration and allowances for a more lateral approach.\n(This is a prerequisite to any orphan research tech, including modded ones.)</description>
+    <baseCost>1</baseCost>
+    <techLevel>Neolithic</techLevel>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>5.50</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
     <defName>RR_Organization</defName>
     <label>organization</label>
     <description>Fundamentals of organization.</description>
