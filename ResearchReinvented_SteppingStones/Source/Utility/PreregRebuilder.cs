@@ -12,7 +12,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Utility
 {
     public static class PreregRebuilder
     {
-        public static void SetPrerequisitesOnOprhans()
+        public static void SetPrerequisitesOnOrphans()
         {
             var noProjectRecipeDefs = new HashSet<RecipeDef>();
             var noProjectSurgeryRecipeDefs = new HashSet<RecipeDef>();
