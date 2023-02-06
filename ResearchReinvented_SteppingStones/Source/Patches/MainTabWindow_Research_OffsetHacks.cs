@@ -129,7 +129,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
             {
                 new CodeInstruction(OpCodes.Ldloc_S, 20), 
                 new CodeInstruction(OpCodes.Ldloc_S, 18),
-                new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(MainTabWindow_Research_OffsetHack_DrawRightRect), nameof(MainTabWindow_Research_OffsetHack_DrawRightRect.DrawTechLevel))),
+                new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(MainTabWindow_Research_OffsetHack_DrawRightRect), nameof(MainTabWindow_Research_OffsetHack_DrawRightRect.DrawExtras))),
             };
 
             matcher.MatchEndForward(targetSite);
@@ -145,10 +145,23 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
             }
         }
 
+        public static void DrawExtras(Rect rect, ResearchProjectDef researchProject)
+        {
+            DrawTechLevel(rect, researchProject);
+            if(researchProject.ProgressPercent > 0 && researchProject.ProgressPercent < 1)
+                DrawProgress(rect, researchProject);
+        }
         public static void DrawTechLevel(Rect rect, ResearchProjectDef researchProject) 
         {
             var sideRect = rect.LeftPartPixels(5f).ContractedBy(1f);
             Widgets.DrawBoxSolid(sideRect, TechLevelColorUtil.ColorAvailable[researchProject.techLevel]);
+        }
+
+        public static readonly Color SemiFinishedResearchColor = new ColorInt(0, 64, 16, 65).ToColor;
+        public static void DrawProgress(Rect rect, ResearchProjectDef researchProject)
+        {
+            var progRect = rect.ContractedBy(1f).LeftPart(researchProject.ProgressPercent);
+            Widgets.DrawBoxSolid(progRect, SemiFinishedResearchColor);
         }
     }
 
