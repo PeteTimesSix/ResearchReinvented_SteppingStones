@@ -15,10 +15,10 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
     {
         public static void SetPrerequisitesOnOrphans()
         {
-            DoRecipes();
             DoBuildables();
             DoPlants();
             DoTerrains();
+            DoRecipes(); //for some reason Im not quite sure of right now, doing this first results in wrong assingments.
             DoProjects();
 
             ThingDefOf_Custom.RR_ThinkingSpot.researchPrerequisites = null;
