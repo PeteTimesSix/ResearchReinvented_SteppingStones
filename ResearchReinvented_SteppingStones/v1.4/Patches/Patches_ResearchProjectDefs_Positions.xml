@@ -57,18 +57,6 @@
 		<researchViewY>3.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<xpath>Defs/ResearchProjectDef[defName="NobleApparel"]</xpath>
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<researchViewX>2.00</researchViewX>
-		<researchViewY>2.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<xpath>Defs/ResearchProjectDef[defName="RoyalApparel"]</xpath>
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<researchViewX>3.00</researchViewX>
-		<researchViewY>2.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="PlateArmor"]</xpath>
 		<researchViewX>2.00</researchViewX>
 		<researchViewY>2.50</researchViewY>
@@ -77,24 +65,6 @@
 		<xpath>Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
 		<researchViewX>2.00</researchViewX>
 		<researchViewY>3.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<xpath>Defs/ResearchProjectDef[defName="Harp"]</xpath>
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<researchViewX>1.00</researchViewX>
-		<researchViewY>5.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<xpath>Defs/ResearchProjectDef[defName="Harpsichord"]</xpath>
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<researchViewX>2.00</researchViewX>
-		<researchViewY>5.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<xpath>Defs/ResearchProjectDef[defName="Piano"]</xpath>
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<researchViewX>3.00</researchViewX>
-		<researchViewY>5.00</researchViewY>
 	</Operation>
 	
 	
@@ -215,18 +185,6 @@
   <researchViewY>5.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="FertilityProcedures"]</xpath>
-  <researchViewX>5.00</researchViewX>
-  <researchViewY>5.50</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="ToxGas"]</xpath>
-		<researchViewX>8.00</researchViewX>
-		<researchViewY>4.50</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Prosthetics"]</xpath>
   <researchViewX>7.00</researchViewX>
   <researchViewY>5.00</researchViewY>
@@ -325,12 +283,6 @@
 		<researchViewY>2.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="GrowthVats"]</xpath>
-		<researchViewX>11.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="VitalsMonitor"]</xpath>
 		<researchViewX>14.00</researchViewX>
 		<researchViewY>1.50</researchViewY>
@@ -350,72 +302,6 @@
 		<researchViewX>11.00</researchViewX>
 		<researchViewY>4.00</researchViewY>
 	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.ideology</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="NeuralSupercharger"]</xpath>
-		<researchViewX>12.00</researchViewX>
-		<researchViewY>0.50</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="JumpPack"]</xpath>
-		<researchViewX>12.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="ToxifierGenerator"]</xpath>
-		<researchViewX>6.00</researchViewX>
-		<researchViewY>2.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<researchViewX>9.00</researchViewX>
-		<researchViewY>2.50</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="BasicMechtech"]</xpath>
-		<researchViewX>8.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="Xenogermination"]</xpath>
-  <researchViewX>7.00</researchViewX>
-  <researchViewY>5.50</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="GeneProcessor"]</xpath>
-		<researchViewX>12.00</researchViewX>
-		<researchViewY>5.50</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="BrainWiring"]</xpath>
-		<researchViewX>12.00</researchViewX>
-		<researchViewY>4.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="SpecializedLimbs"]</xpath>
-		<researchViewX>12.00</researchViewX>
-		<researchViewY>4.50</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="CompactWeaponry"]</xpath>
-		<researchViewX>12.00</researchViewX>
-		<researchViewY>5.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]</xpath>
-		<researchViewX>13.00</researchViewX>
-		<researchViewY>5.00</researchViewY>
-	</Operation>
 	
 	
 	<!-- Spacer/Ultra -->
@@ -432,12 +318,6 @@
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="PoweredArmor"]</xpath>
 		<researchViewX>16.00</researchViewX>
-		<researchViewY>2.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="CataphractArmor"]</xpath>
-		<researchViewX>17.00</researchViewX>
 		<researchViewY>2.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
@@ -464,42 +344,6 @@
 		<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]</xpath>
 		<researchViewX>14.00</researchViewX>
 		<researchViewY>4.50</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<xpath>Defs/ResearchProjectDef[defName="Gunlink"]</xpath>
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<researchViewX>14.00</researchViewX>
-		<researchViewY>2.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.ideology</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="Biosculpting"]</xpath>
-		<researchViewX>15.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.ideology</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]</xpath>
-		<researchViewX>16.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="StandardMechtech"]</xpath>
-		<researchViewX>11.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="UltraMechtech"]</xpath>
-		<researchViewX>16.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="WastepackAtomizer"]</xpath>
-		<researchViewX>16.00</researchViewX>
-		<researchViewY>2.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="ShipBasics"]</xpath>
@@ -530,65 +374,5 @@
 		<xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]</xpath>
 		<researchViewX>18.00</researchViewX>
 		<researchViewY>0.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="HighMechtech"]</xpath>
-		<researchViewX>15.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="Archogenetics"]</xpath>
-		<researchViewX>15.00</researchViewX>
-		<researchViewY>5.50</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]</xpath>
-		<researchViewX>16.00</researchViewX>
-		<researchViewY>5.50</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="ArtificialMetabolism"]</xpath>
-		<researchViewX>16.00</researchViewX>
-		<researchViewY>5.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="NeuralComputation"]</xpath>
-		<researchViewX>17.00</researchViewX>
-		<researchViewY>4.50</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="SkinHardening"]</xpath>
-		<researchViewX>18.00</researchViewX>
-		<researchViewY>4.50</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="HealingFactors"]</xpath>
-		<researchViewX>18.00</researchViewX>
-		<researchViewY>4.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="FleshShaping"]</xpath>
-		<researchViewX>16.00</researchViewX>
-		<researchViewY>4.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="MolecularAnalysis"]</xpath>
-		<researchViewX>17.00</researchViewX>
-		<researchViewY>5.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="CircadianInfluence"]</xpath>
-		<researchViewX>16.00</researchViewX>
-		<researchViewY>4.50</researchViewY>
 	</Operation>
 </Patch>

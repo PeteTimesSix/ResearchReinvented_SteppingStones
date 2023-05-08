@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<RR_SS_setting_doPowerPreregs>Gate electrical buildings behind electricity</RR_SS_setting_doPowerPreregs>
+	<RR_SS_setting_doPowerPreregs_tooltip>Ensures powered buildings require electricity to invent.</RR_SS_setting_doPowerPreregs_tooltip>
+	
+	<RR_SS_setting_doSurgeryPreregs>Gate advanced surgery</RR_SS_setting_doSurgeryPreregs>
+	<RR_SS_setting_doSurgeryPreregs_tooltip>Ensures installation of advanced artifical bodyparts requires an appropriate understanding of medicine and prosthetics. For example, installing a simple wooden peg leg only requires the most basic understanding of apparel, while installing a bionic leg requires understanding the inner workings of basic prosthetics.</RR_SS_setting_doSurgeryPreregs_tooltip>
+	<RR_SS_setting_doSurgeryPreregs_option_Off>Off</RR_SS_setting_doSurgeryPreregs_option_Off>
+	<RR_SS_setting_doSurgeryPreregs_option_Easy>Easy</RR_SS_setting_doSurgeryPreregs_option_Easy>
+	<RR_SS_setting_doSurgeryPreregs_option_Normal>Normal</RR_SS_setting_doSurgeryPreregs_option_Normal>
+	
+	<RR_SS_setting_doSurgeryPreregs_option_Off_tooltip>Disable entirely.</RR_SS_setting_doSurgeryPreregs_option_Off_tooltip>
+	<RR_SS_setting_doSurgeryPreregs_option_Easy_tooltip>Assign prerequisites from earlier in the tech tree.</RR_SS_setting_doSurgeryPreregs_option_Easy_tooltip>
+	<RR_SS_setting_doSurgeryPreregs_option_Normal_tooltip>Assign prerequisites as normal.</RR_SS_setting_doSurgeryPreregs_option_Normal_tooltip>
+	
+	<RR_settings_restartWarning>Restarting the game is required for the above to apply.</RR_settings_restartWarning>
+</LanguageData>

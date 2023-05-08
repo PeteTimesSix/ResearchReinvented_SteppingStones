@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RR.SmartXml.Conditionals;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace RR
 
     public class PatchOperationAddOrReplace : PatchOperationPathed
     {
+        public Type conditionalType = null;
+        public string conditionalParam = null;
         public string doesRequire;
 
         public XmlContainer value;
@@ -34,6 +37,13 @@ namespace RR
                     }
                 }
             }
+
+            if(conditionalType != null)
+            {
+                var conditional = SmartXmlConditionalMaker.MakeConditional(conditionalType);
+                if(!conditional.ShouldExecute(conditionalParam))
+                    return true; //specific condition (probably a settings value) not met
+			}
 
             XmlNode node = value.node;
             XmlNode foundNode = null;

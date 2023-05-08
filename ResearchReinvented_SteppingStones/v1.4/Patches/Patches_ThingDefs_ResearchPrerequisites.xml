@@ -127,4 +127,30 @@
     </researchPrerequisites>
 		</value>
 	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="SimpleProstheticHeart"]</xpath>
+		<conditionalType>RR.SmartXml.Conditionals.Cond_Surgery</conditionalType>
+		<conditionalParam>Easy</conditionalParam>
+		
+		<value>
+    <researchPrerequisites>
+      <li>Prosthetics</li>
+      <li>DrugProduction</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="SimpleProstheticHeart"]</xpath>
+		<conditionalType>RR.SmartXml.Conditionals.Cond_Surgery</conditionalType>
+		<conditionalParam>Normal</conditionalParam>
+		
+		<value>
+    <researchPrerequisites>
+      <li>Prosthetics</li>
+      <li>PenoxycylineProduction</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
 </Patch>

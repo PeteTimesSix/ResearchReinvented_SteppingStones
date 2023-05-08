@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="NeuralSupercharger"]</xpath>
+		<researchViewX>12.00</researchViewX>
+		<researchViewY>0.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Biosculpting"]</xpath>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]</xpath>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+	</Operation>
+</Patch>

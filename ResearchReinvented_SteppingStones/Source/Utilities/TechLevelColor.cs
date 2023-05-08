@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace PeteTimesSix.ResearchReinvented_SteppingStones.Utility
+namespace PeteTimesSix.ResearchReinvented_SteppingStones.Utilities
 {
     [StaticConstructorOnStartup]
     public static class TechLevelColorUtil

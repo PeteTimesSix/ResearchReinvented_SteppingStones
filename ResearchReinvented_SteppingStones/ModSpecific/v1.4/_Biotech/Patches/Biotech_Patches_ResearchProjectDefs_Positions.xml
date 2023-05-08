@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="FertilityProcedures"]</xpath>
+  <researchViewX>5.00</researchViewX>
+  <researchViewY>5.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ToxGas"]</xpath>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="GrowthVats"]</xpath>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ToxifierGenerator"]</xpath>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="BasicMechtech"]</xpath>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Xenogermination"]</xpath>
+  <researchViewX>7.00</researchViewX>
+  <researchViewY>5.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="GeneProcessor"]</xpath>
+		<researchViewX>12.00</researchViewX>
+		<researchViewY>5.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="StandardMechtech"]</xpath>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="UltraMechtech"]</xpath>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="WastepackAtomizer"]</xpath>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="HighMechtech"]</xpath>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Archogenetics"]</xpath>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>5.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]</xpath>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>5.50</researchViewY>
+	</Operation>
+</Patch>

@@ -39,6 +39,7 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefOfs\ConceptDefOf_Custom.cs" />
     <Compile Include="DefOfs\ThingDefOf_Custom.cs" />
     <Compile Include="Extensions\RecipeDefExtensions.cs" />
     <Compile Include="Extensions\ResearchProjectDefExtensions.cs" />
@@ -46,9 +47,13 @@
     <Compile Include="Patches\MainTabWindow_Research_OffsetHacks.cs" />
     <Compile Include="Patches\ResearchProjectDef_Patches.cs" />
     <Compile Include="Patches\Zone_Growing_Patches.cs" />
-    <Compile Include="PatchOperationAddOrReplace.cs" />
-    <Compile Include="PatchOperationCompactResearchCoords.cs" />
-    <Compile Include="PatchOperationReplaceResearchCoords.cs" />
+    <Compile Include="SmartXml\Conditionals\Cond_Surgery.cs" />
+    <Compile Include="SmartXml\Conditionals\Cond_Power.cs" />
+    <Compile Include="SmartXml\Conditionals\_ConditionalBase.cs" />
+    <Compile Include="SmartXml\Conditionals\_SmartXmlConditionalMaker.cs" />
+    <Compile Include="SmartXml\PatchOperationAddOrReplace.cs" />
+    <Compile Include="SmartXml\PatchOperationCompactResearchCoords.cs" />
+    <Compile Include="SmartXml\PatchOperationReplaceResearchCoords.cs" />
     <Compile Include="PreregRebuilders\PreregRebuilder_Buildables.cs" />
     <Compile Include="PreregRebuilders\PreregRebuilder_Plants.cs" />
     <Compile Include="PreregRebuilders\PreregRebuilder_Recipes.cs" />
@@ -60,7 +65,8 @@
     <Compile Include="DefOfs\ResearchProjectDefOf_Custom.cs" />
     <Compile Include="PreregRebuilders\PreregRebuilder.cs" />
     <Compile Include="ResearchReinvented_SteppingStones_Settings.cs" />
-    <Compile Include="Utility\TechLevelColor.cs" />
+    <Compile Include="Utilities\ListingExtensions.cs" />
+    <Compile Include="Utilities\TechLevelColor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Install.bat" />

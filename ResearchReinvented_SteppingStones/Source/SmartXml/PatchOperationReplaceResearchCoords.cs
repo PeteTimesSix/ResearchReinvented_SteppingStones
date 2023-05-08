@@ -29,7 +29,6 @@ namespace RR
 				}
 			}
 
-
 			string valueX = researchViewX.node.InnerText;
 			string valueY = researchViewY.node.InnerText;
 			//Log.Message($"running research coord replace patch on {xpath}, values: {valueX} {valueY}");

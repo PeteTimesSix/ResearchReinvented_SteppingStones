@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="FertilityProcedures"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>SterileMaterials</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ToxifierGenerator"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_PowerGenerators</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ToxGas"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Gunsmithing</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="GeneProcessor"]</xpath>
+		<value>
+			<techLevel>Spacer</techLevel>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Xenogermination"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>MedicineProduction</li>
+			  <li>Machining</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="BasicMechtech"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Batteries</li>
+			</prerequisites>
+			<hiddenPrerequisites>
+			  <li>Machining</li>
+			</hiddenPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="StandardMechtech"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>BasicMechtech</li>
+			  <li>MicroelectronicsBasics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="HighMechtech"]</xpath>
+		<value>
+			<techLevel>Spacer</techLevel>
+			<prerequisites>
+			  <li>StandardMechtech</li>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="UltraMechtech"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>HighMechtech</li>
+			  <li>AdvancedFabrication</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Archogenetics"]</xpath>
+		<value>
+			<techLevel>Ultra</techLevel>
+			<prerequisites>
+			  <li>GeneProcessor</li>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="WastepackAtomizer"]</xpath>
+		<value>
+			<baseCost>5000</baseCost>
+			<techLevel>Spacer</techLevel>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Bionics"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Bionics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+</Patch>

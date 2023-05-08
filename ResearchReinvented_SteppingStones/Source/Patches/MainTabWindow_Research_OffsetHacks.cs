@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
-using PeteTimesSix.ResearchReinvented_SteppingStones.Utility;
+using PeteTimesSix.ResearchReinvented_SteppingStones.DefOfs;
+using PeteTimesSix.ResearchReinvented_SteppingStones.Utilities;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -52,6 +53,12 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
     [HarmonyPatch(typeof(MainTabWindow_Research), "DrawRightRect")]
     public static class MainTabWindow_Research_OffsetHack_DrawRightRect
     {
+        [HarmonyPostfix]
+        public static void Postfix()
+		{
+			LessonAutoActivator.TeachOpportunity(ConceptDefOf_Custom.RR_SteppingStones_Intro, OpportunityType.Important);
+		}
+
         [HarmonyTranspiler]
         public static IEnumerable<CodeInstruction> DrawRightRect(IEnumerable<CodeInstruction> instructions)
         {

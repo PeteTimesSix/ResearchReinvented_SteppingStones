@@ -126,6 +126,14 @@
 		</value>
 	</Operation>
 	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="PenoxycylineProduction"]</xpath>
+		<value>
+			<label>penoxycyline</label>
+			<description>Produce penoxycyline, a disease prevention drug which blocks plague, malaria, and more before they start. Trace amounts of penoxycyline are also used to prevent rejection of transplanted and artificial organs or body parts.</description>
+		</value>
+	</Operation>
+	
 	
 	<!-- Early industrial -->
 
@@ -192,16 +200,6 @@
 	</Operation>
 	
 	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="FertilityProcedures"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>SterileMaterials</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ResearchProjectDef[defName="TubeTelevision"]</xpath>
 		<value>
 			<prerequisites>
@@ -250,34 +248,6 @@
 			  <li>RR_HeatingElements</li>
 			  <li>RR_PowerGenerators</li>
 			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="ToxifierGenerator"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>RR_PowerGenerators</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="ToxGas"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>Gunsmithing</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="GeneProcessor"]</xpath>
-		<value>
-			<techLevel>Spacer</techLevel>
 		</value>
 	</Operation>
 	
@@ -335,27 +305,9 @@
 			  <li>Machining</li>
 			  <li>SterileMaterials</li>
 			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="Xenogermination"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>MedicineProduction</li>
-			  <li>Machining</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="JumpPack"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>TransportPod</li>
-			</prerequisites>
+			<hiddenPrerequisites>
+			  <li>ComplexClothing</li>
+			</hiddenPrerequisites>
 		</value>
 	</Operation>
 	
@@ -367,32 +319,6 @@
 			  <li>Fabrication</li>
 			</prerequisites>
 			<requiredResearchFacilities></requiredResearchFacilities>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.ideology</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="Biosculpting"]</xpath>
-		<value>
-			<techLevel>Spacer</techLevel>
-			<prerequisites>
-			  <li>HospitalBed</li>
-			  <li>MultiAnalyzer</li>
-			</prerequisites>
-			<requiredResearchFacilities>
-				<li>MultiAnalyzer</li>
-			</requiredResearchFacilities>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.ideology</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]</xpath>
-		<value>
-			<techLevel>Spacer</techLevel>
-			<prerequisites>
-			  <li>Biosculpting</li>
-			</prerequisites>
 		</value>
 	</Operation>
 	
@@ -412,16 +338,6 @@
 			<prerequisites>
 			  <li>DeepDrilling</li>
 			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="CompactWeaponry"]</xpath>
-		<value>
-			<hiddenPrerequisites>
-			  <li>LongBlades</li>
-			</hiddenPrerequisites>
 		</value>
 	</Operation>
 	
@@ -483,157 +399,15 @@
 	</Operation>
 	
 	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="BasicMechtech"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>Batteries</li>
-			</prerequisites>
-			<hiddenPrerequisites>
-			  <li>Machining</li>
-			</hiddenPrerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="StandardMechtech"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>BasicMechtech</li>
-			  <li>MicroelectronicsBasics</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="HighMechtech"]</xpath>
-		<value>
-			<techLevel>Spacer</techLevel>
-			<prerequisites>
-			  <li>StandardMechtech</li>
-			  <li>MultiAnalyzer</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="UltraMechtech"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>HighMechtech</li>
-			  <li>AdvancedFabrication</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="Archogenetics"]</xpath>
-		<value>
-			<techLevel>Ultra</techLevel>
-			<prerequisites>
-			  <li>GeneProcessor</li>
-			  <li>MultiAnalyzer</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="WastepackAtomizer"]</xpath>
-		<value>
-			<baseCost>5000</baseCost>
-			<techLevel>Spacer</techLevel>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
 		<xpath>Defs/ResearchProjectDef[defName="Bionics"]</xpath>
 		<value>
 			<prerequisites>
 			  <li>MultiAnalyzer</li>
 			</prerequisites>
-		</value>
-	</Operation>
-	
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.biotech</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="ToxFiltration"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>Bionics</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="ArtificialMetabolism"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>Bionics</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="MolecularAnalysis"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>ArtificialMetabolism</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="CircadianInfluence"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>Bionics</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="NeuralComputation"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>CircadianInfluence</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="FleshShaping"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>Bionics</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="SkinHardening"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>FleshShaping</li>
-			  <li>AdvancedFabrication</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<doesRequire>ludeon.rimworld.royalty</doesRequire>
-		<xpath>Defs/ResearchProjectDef[defName="HealingFactors"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>FleshShaping</li>
-			  <li>AdvancedFabrication</li>
-			</prerequisites>
+			<hiddenPrerequisites>
+			  <li>Prosthetics</li>
+			  <li>PenoxycylineProduction</li>
+			</hiddenPrerequisites>
 		</value>
 	</Operation>
 </Patch>

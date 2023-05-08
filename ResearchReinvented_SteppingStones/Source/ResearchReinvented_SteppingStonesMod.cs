@@ -11,7 +11,7 @@ using RimWorld;
 using PeteTimesSix.ResearchReinvented_SteppingStones.Extensions;
 using PeteTimesSix.ResearchReinvented_SteppingStones.DefOfs;
 using PeteTimesSix.ResearchReinvented_SteppingStones.Patches;
-using PeteTimesSix.ResearchReinvented_SteppingStones.Utility;
+using PeteTimesSix.ResearchReinvented_SteppingStones.Utilities;
 using PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders;
 
 namespace PeteTimesSix.ResearchReinvented_SteppingStones
@@ -28,12 +28,20 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones
 
             Harmony = new Harmony("PeteTimesSix.ResearchReinvented_SteppingStones");
             Harmony.PatchAll();
-        }
 
-        /*public override string SettingsCategory()
-        {
-            return "ResearchReinvented_SteppingStones_ModTitle".Translate();
-        }*/
+			Settings = GetSettings<ResearchReinvented_SteppingStones_Settings>();
+		}
+
+
+		public override string SettingsCategory()
+		{
+			return "ResearchReinvented_SteppingStones_ModTitle".Translate();
+		}
+
+		public override void DoSettingsWindowContents(Rect inRect)
+		{
+			Settings.DoSettingsWindowContents(inRect);
+		}
 	}
 
     [StaticConstructorOnStartup]
@@ -41,7 +49,6 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones
     {
         static ResearchReinventedSteppingStones_PostInit()
         {
-            ResearchReinvented_SteppingStonesMod.Settings = ResearchReinvented_SteppingStonesMod.ModSingleton.GetSettings<ResearchReinvented_SteppingStones_Settings>();
 
             PreregRebuilder.SetPrerequisitesOnOrphans();
             MainTabWindow_Research_OffsetHacks.BuildTabOffsets();

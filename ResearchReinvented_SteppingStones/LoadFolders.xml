@@ -9,6 +9,8 @@
 		<li>/</li>
 		<li>v1.4</li>
 		<li IfModActive="petetimessix.researchreinvented">ModSpecific/v1.4/RR_Main</li>
-		<li IfModActive="ludeon.rimworld.ideology">ModSpecific/v1.4/Ideology</li>
+		<li IfModActive="ludeon.rimworld.royalty">ModSpecific/v1.4/_Royalty</li>
+		<li IfModActive="ludeon.rimworld.ideology">ModSpecific/v1.4/_Ideology</li>
+		<li IfModActive="ludeon.rimworld.biotech">ModSpecific/v1.4/_Biotech</li>
 	</v1.4>
 </loadFolders>

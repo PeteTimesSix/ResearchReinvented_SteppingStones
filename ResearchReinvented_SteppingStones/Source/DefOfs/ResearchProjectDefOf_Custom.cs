@@ -27,7 +27,13 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.DefOfs
 
         public static ResearchProjectDef RR_ElectricityBasics;
 
-        static ResearchProjectDefOf_Custom()
+        //vanilla
+		public static ResearchProjectDef ComplexClothing;
+		public static ResearchProjectDef Prosthetics;
+		public static ResearchProjectDef DrugProduction;
+		public static ResearchProjectDef PenoxycylineProduction;
+
+		static ResearchProjectDefOf_Custom()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(ResearchProjectDefOf_Custom));
         }

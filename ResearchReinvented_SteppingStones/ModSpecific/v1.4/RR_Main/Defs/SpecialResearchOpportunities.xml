@@ -21,6 +21,26 @@
 	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
 	
 	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_LateralThinking_man</defName>
+		<opportunityType>Analyse</opportunityType>
+		<originalProject>RR_LateralThinking</originalProject>
+		<alternates>
+			<li>Human</li>
+		</alternates>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_LateralThinking_dirt</defName>
+		<opportunityType>AnalyseTerrain</opportunityType>
+		<originalProject>RR_LateralThinking</originalProject>
+		<alternateTerrains>
+			<li>Soil</li>
+			<li>Sand</li>
+			<li>Ice</li>
+		</alternateTerrains>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+	
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
 		<defName>RR_SS_badForAgriculture</defName>
 		<opportunityType>AnalysePlant</opportunityType>
 		<originalProject>RR_Agriculture</originalProject>
