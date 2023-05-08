@@ -61,9 +61,9 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             if (buildable.researchPrerequisites == null)
                 buildable.researchPrerequisites = new List<ResearchProjectDef>();
 
-            if (buildable.IsElectrical())
+            if (ResearchReinvented_SteppingStonesMod.Settings.doPowerPreregs && buildable.IsElectrical())
             {
-                buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicCraftingFacilities);
+                buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_ElectricityBasics);
             }
             else if (buildable.IsCraftingFacility())
             {

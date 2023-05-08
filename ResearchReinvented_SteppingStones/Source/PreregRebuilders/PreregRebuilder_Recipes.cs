@@ -138,6 +138,24 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             {
                 recipe.researchPrerequisites.AddRange(firstProjects);
             }
+
+            /*if(recipe.addsHediff != null) 
+            {
+                var addedHediff = recipe.addsHediff;
+                if (addedHediff.countsAsAddedPartOrImplant) 
+                {
+                    if (addedHediff.hediffClass == typeof(Hediff_AddedPart))
+                    {
+                        var props = addedHediff.addedPartProps;
+                        if (props != null)
+                        {
+                            var better = props.betterThanNatural;
+                            var efficiency = props.partEfficiency;
+                            Log.Message($"recipe {recipe} adds hediff {addedHediff}");
+                        }
+                    }
+                }
+            }*/
             //recipe.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_FundamentalSurgery);
         }
 

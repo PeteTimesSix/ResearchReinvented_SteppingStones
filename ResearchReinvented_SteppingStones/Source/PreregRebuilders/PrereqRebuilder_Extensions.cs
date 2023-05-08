@@ -30,7 +30,11 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
 
         private static bool IsElectrical(this ThingDef buildable)
         {
-            return buildable.HasComp(typeof(CompPower)) || buildable.HasComp(typeof(CompPowerTrader)) || buildable.HasComp(typeof(CompPowerBattery)) || buildable.HasComp(typeof(CompPowerTransmitter)) || buildable.HasComp(typeof(CompPowerPlant));
+            return  buildable.HasComp(typeof(CompPower)) || 
+                    buildable.HasComp(typeof(CompPowerTrader)) || 
+                    buildable.HasComp(typeof(CompPowerBattery)) || 
+                    buildable.HasComp(typeof(CompPowerTransmitter)) || 
+                    buildable.HasComp(typeof(CompPowerPlant));
         }
 
     }

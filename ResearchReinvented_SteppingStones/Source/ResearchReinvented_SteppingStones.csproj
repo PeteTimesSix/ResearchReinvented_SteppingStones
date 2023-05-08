@@ -59,6 +59,7 @@
     <Compile Include="ResearchReinvented_SteppingStonesMod.cs" />
     <Compile Include="DefOfs\ResearchProjectDefOf_Custom.cs" />
     <Compile Include="PreregRebuilders\PreregRebuilder.cs" />
+    <Compile Include="ResearchReinvented_SteppingStones_Settings.cs" />
     <Compile Include="Utility\TechLevelColor.cs" />
   </ItemGroup>
   <ItemGroup>

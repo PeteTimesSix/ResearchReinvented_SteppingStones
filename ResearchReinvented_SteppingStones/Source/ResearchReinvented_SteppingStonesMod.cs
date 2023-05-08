@@ -19,6 +19,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones
     public class ResearchReinvented_SteppingStonesMod : Mod
     {
         public static ResearchReinvented_SteppingStonesMod ModSingleton { get; private set; }
+        public static ResearchReinvented_SteppingStones_Settings Settings { get; set; }
         public static Harmony Harmony { get; internal set; }
 
         public ResearchReinvented_SteppingStonesMod(ModContentPack content) : base(content)
@@ -38,8 +39,10 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones
     [StaticConstructorOnStartup]
     public static class ResearchReinventedSteppingStones_PostInit
     {
-        static ResearchReinventedSteppingStones_PostInit() 
+        static ResearchReinventedSteppingStones_PostInit()
         {
+            ResearchReinvented_SteppingStonesMod.Settings = ResearchReinvented_SteppingStonesMod.ModSingleton.GetSettings<ResearchReinvented_SteppingStones_Settings>();
+
             PreregRebuilder.SetPrerequisitesOnOrphans();
             MainTabWindow_Research_OffsetHacks.BuildTabOffsets();
         }

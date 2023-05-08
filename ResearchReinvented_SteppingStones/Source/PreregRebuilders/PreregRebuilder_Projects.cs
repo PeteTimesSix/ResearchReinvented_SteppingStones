@@ -83,7 +83,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                     else if (thing.BuildableByPlayer)
                     {
                         var buildable = thing;
-                        if (buildable.IsElectrical())
+                        if (ResearchReinvented_SteppingStonesMod.Settings.doPowerPreregs && buildable.IsElectrical())
                         {
                             unlockPoints.AddPoint(ResearchProjectDefOf_Custom.RR_ElectricityBasics);
                         }
