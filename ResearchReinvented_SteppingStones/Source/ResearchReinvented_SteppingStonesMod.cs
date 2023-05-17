@@ -49,7 +49,6 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones
     {
         static ResearchReinventedSteppingStones_PostInit()
         {
-
             PreregRebuilder.SetPrerequisitesOnOrphans();
             MainTabWindow_Research_OffsetHacks.BuildTabOffsets();
         }

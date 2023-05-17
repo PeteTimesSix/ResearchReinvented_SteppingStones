@@ -164,8 +164,11 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             else if (recipe.workerClass.IsAssignableFrom(typeof(Recipe_InstallArtificialBodyPart)))
 			{
                 var props = recipe.addsHediff?.addedPartProps;
-                if(props == null)
-					Log.Warning($"RR.SS: recipe {recipe} has Recipe_InstallArtificialBodyPart as worker but does not define addedPartProps, skipping.");
+                if (props == null)
+                {
+                    Log.Warning($"RR.SS: recipe {recipe} has Recipe_InstallArtificialBodyPart as worker but does not define addedPartProps, skipping.");
+                    return;
+                }
 
                 bool isExternal = recipe.appliedOnFixedBodyParts.Any(bp => GetRecordsOfBodyPartDef(bp).Any(r => r.depth == BodyPartDepth.Outside));
 
