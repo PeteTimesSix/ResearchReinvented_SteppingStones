@@ -9,6 +9,23 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Extensions
 {
     public static class RecipeDefExtensions
 	{
+		public static bool IsDefinitelyASurgery(this RecipeDef recipeDef) 
+		{
+			bool isSurgery = false;
+			foreach (var recipeUser in recipeDef.AllRecipeUsers)
+			{
+				if (recipeUser.category == ThingCategory.Pawn)
+				{
+					isSurgery = true;
+				}
+				else 
+				{
+					return false;
+				}
+			}
+			return isSurgery;
+		}
+
 		public static bool AnyResearchPrerequisites(this RecipeDef recipe)
 		{
 			HashSet<ResearchProjectDef> prerequisites = new HashSet<ResearchProjectDef>();
