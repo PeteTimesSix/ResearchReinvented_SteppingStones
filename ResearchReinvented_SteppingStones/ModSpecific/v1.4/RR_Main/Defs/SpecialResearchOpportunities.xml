@@ -2,7 +2,7 @@
 <Defs>  
 	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
 		<defName>RR_SS_organization_man</defName>
-		<opportunityType>Analyse</opportunityType>
+		<opportunityType>AnalysePawn</opportunityType>
 		<originalProject>RR_Organization</originalProject>
 		<alternates>
 			<li>Human</li>
@@ -22,7 +22,7 @@
 	
 	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
 		<defName>RR_LateralThinking_man</defName>
-		<opportunityType>Analyse</opportunityType>
+		<opportunityType>AnalysePawn</opportunityType>
 		<originalProject>RR_LateralThinking</originalProject>
 		<alternates>
 			<li>Human</li>

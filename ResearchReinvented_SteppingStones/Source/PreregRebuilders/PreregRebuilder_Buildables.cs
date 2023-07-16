@@ -67,7 +67,8 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             }
             else if (buildable.IsCraftingFacility())
             {
-                buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicCraftingFacilities);
+                if(buildable.defName != "ResearchSampleBench") //avoid hard lockout with Research Data
+                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicCraftingFacilities);
             }
             else if (buildable.IsFurniture())
             {
