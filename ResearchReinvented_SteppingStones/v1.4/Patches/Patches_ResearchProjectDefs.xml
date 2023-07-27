@@ -10,6 +10,7 @@
 		<value>
 			<prerequisites>
 			  <li>RR_Agriculture</li>
+			  <li>RR_Fire</li>
 			</prerequisites>
 		</value>
 	</Operation>
@@ -18,8 +19,8 @@
 		<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
 		<value>
 			<prerequisites>
-			  <li>RR_Agriculture</li>
 			  <li>RR_BasicHerbLore</li>
+			  <li>RR_Fire</li>
 			</prerequisites>
 		</value>
 	</Operation>
@@ -85,6 +86,7 @@
 			  <li>RR_BasicCraftingFacilities</li>
 			  <li>RR_BasicMeleeWeapons</li>
 			  <li>RR_BasicRangedWeapons</li>
+			  <li>RR_Fire</li>
 			</prerequisites>
 		</value>
 	</Operation>
@@ -248,6 +250,15 @@
 			  <li>RR_HeatingElements</li>
 			  <li>RR_PowerGenerators</li>
 			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="IEDs"]</xpath>
+		<value>
+			<hiddenPrerequisites>
+			  <li>RR_Trapping</li>
+			</hiddenPrerequisites>
 		</value>
 	</Operation>
 	

@@ -42,8 +42,9 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             {
                 terrain.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_Agriculture);
             }
-            else
+            else if(terrain.bridge)
             {
+                terrain.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicStructures);
                 //terrain.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_FundamentalConstruction);
             }
         }

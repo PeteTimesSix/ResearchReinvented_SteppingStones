@@ -7,7 +7,7 @@
     <description>Consideration and allowances for a more lateral approach.\n(This is a prerequisite to any orphan research tech, including modded ones.)</description>
     <baseCost>1</baseCost>
     <techLevel>Neolithic</techLevel>
-  <researchViewX>-1.00</researchViewX>
+  <researchViewX>-2.00</researchViewX>
   <researchViewY>5.50</researchViewY>
   </ResearchProjectDef>
   
@@ -22,7 +22,7 @@
       <li>ClassicStart</li>
     </tags>
   <researchViewX>-2.00</researchViewX>
-  <researchViewY>4.00</researchViewY>
+  <researchViewY>3.00</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -36,7 +36,7 @@
       <li>ClassicStart</li>
     </tags>
   <researchViewX>-1.00</researchViewX>
-  <researchViewY>0.50</researchViewY>
+  <researchViewY>1.00</researchViewY>
 	<prerequisites>
 	  <li>RR_Organization</li>
 	</prerequisites>
@@ -52,8 +52,25 @@
       <li>TribalStart</li>
       <li>ClassicStart</li>
     </tags>
+  <researchViewX>0.00</researchViewX>
+  <researchViewY>1.00</researchViewY>
+	<prerequisites>
+	  <li>RR_Agriculture</li>
+	</prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_Fire</defName>
+    <label>Fire</label>
+    <description>Intentional creation, maintenance and management of combustion, also known as fire.</description>
+    <baseCost>25</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
   <researchViewX>-1.00</researchViewX>
-  <researchViewY>1.50</researchViewY>
+  <researchViewY>2.00</researchViewY>
 	<prerequisites>
 	  <li>RR_Organization</li>
 	</prerequisites>
@@ -69,10 +86,10 @@
       <li>TribalStart</li>
       <li>ClassicStart</li>
     </tags>
-  <researchViewX>-1.00</researchViewX>
+  <researchViewX>0.00</researchViewX>
   <researchViewY>2.00</researchViewY>
 	<prerequisites>
-	  <li>RR_Organization</li>
+	  <li>RR_Fire</li>
 	</prerequisites>
   </ResearchProjectDef>
   
@@ -175,6 +192,23 @@
   <researchViewY>4.50</researchViewY>
 	<prerequisites>
 	  <li>RR_Organization</li>
+	</prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_Trapping</defName>
+    <label>trapping</label>
+    <description>Construction of simplistic traps for the purposes of hunting or defense.</description>
+    <baseCost>25</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>0.00</researchViewX>
+  <researchViewY>5.50</researchViewY>
+	<prerequisites>
+	  <li>RR_BasicFurniture</li>
 	</prerequisites>
   </ResearchProjectDef>
 </Defs>

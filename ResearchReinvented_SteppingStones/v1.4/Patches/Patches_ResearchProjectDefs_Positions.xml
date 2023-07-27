@@ -2,14 +2,24 @@
 <Patch>
 	<!-- Neolithic/Medieval -->
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
+		<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
 		<researchViewX>0.00</researchViewX>
-		<researchViewY>1.50</researchViewY>
+		<researchViewY>0.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Cocoa"]</xpath>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
-		<researchViewX>0.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]</xpath>
@@ -29,7 +39,7 @@
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Devilstrand"]</xpath>
 		<researchViewX>0.00</researchViewX>
-		<researchViewY>0.50</researchViewY>
+		<researchViewY>0.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
@@ -43,7 +53,7 @@
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Pemmican"]</xpath>
-		<researchViewX>0.00</researchViewX>
+		<researchViewX>1.00</researchViewX>
 		<researchViewY>2.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">

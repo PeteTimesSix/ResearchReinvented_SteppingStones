@@ -61,26 +61,44 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             if (buildable.researchPrerequisites == null)
                 buildable.researchPrerequisites = new List<ResearchProjectDef>();
 
+            if (buildable.defName == "ResearchSampleBench") //avoid hard lockout with Research Data
+                return;
+
             if (ResearchReinvented_SteppingStonesMod.Settings.doPowerPreregs && buildable.IsElectrical())
             {
                 buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_ElectricityBasics);
             }
-            else if (buildable.IsCraftingFacility())
+
+            if (buildable.researchPrerequisites.Count == 0) //no specifics, so go more basic
             {
-                if(buildable.defName != "ResearchSampleBench") //avoid hard lockout with Research Data
+                if (buildable.IsCraftingFacility())
+                {
                     buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicCraftingFacilities);
+                }
+                if (buildable?.building.isTrap ?? false)
+                {
+                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_Trapping);
+                }
+                if (buildable.IsFireBased())
+                {
+                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_Fire);
+                }
             }
-            else if (buildable.IsFurniture())
+
+            if (buildable.researchPrerequisites.Count == 0) //no specifics, so go more basic
             {
-                buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicFurniture);
-            }
-            else if (buildable.IsStructure())
-            {
-                buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicStructures);
-            }
-            else
-            {
-                //buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_FundamentalConstruction);
+                if (buildable.IsFurniture())
+                {
+                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicFurniture);
+                }
+                else if (buildable.IsStructure())
+                {
+                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicStructures);
+                }
+                else
+                {
+                    //buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_FundamentalConstruction);
+                }
             }
         }
 
