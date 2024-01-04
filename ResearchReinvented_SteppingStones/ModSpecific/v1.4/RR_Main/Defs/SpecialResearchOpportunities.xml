@@ -70,4 +70,15 @@
 			<li>WoodLog</li>
 		</alternates>
 	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+	
+	
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_SS_fire</defName>
+		<opportunityType>Analyse</opportunityType>
+		<originalProject>RR_Fire</originalProject>
+		<alternates>
+			<li>Fire</li>
+		</alternates>
+		<importanceMultiplier>2.5</importanceMultiplier>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
 </Defs>

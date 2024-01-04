@@ -62,8 +62,16 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Extensions
 						continue;
 
 					var projectCrawler = project;
-					var ancestor = RecursiveAncestorFind(project, allPrereqOptionsSquashed.Except(project), 0);
-					ancestorMapping[project] = ancestor;
+					try
+                    {
+                        var ancestor = RecursiveAncestorFind(project, allPrereqOptionsSquashed.Except(project), 0);
+                        ancestorMapping[project] = ancestor;
+                    }
+					catch (RecursiveAncestorLoopException)
+					{
+						Log.Error($"Reached a depth of 1000 while recursively crawling the tech tree (start project: {project.defName})! This almost certainly means there's a loop in it.");
+						continue;
+                    }
 				}
 			}
 
@@ -77,13 +85,15 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Extensions
 			return null;
 		}
 
+		private class RecursiveAncestorLoopException : InvalidOperationException { }
+
 		private static ResearchProjectDef RecursiveAncestorFind(ResearchProjectDef node, IEnumerable<ResearchProjectDef> possibleAncestors, int depth)
         {
 			if(possibleAncestors.Contains(node))
 				return node;
 
 			if (depth > 1000)
-				throw new InvalidOperationException("Reached a depth of 1000 while recursively crawling the tech tree! This almost certainly means there's a loop in it.");
+				throw new RecursiveAncestorLoopException();
 
 			foreach (var ancestorNode in node.AllPrerequisiteProjects())
 			{
