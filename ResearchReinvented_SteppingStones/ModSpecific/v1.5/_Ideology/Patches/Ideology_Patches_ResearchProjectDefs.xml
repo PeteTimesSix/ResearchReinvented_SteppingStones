@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Biosculpting"]</xpath>
+		<value>
+			<techLevel>Spacer</techLevel>
+			<prerequisites>
+			  <li>HospitalBed</li>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+			<requiredResearchFacilities>
+				<li>MultiAnalyzer</li>
+			</requiredResearchFacilities>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]</xpath>
+		<value>
+			<techLevel>Spacer</techLevel>
+			<prerequisites>
+			  <li>Biosculpting</li>
+			</prerequisites>
+		</value>
+	</Operation>
+</Patch>

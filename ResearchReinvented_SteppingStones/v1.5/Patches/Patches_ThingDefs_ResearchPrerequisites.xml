@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant</xpath>
+		<value>
+			<sowResearchPrerequisites>
+			  <li>RR_BasicHerbLore</li>
+			</sowResearchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="PowerConduit"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>RR_ElectricityBasics</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="WaterproofConduit"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>RR_ElectricityBasics</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="ChemfuelPoweredGenerator"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>RR_PowerGenerators</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="WoodFiredGenerator"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>RR_PowerGenerators</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="WindTurbine"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>WatermillGenerator</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Heater"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>RR_HeatingElements</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[@Name="LampBase"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>RR_ElectricityBasics</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="SunLamp"]</xpath>
+		<value>
+    <researchPrerequisites Inherit="False">
+      <li>ColoredLights</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="ElectricCrematorium"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>RR_HeatingElements</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="ElectricSmelter"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>RR_HeatingElements</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="ElectricStove"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>RR_HeatingElements</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="ElectricTailoringBench"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>RR_ElectricityBasics</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="ElectricSmithy"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>Smithing</li>
+      <li>RR_HeatingElements</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="SimpleProstheticHeart"]</xpath>
+		<conditionalType>RR.SmartXml.Conditionals.Cond_Surgery</conditionalType>
+		<conditionalParam>Easy</conditionalParam>
+		
+		<value>
+    <researchPrerequisites>
+      <li>Prosthetics</li>
+      <li>DrugProduction</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="SimpleProstheticHeart"]</xpath>
+		<conditionalType>RR.SmartXml.Conditionals.Cond_Surgery</conditionalType>
+		<conditionalParam>Normal</conditionalParam>
+		
+		<value>
+    <researchPrerequisites>
+      <li>Prosthetics</li>
+      <li>PenoxycylineProduction</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+</Patch>

@@ -13,4 +13,13 @@
 		<li IfModActive="ludeon.rimworld.ideology">ModSpecific/v1.4/_Ideology</li>
 		<li IfModActive="ludeon.rimworld.biotech">ModSpecific/v1.4/_Biotech</li>
 	</v1.4>
+	<v1.5>
+		<li>/</li>
+		<li>v1.5</li>
+		<li IfModActive="petetimessix.researchreinvented">ModSpecific/v1.5/RR_Main</li>
+		<li IfModActive="ludeon.rimworld.royalty">ModSpecific/v1.5/_Royalty</li>
+		<li IfModActive="ludeon.rimworld.ideology">ModSpecific/v1.5/_Ideology</li>
+		<li IfModActive="ludeon.rimworld.biotech">ModSpecific/v1.5/_Biotech</li>
+		<li IfModActive="ludeon.rimworld.anomaly">ModSpecific/v1.5/_Anomaly</li>
+	</v1.5>
 </loadFolders>

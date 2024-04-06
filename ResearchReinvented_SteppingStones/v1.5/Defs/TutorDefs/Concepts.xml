@@ -1,0 +1,8 @@
+<Defs>
+  <ConceptDef>
+    <defName>RR_SteppingStones_Intro</defName>
+    <label>R.R.: Stepping Stones</label>
+    <priority>50</priority>
+    <helpText>Research Reinvented: Stepping Stones\n\nWelcome to Stepping Stones. Your research tree has been shuffled around to a more reasonable configuration. If you find yourself suddenly unable to do something, its possible that its been locked behind one of the technologies that you have not yet researched. Some of the more significant, broad sweeping changes are optional and can be disabled in the mod settings.</helpText>
+  </ConceptDef>
+ </Defs>  

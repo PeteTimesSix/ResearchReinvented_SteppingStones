@@ -63,7 +63,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
         public static IEnumerable<CodeInstruction> DrawRightRect(IEnumerable<CodeInstruction> instructions)
         {
             instructions = DoOffsetTranspiler(instructions);
-            instructions = DoTechLevelTranspiler(instructions);
+            //instructions = DoTechLevelTranspiler(instructions);
             return instructions;
         }
 
@@ -122,7 +122,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
             }
         }
 
-        private static IEnumerable<CodeInstruction> DoTechLevelTranspiler(IEnumerable<CodeInstruction> instructions)
+        /*private static IEnumerable<CodeInstruction> DoTechLevelTranspiler(IEnumerable<CodeInstruction> instructions)
         {
             var matcher = new CodeMatcher(instructions);
 
@@ -150,7 +150,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
             {
                 return matcher.InstructionEnumeration();
             }
-        }
+        }*/
 
         public static void DrawExtras(Rect rect, ResearchProjectDef researchProject)
         {

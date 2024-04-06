@@ -52,7 +52,10 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
 
             if (indeterminateSurgeries.Any()) 
             {
-                Log.Warning($"RR.SS: Detected recipe(s) that both are and arent surgeries: {string.Join(",", indeterminateSurgeries)} - this is usually the result of invalid animal prosthetic patches.");
+                if(indeterminateSurgeries.Count > 1 || indeterminateSurgeries.First() != RecipeDefOf.RemoveBodyPart)
+                {
+                    Log.Warning($"RR.SS: Detected recipe(s) that both are and arent surgeries: {string.Join(",", indeterminateSurgeries)} - this is usually the result of invalid animal prosthetic patches.");
+                }
             }
 
             foreach (var recipe in noProjectRecipeDefs)

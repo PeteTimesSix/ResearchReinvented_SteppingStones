@@ -1,0 +1,28 @@
+<Defs>
+  <ThingStyleDef>
+    <defName>RR_VoltaicPile_Totemic</defName>
+    <graphicData>
+      <texPath>RRSS/Things/voltaic_pile_totemic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef>
+    <defName>RR_VoltaicPile_Rustic</defName>
+    <graphicData>
+      <texPath>RRSS/Things/voltaic_pile_rustic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef>
+    <defName>RR_VoltaicPile_Techist</defName>
+    <graphicData>
+      <texPath>RRSS/Things/voltaic_pile_techist</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+</Defs>

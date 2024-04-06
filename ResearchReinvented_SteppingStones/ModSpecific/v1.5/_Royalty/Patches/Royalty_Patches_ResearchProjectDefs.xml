@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="JumpPack"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>TransportPod</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="BrainWiring"]</xpath>
+		<value>
+			<hiddenPrerequisites>
+			  <li>PenoxycylineProduction</li>
+			</hiddenPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="CompactWeaponry"]</xpath>
+		<value>
+			<hiddenPrerequisites>
+			  <li>LongBlades</li>
+			  <li>Prosthetics</li>
+			  <li>PenoxycylineProduction</li>
+			</hiddenPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ArtificialMetabolism"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Bionics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="MolecularAnalysis"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>ArtificialMetabolism</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="CircadianInfluence"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Bionics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="NeuralComputation"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>CircadianInfluence</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="FleshShaping"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Bionics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="SkinHardening"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>FleshShaping</li>
+			  <li>AdvancedFabrication</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="HealingFactors"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>FleshShaping</li>
+			  <li>AdvancedFabrication</li>
+			</prerequisites>
+		</value>
+	</Operation>
+</Patch>
