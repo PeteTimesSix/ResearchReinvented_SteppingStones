@@ -80,10 +80,14 @@
     <Compile Include="Patches\MainTabWindow_Research_OffsetHacks.cs" />
     <Compile Include="Patches\ResearchProjectDef_Patches.cs" />
     <Compile Include="Patches\Zone_Growing_Patches.cs" />
+    <Compile Include="SmartXml\Conditionals\Cond_ModNotLoaded.cs" />
+    <Compile Include="SmartXml\Conditionals\Cond_ModLoaded.cs" />
     <Compile Include="SmartXml\Conditionals\Cond_Surgery.cs" />
     <Compile Include="SmartXml\Conditionals\Cond_Power.cs" />
     <Compile Include="SmartXml\Conditionals\_ConditionalBase.cs" />
     <Compile Include="SmartXml\Conditionals\_SmartXmlConditionalMaker.cs" />
+    <Compile Include="SmartXml\PatchOperationAddIfEmpty.cs" />
+    <Compile Include="SmartXml\PatchOperationAddIfMissing.cs" />
     <Compile Include="SmartXml\PatchOperationAddOrReplace.cs" />
     <Compile Include="SmartXml\PatchOperationCompactResearchCoords.cs" />
     <Compile Include="SmartXml\PatchOperationReplaceResearchCoords.cs" />
@@ -98,6 +102,7 @@
     <Compile Include="DefOfs\ResearchProjectDefOf_Custom.cs" />
     <Compile Include="PreregRebuilders\PreregRebuilder.cs" />
     <Compile Include="ResearchReinvented_SteppingStones_Settings.cs" />
+    <Compile Include="SmartXml\SharedUtils.cs" />
     <Compile Include="Utilities\ListingExtensions.cs" />
     <Compile Include="Utilities\TechLevelColor.cs" />
   </ItemGroup>

@@ -12,7 +12,7 @@ namespace RR
 {
     //code taken with permission from https://github.com/15adhami/XmlExtensions/blob/main/Source/PatchOperations/PatchOperations/PatchOperationAddOrReplace.cs
 
-    public class PatchOperationAddOrReplace : PatchOperationPathed
+    public class PatchOperationAddIfEmpty : PatchOperationPathed
     {
         public Type conditionalType = null;
         public string conditionalParam = null;
@@ -47,23 +47,16 @@ namespace RR
 			}
 
             XmlNode node = value.node;
-            XmlNode foundNode = null;
             bool matched = false;
             foreach (XmlNode xmlNode in xml.SelectNodes(xpath).Cast<XmlNode>().ToArray())
             {
                 matched = true;
-                foreach (XmlNode addNode in node.ChildNodes)
+                if(xmlNode.ChildNodes.Count == 0)
                 {
-                    if (!SharedUtils.ContainsNode(xmlNode, addNode, ref foundNode))
+                    foreach (XmlNode addNode in node.ChildNodes)
                     {
-                        Log.Message($"2 adding node {addNode} to {xmlNode}");
+                        Log.Message($"3 adding node {addNode} to empty {xmlNode}");
                         xmlNode.AppendChild(xmlNode.OwnerDocument.ImportNode(addNode, true));
-                    }
-                    else
-                    {
-                        Log.Message($"2 replacing node {addNode} to {xmlNode}");
-                        xmlNode.InsertAfter(xmlNode.OwnerDocument.ImportNode(addNode, true), foundNode);
-                        xmlNode.RemoveChild(foundNode);
                     }
                 }
             }

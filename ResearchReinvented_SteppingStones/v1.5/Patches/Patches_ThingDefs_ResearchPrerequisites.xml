@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="RR.PatchOperationAddOrReplace">
+	<Operation Class="RR.PatchOperationAddIfMissing">
 		<xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant</xpath>
 		<value>
-			<sowResearchPrerequisites>
-			  <li>RR_BasicHerbLore</li>
-			</sowResearchPrerequisites>
+	<sowResearchPrerequisites>
+	  <li>RR_BasicHerbLore</li>
+	</sowResearchPrerequisites>
 		</value>
 	</Operation>
 
