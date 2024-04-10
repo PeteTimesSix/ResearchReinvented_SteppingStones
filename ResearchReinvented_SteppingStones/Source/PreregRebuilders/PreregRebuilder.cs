@@ -33,15 +33,15 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                     _superEarlyTechs = new HashSet<ResearchProjectDef>() {
                         ResearchProjectDefOf_Custom.RR_Organization,
                         ResearchProjectDefOf_Custom.RR_LateralThinking,
-                        ResearchProjectDefOf_Custom.RR_Agriculture,
-                        ResearchProjectDefOf_Custom.RR_BasicMeleeWeapons,
-                        ResearchProjectDefOf_Custom.RR_BasicRangedWeapons,
+                        ResearchProjectDefOf_Manual.Agriculture,
+                        ResearchProjectDefOf_Manual.BasicMeleeWeapons,
+                        ResearchProjectDefOf_Manual.BasicRangedWeapons,
                         ResearchProjectDefOf_Custom.RR_BasicApparel,
                         ResearchProjectDefOf_Custom.RR_BasicCraftingFacilities,
                         ResearchProjectDefOf_Custom.RR_BasicFoodPrep,
-                        ResearchProjectDefOf_Custom.RR_BasicHerbLore,
-                        ResearchProjectDefOf_Custom.RR_BasicFurniture,
-                        ResearchProjectDefOf_Custom.RR_BasicStructures };
+                        ResearchProjectDefOf_Manual.BasicHerbLore,
+                        ResearchProjectDefOf_Manual.BasicFurniture,
+                        ResearchProjectDefOf_Manual.BasicStructures };
                 return _superEarlyTechs;
             }
         }

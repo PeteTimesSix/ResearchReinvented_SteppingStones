@@ -62,7 +62,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                     {
                         if (terrain.costList == null || !terrain.costList.Any())
                         {
-                            unlockPoints.AddPoint(ResearchProjectDefOf_Custom.RR_Agriculture);
+                            unlockPoints.AddPoint(ResearchProjectDefOf_Manual.Agriculture);
                         }
                         else
                         {
@@ -77,7 +77,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                         var plant = thing.plant;
                         if (plant.Sowable)
                         {
-                            unlockPoints.AddPoint(ResearchProjectDefOf_Custom.RR_Agriculture);
+                            unlockPoints.AddPoint(ResearchProjectDefOf_Manual.Agriculture);
                         }
                     }
                     else if (thing.BuildableByPlayer)
@@ -93,11 +93,11 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                         }
                         if (buildable.IsFurniture())
                         {
-                            unlockPoints.AddPoint(ResearchProjectDefOf_Custom.RR_BasicFurniture);
+                            unlockPoints.AddPoint(ResearchProjectDefOf_Manual.BasicFurniture);
                         }
                         if (buildable.IsStructure())
                         {
-                            unlockPoints.AddPoint(ResearchProjectDefOf_Custom.RR_BasicStructures);
+                            unlockPoints.AddPoint(ResearchProjectDefOf_Manual.BasicStructures);
                         }
                         //else
                         {
@@ -144,11 +144,11 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             {
                 if (product.IsRangedWeapon)
                 {
-                    unlockPoints.AddPoint(ResearchProjectDefOf_Custom.RR_BasicRangedWeapons);
+                    unlockPoints.AddPoint(ResearchProjectDefOf_Manual.BasicRangedWeapons);
                 }
                 else
                 {
-                    unlockPoints.AddPoint(ResearchProjectDefOf_Custom.RR_BasicMeleeWeapons);
+                    unlockPoints.AddPoint(ResearchProjectDefOf_Manual.BasicMeleeWeapons);
                 }
             }
             else if (product.IsApparel)
@@ -163,7 +163,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                 }
                 else
                 {
-                    unlockPoints.AddPoint(ResearchProjectDefOf_Custom.RR_BasicHerbLore);
+                    unlockPoints.AddPoint(ResearchProjectDefOf_Manual.BasicHerbLore);
                 }
             }
             else

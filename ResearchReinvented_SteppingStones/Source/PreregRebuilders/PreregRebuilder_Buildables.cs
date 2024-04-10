@@ -77,11 +77,11 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                 }
                 if (buildable?.building.isTrap ?? false)
                 {
-                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_Trapping);
+                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Manual.Trapping);
                 }
                 if (buildable.IsFireBased())
                 {
-                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_Fire);
+                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Manual.Fire);
                 }
             }
 
@@ -89,11 +89,11 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             {
                 if (buildable.IsFurniture())
                 {
-                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicFurniture);
+                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicFurniture);
                 }
                 else if (buildable.IsStructure())
                 {
-                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicStructures);
+                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicStructures);
                 }
                 else
                 {
