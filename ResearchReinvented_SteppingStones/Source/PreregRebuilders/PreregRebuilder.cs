@@ -21,7 +21,13 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             DoRecipes(); //for some reason Im not quite sure of right now, doing this first results in wrong assingments.
             DoProjects();
 
-            ThingDefOf_Custom.RR_ThinkingSpot.researchPrerequisites = null;
+            {
+                var spot = ThingDefOf_Custom.RR_ThinkingSpot;
+                if(spot.researchPrerequisites != null)
+                    spot.researchPrerequisites.RemoveAll(p => p == ResearchProjectDefOf_Custom.RR_Organization);
+                if (spot.researchPrerequisites.Count == 0)
+                    spot.researchPrerequisites = null;
+            }
         }
 
         private static HashSet<ResearchProjectDef> _superEarlyTechs;

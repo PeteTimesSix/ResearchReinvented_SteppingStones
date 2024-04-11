@@ -56,7 +56,6 @@ namespace RR
                 {
                     if (!SharedUtils.ContainsNode(xmlNode, addNode, ref foundNode))
                     {
-                        Log.Message($"1 adding node {addNode} to {xmlNode}");
                         xmlNode.AppendChild(xmlNode.OwnerDocument.ImportNode(addNode, true));
                     }
                 }

@@ -39,7 +39,6 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.DefOfs
     {
 
         public static ResearchProjectDef Agriculture;
-
         public static ResearchProjectDef BasicMeleeWeapons;
         public static ResearchProjectDef BasicRangedWeapons;
         public static ResearchProjectDef BasicHerbLore;

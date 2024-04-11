@@ -56,12 +56,10 @@ namespace RR
                 {
                     if (!SharedUtils.ContainsNode(xmlNode, addNode, ref foundNode))
                     {
-                        Log.Message($"2 adding node {addNode} to {xmlNode}");
                         xmlNode.AppendChild(xmlNode.OwnerDocument.ImportNode(addNode, true));
                     }
                     else
                     {
-                        Log.Message($"2 replacing node {addNode} to {xmlNode}");
                         xmlNode.InsertAfter(xmlNode.OwnerDocument.ImportNode(addNode, true), foundNode);
                         xmlNode.RemoveChild(foundNode);
                     }

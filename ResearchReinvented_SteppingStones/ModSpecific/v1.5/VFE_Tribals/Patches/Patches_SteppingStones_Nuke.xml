@@ -1,42 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<xpath>Defs/ResearchProjectDef[defName="RR_Organization"]</xpath>
-		<value>	
-			<tab>VFET_Basics</tab>
-			<techLevel>Animal</techLevel>
-			<researchViewX>-1.00</researchViewX>
-			<researchViewY>1.40</researchViewY>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<xpath>Defs/VFETribals.TribalResearchProjectDef[defName="VFET_Fire"]</xpath>
-		<value>	
-			<prerequisites>
-			  <li>RR_Organization</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<xpath>Defs/ResearchProjectDef[defName="RR_BasicCraftingFacilities"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>VFET_Culture</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<xpath>Defs/ResearchProjectDef[defName="RR_BasicApparel"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>VFET_Culture</li>
-			</prerequisites>
-		</value>
-	</Operation>
-	
 	<Operation Class="PatchOperationRemove"><xpath>Defs/ResearchProjectDef[defName="RR_Fire"]</xpath></Operation>
 	<Operation Class="PatchOperationRemove"><xpath>Defs/ResearchProjectDef[defName="RR_Agriculture"]</xpath></Operation>
 	<Operation Class="PatchOperationRemove"><xpath>Defs/ResearchProjectDef[defName="RR_BasicMeleeWeapons"]</xpath></Operation>

@@ -28,8 +28,8 @@
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
-		<researchViewX>0.00</researchViewX>
-		<researchViewY>4.00</researchViewY>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>4.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>

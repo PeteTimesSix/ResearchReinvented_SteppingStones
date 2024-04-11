@@ -25,8 +25,10 @@ namespace RR
         public string conditionalParam = null;
         public string doesRequire;
 
-        public TargetPrerequisiteKind target;
+        public string target;
         public List<string> defNames;
+
+        bool clearFirst = true;
 
         public override void Complete(string modIdentifier)
         {
@@ -35,8 +37,6 @@ namespace RR
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
-            Log.Message($"LOOKING FOR {string.Join(",", defNames)} OF {target}, xpath {this.xpath}");
-
             if (!string.IsNullOrWhiteSpace(doesRequire)) 
             {
                 var split = doesRequire.Split(',');
@@ -56,32 +56,51 @@ namespace RR
                     return true; //specific condition (probably a settings value) not met
 			}
 
-            string targetNodeName = target switch
-            {
-                TargetPrerequisiteKind.ProjectHiddenPrerequisites => "hiddenPrerequisites",
-                TargetPrerequisiteKind.Prerequisites => "researchPrerequisites",
-                TargetPrerequisiteKind.SowResearchPrerequisites => "sowResearchPrerequisites",
-                TargetPrerequisiteKind.ProjectPrerequisites => "prerequisites",
-                _ => "prerequisites",
-            }; ;
-
             bool matched = false;
             foreach (XmlNode xmlNode in xml.SelectNodes(xpath).Cast<XmlNode>().ToArray())
             {
                 matched = true;
+                XmlNode targetNode = null;
                 foreach(XmlNode node in xmlNode.ChildNodes)
                 {
-                    if(node.Name == targetNodeName)
+                    if(node.Name == target)
                     {
-                        node.RemoveAll();
-                        foreach(var defName in defNames)
-                        {
-                            var toAdd = DefNameSubstitutor.GetDefNameOrSub(defName);
-                            XmlNode newNode = node.OwnerDocument.CreateElement("li");
-                            newNode.InnerText = toAdd;
-                            node.AppendChild(node.OwnerDocument.ImportNode(newNode, true));
-                        }
+                        targetNode = node;
+                        break;
                     }
+                }
+                if (targetNode == null)
+                {
+                    targetNode = xmlNode.OwnerDocument.CreateElement(target);
+                    xmlNode.AppendChild(targetNode);
+                }
+                if(clearFirst)
+                {
+                    targetNode.RemoveAll();
+                }
+
+                foreach (var defName in defNames)
+                {
+                    var toAdd = DefNameSubstitutor.GetDefNameOrSub(defName);
+
+                    if (!clearFirst)
+                    {
+                        bool alreadyPresent = false;
+                        foreach (XmlNode childNode in targetNode.ChildNodes)
+                        {
+                            if (childNode.InnerText == toAdd)
+                            {
+                                alreadyPresent = true;
+                                break;
+                            }
+                        }
+                        if (alreadyPresent)
+                            continue;
+                    }
+
+                    XmlNode newNode = targetNode.OwnerDocument.CreateElement("li");
+                    newNode.InnerText = toAdd;
+                    targetNode.AppendChild(newNode);
                 }
             }
             return matched;

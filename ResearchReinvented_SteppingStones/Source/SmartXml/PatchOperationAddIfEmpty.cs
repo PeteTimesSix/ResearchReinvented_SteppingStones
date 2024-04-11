@@ -55,7 +55,6 @@ namespace RR
                 {
                     foreach (XmlNode addNode in node.ChildNodes)
                     {
-                        Log.Message($"3 adding node {addNode} to empty {xmlNode}");
                         xmlNode.AppendChild(xmlNode.OwnerDocument.ImportNode(addNode, true));
                     }
                 }

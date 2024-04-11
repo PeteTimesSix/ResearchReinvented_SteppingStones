@@ -81,6 +81,8 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                 }
                 if (buildable.IsFireBased())
                 {
+                    if (buildable.defName.ToLowerInvariant().Contains("campfire"))
+                        buildable.researchPrerequisites.Clear(); //hack to make campfires only require fire
                     buildable.researchPrerequisites.Add(ResearchProjectDefOf_Manual.Fire);
                 }
             }
