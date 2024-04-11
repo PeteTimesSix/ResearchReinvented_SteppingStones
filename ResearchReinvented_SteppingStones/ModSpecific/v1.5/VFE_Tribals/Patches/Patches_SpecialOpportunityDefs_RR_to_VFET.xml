@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- <success>Always</success> because 0 matches are a valid result,
+		 and these are noncritical patches anyway (RR is supposed to be inaccesible during the tribal stage) -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/originalProject[text()="RR_Agriculture"]</xpath>
+		<success>Always</success>
+		<value>
+			<originalProject>VFET_Agriculture</originalProject>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/originalProject[text()="RR_BasicMeleeWeapons"]</xpath>
+		<success>Always</success>
+		<value>
+			<originalProject>VFET_Weapons</originalProject>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/originalProject[text()="RR_BasicRangedWeapons"]</xpath>
+		<success>Always</success>
+		<value>
+			<originalProject>VFET_Bow</originalProject>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/originalProject[text()="RR_BasicHerbLore"]</xpath>
+		<success>Always</success>
+		<value>
+			<originalProject>VFET_Medicine</originalProject>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/originalProject[text()="RR_BasicFurniture"]</xpath>
+		<success>Always</success>
+		<value>
+			<originalProject>VFET_Furniture</originalProject>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/originalProject[text()="RR_BasicStructures"]</xpath>
+		<success>Always</success>
+		<value>
+			<originalProject>VFET_Construction</originalProject>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/originalProject[text()="RR_Trapping"]</xpath>
+		<success>Always</success>
+		<value>
+			<originalProject>VFET_Hunting</originalProject>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/originalProject[text()="RR_Fire"]</xpath>
+		<success>Always</success>
+		<value>
+			<originalProject>VFET_Fire</originalProject>
+		</value>
+	</Operation>
+</Patch>

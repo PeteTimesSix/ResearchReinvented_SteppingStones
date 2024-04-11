@@ -21,5 +21,6 @@
 		<li IfModActive="ludeon.rimworld.ideology">ModSpecific/v1.5/_Ideology</li>
 		<li IfModActive="ludeon.rimworld.biotech">ModSpecific/v1.5/_Biotech</li>
 		<li IfModActive="ludeon.rimworld.anomaly">ModSpecific/v1.5/_Anomaly</li>
+		<li IfModActive="oskarpotocki.vfe.tribals">ModSpecific/v1.5/VFE_Tribals</li>
 	</v1.5>
 </loadFolders>

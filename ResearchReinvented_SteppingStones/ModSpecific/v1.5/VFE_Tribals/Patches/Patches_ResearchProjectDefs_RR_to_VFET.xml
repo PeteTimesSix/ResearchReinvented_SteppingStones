@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- RR:SS or VFET -->
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RR_Organization"]</xpath>
+		<value>
+			<tab>VFET_Basics</tab>
+			<techLevel>Animal</techLevel>
+			<researchViewX>-1.00</researchViewX>
+			<researchViewY>1.40</researchViewY>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/VFETribals.TribalResearchProjectDef[defName="VFET_Fire"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_Organization</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicApparel"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>VFET_Tribalwear</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicCraftingFacilities"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>VFET_Furniture</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="RR_BasicFoodPrep"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>VFET_Fire</li>
+		</defNames>
+	</Operation>
+</Patch>

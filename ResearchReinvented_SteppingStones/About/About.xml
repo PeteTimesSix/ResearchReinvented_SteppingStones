@@ -31,6 +31,11 @@
 		<li>imranfish.xmlextensions</li>
 		<li>petetimessix.researchreinvented</li>
 	</loadAfter>
+	<loadAfterByVersion>
+	  <v1.5>
+		<li>OskarPotocki.VFE.Tribals</li>
+	  </v1.5>
+	</loadAfterByVersion>
 	<description>
 Restructures the vanilla research tree to follow a more logical progression.
 	</description>

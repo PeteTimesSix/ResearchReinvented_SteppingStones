@@ -40,7 +40,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             if (plant.plant.sowResearchPrerequisites == null)
                 plant.plant.sowResearchPrerequisites = new List<ResearchProjectDef>();
 
-            plant.plant.sowResearchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_Agriculture);
+            plant.plant.sowResearchPrerequisites.Add(ResearchProjectDefOf_Manual.Agriculture);
         }
     }
 }

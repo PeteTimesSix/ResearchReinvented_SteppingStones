@@ -40,12 +40,11 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
 
             if (terrain.costList == null || !terrain.costList.Any())
             {
-                terrain.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_Agriculture);
+                terrain.researchPrerequisites.Add(ResearchProjectDefOf_Manual.Agriculture);
             }
             else if(terrain.bridge)
             {
-                terrain.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicStructures);
-                //terrain.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_FundamentalConstruction);
+                terrain.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicStructures);
             }
         }
     }

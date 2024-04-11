@@ -29,7 +29,7 @@
     <defName>RR_Agriculture</defName>
     <label>agriculture</label>
     <description>Fundamentals of agriculture.</description>
-    <baseCost>10</baseCost>
+    <baseCost>20</baseCost>
     <techLevel>Neolithic</techLevel>
     <tags>
       <li>TribalStart</li>
@@ -87,7 +87,7 @@
     <defName>RR_Fire</defName>
     <label>Fire</label>
     <description>Intentional creation, maintenance and management of combustion, also known as fire.</description>
-    <baseCost>25</baseCost>
+    <baseCost>20</baseCost>
     <techLevel>Neolithic</techLevel>
     <tags>
       <li>TribalStart</li>
@@ -116,7 +116,7 @@
     <defName>RR_BasicFoodPrep</defName>
     <label>food preparation</label>
     <description>Preparation of food.</description>
-    <baseCost>20</baseCost>
+    <baseCost>25</baseCost>
     <techLevel>Neolithic</techLevel>
     <tags>
       <li>TribalStart</li>
@@ -144,13 +144,13 @@
     <defName>RR_BasicApparel</defName>
     <label>simple apparel</label>
     <description>Crafting of simple apparel.</description>
-    <baseCost>20</baseCost>
+    <baseCost>25</baseCost>
     <techLevel>Neolithic</techLevel>
     <tags>
       <li>TribalStart</li>
       <li>ClassicStart</li>
     </tags>
-  <researchViewX>-1.00</researchViewX>
+  <researchViewX>0.00</researchViewX>
   <researchViewY>2.50</researchViewY>
 	<prerequisites>
 	  <li>RR_Organization</li>
@@ -235,10 +235,10 @@
       <li>TribalStart</li>
       <li>ClassicStart</li>
     </tags>
-  <researchViewX>-1.00</researchViewX>
+  <researchViewX>0.00</researchViewX>
   <researchViewY>4.00</researchViewY>
 	<prerequisites>
-	  <li>RR_Organization</li>
+	  <li>RR_BasicFurniture</li>
 	</prerequisites>
 	<generalRules>
 	  <rulesStrings>
@@ -288,7 +288,7 @@
     <defName>RR_BasicFurniture</defName>
     <label>simple furniture</label>
     <description>Simple, but reliable furniture.</description>
-    <baseCost>25</baseCost>
+    <baseCost>20</baseCost>
     <techLevel>Neolithic</techLevel>
     <tags>
       <li>TribalStart</li>
@@ -316,7 +316,7 @@
     <defName>RR_Trapping</defName>
     <label>trapping</label>
     <description>Construction of simplistic traps for the purposes of hunting or defense.</description>
-    <baseCost>25</baseCost>
+    <baseCost>50</baseCost>
     <techLevel>Neolithic</techLevel>
     <tags>
       <li>TribalStart</li>

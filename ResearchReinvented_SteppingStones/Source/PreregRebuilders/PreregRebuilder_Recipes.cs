@@ -124,11 +124,11 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                 {
                     if (recipe.ProducedThingDef.IsRangedWeapon)
                     {
-                        recipe.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicRangedWeapons);
+                        recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicRangedWeapons);
                     }
                     else
                     {
-                        recipe.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicMeleeWeapons);
+                        recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicMeleeWeapons);
                     }
                 }
                 else if (recipe.ProducedThingDef.IsApparel)
@@ -143,7 +143,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                     }
                     else
                     {
-                        recipe.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicHerbLore);
+                        recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicHerbLore);
                     }
                 }
                 else
@@ -197,7 +197,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
 						if (ResearchReinvented_SteppingStonesMod.Settings.surgeryPreregsMode == SurgeryPreregsMode.Easy)
 						{
 							recipe.researchPrerequisites.Add(ResearchProjectDefOf_Custom.ComplexClothing);
-							recipe.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicHerbLore);
+							recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicHerbLore);
 						}
 						else
 						{

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationRemove"><xpath>Defs/ResearchProjectDef[defName="RR_Fire"]</xpath></Operation>
+	<Operation Class="PatchOperationRemove"><xpath>Defs/ResearchProjectDef[defName="RR_Agriculture"]</xpath></Operation>
+	<Operation Class="PatchOperationRemove"><xpath>Defs/ResearchProjectDef[defName="RR_BasicMeleeWeapons"]</xpath></Operation>
+	<Operation Class="PatchOperationRemove"><xpath>Defs/ResearchProjectDef[defName="RR_BasicRangedWeapons"]</xpath></Operation>
+	<Operation Class="PatchOperationRemove"><xpath>Defs/ResearchProjectDef[defName="RR_BasicHerbLore"]</xpath></Operation>
+	<Operation Class="PatchOperationRemove"><xpath>Defs/ResearchProjectDef[defName="RR_BasicFurniture"]</xpath></Operation>
+	<Operation Class="PatchOperationRemove"><xpath>Defs/ResearchProjectDef[defName="RR_BasicStructures"]</xpath></Operation>
+	<Operation Class="PatchOperationRemove"><xpath>Defs/ResearchProjectDef[defName="RR_Trapping"]</xpath></Operation>
+</Patch>
