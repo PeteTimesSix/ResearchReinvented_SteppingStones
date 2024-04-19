@@ -89,6 +89,19 @@
 		</value>
 	</Operation>
 	
+	<!-- because of the added Inherit="False" AddOrReplace fails to match --> 
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="FloodLight"]/researchPrerequisites</xpath>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="FloodLight"]</xpath>
+		<value>
+    <researchPrerequisites Inherit="False">
+      <li>ColoredLights</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
 	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ThingDef[defName="ElectricCrematorium"]</xpath>
 		<value>

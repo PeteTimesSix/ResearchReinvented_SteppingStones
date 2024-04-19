@@ -215,7 +215,7 @@
 		<xpath>Defs/ResearchProjectDef[defName="ColoredLights"]</xpath>
 		<value>
 			<label>semiconductor lights</label>
-			<description>Build lights using semiconductors that have light emitting properties when subjected to an electric current (commonly known as LEDs), reducing their power draw by half. Unlike incandescent bulbs, LEDs emit light of a specific wavelength, allowing them to be colored. Also unlocks sunlamps, which are a relatively efficient source of high-intensity full-spectrum light that enables plants to grow in roofed conditions.</description>
+			<description>Build lights using semiconductors that have light emitting properties when subjected to an electric current (commonly known as LEDs), reducing their power draw by half. Unlike incandescent bulbs, LEDs emit light of a specific wavelength, allowing them to be colored. Also unlocks sunlamps, which are a relatively efficient source of high-intensity full-spectrum light that allows plants to grow in roofed conditions.</description>
 		</value>
 	</Operation>
 	<Operation Class="RR.PatchOperationResearchPrereg">
