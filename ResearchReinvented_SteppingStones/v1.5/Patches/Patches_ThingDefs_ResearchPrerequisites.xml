@@ -27,6 +27,15 @@
 	</Operation>
 	
 	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="HiddenConduit"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>RR_ElectricityBasics</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ThingDef[defName="ChemfuelPoweredGenerator"]</xpath>
 		<value>
     <researchPrerequisites>
