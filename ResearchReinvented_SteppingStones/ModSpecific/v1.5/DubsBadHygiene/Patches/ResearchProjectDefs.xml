@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="LogBoilers"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_Fire</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="SewageSludgeComposting"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_Agriculture</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Smithing</li>
+			</prerequisites>
+		</value>
+	</Operation>
+</Patch>
