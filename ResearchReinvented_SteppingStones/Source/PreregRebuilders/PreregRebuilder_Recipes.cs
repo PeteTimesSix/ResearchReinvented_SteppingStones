@@ -124,11 +124,13 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                 {
                     if (recipe.ProducedThingDef.IsRangedWeapon)
                     {
-                        recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicRangedWeapons);
+                        if (ResearchProjectDefOf_Manual.BasicRangedWeapons != null)
+                            recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicRangedWeapons);
                     }
                     else
                     {
-                        recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicMeleeWeapons);
+                        if (ResearchProjectDefOf_Manual.BasicMeleeWeapons != null)
+                            recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicMeleeWeapons);
                     }
                 }
                 else if (recipe.ProducedThingDef.IsApparel)
@@ -143,7 +145,8 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                     }
                     else
                     {
-                        recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicHerbLore);
+                        if (ResearchProjectDefOf_Manual.BasicHerbLore != null)
+                            recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicHerbLore);
                     }
                 }
                 else
@@ -197,7 +200,8 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
 						if (ResearchReinvented_SteppingStonesMod.Settings.surgeryPreregsMode == SurgeryPreregsMode.Easy)
 						{
 							recipe.researchPrerequisites.Add(ResearchProjectDefOf_Custom.ComplexClothing);
-							recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicHerbLore);
+                            if (ResearchProjectDefOf_Manual.BasicHerbLore != null)
+                                recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicHerbLore);
 						}
 						else
 						{

@@ -50,6 +50,7 @@
     <Compile Include="Extensions\RecipeDefExtensions.cs" />
     <Compile Include="Extensions\ResearchProjectDefExtensions.cs" />
     <Compile Include="Extensions\ThingDefExtensions.cs" />
+    <Compile Include="ModCompat\ReplaceLib.cs" />
     <Compile Include="Patches\MainTabWindow_Research_OffsetHacks.cs" />
     <Compile Include="Patches\ResearchProjectDef_Patches.cs" />
     <Compile Include="Patches\Zone_Growing_Patches.cs" />

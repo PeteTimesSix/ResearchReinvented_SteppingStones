@@ -37,10 +37,13 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
 
         private static void GivePrerequisitesToPlant(ThingDef plant)
         {
-            if (plant.plant.sowResearchPrerequisites == null)
-                plant.plant.sowResearchPrerequisites = new List<ResearchProjectDef>();
+            if (ResearchProjectDefOf_Manual.Agriculture != null)
+            {
+                if (plant.plant.sowResearchPrerequisites == null)
+                    plant.plant.sowResearchPrerequisites = new List<ResearchProjectDef>();
 
-            plant.plant.sowResearchPrerequisites.Add(ResearchProjectDefOf_Manual.Agriculture);
+                plant.plant.sowResearchPrerequisites.Add(ResearchProjectDefOf_Manual.Agriculture);
+            }
         }
     }
 }

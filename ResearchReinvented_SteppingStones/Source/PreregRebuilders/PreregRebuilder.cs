@@ -48,6 +48,10 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                         ResearchProjectDefOf_Manual.BasicHerbLore,
                         ResearchProjectDefOf_Manual.BasicFurniture,
                         ResearchProjectDefOf_Manual.BasicStructures };
+
+                if (_superEarlyTechs.Contains(null))
+                    _superEarlyTechs.Remove(null);
+
                 return _superEarlyTechs;
             }
         }

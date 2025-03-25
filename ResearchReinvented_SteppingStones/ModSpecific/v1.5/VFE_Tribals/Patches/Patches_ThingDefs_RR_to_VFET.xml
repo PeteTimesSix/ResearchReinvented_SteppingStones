@@ -10,9 +10,6 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName="VFET_ResearchSpot"]</xpath>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]/requiredResearchBuilding</xpath>
-	</Operation>
 	
 	<Operation Class="RR.PatchOperationResearchPrereg">
 		<xpath>Defs/ThingDef[defName="VFET_Chunk"]/recipeMaker</xpath>

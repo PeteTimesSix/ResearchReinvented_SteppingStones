@@ -1,4 +1,6 @@
-﻿using RimWorld;
+﻿using PeteTimesSix.ResearchReinvented_SteppingStones.ModCompat;
+using PeteTimesSix.ResearchReinvented_SteppingStones.Utilities;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -68,14 +70,48 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.DefOfs
 
         static ResearchProjectDefOf_Manual()
         {
-            Agriculture         = DefDatabase<ResearchProjectDef>.GetNamed(GetDefNameOrSub("RR_Agriculture"));
-            BasicMeleeWeapons   = DefDatabase<ResearchProjectDef>.GetNamed(GetDefNameOrSub("RR_BasicMeleeWeapons"));
-            BasicRangedWeapons  = DefDatabase<ResearchProjectDef>.GetNamed(GetDefNameOrSub("RR_BasicRangedWeapons"));
-            BasicHerbLore       = DefDatabase<ResearchProjectDef>.GetNamed(GetDefNameOrSub("RR_BasicHerbLore"));
-            BasicFurniture      = DefDatabase<ResearchProjectDef>.GetNamed(GetDefNameOrSub("RR_BasicFurniture"));
-            BasicStructures     = DefDatabase<ResearchProjectDef>.GetNamed(GetDefNameOrSub("RR_BasicStructures"));
-            Trapping            = DefDatabase<ResearchProjectDef>.GetNamed(GetDefNameOrSub("RR_Trapping"));
-            Fire                = DefDatabase<ResearchProjectDef>.GetNamed(GetDefNameOrSub("RR_Fire"));
+            DefNameSubstitutor.ReplaceLibCheck();
+
+            Agriculture         = GetNamedResearchDefWithSubstitution("RR_Agriculture");
+            BasicMeleeWeapons   = GetNamedResearchDefWithSubstitution("RR_BasicMeleeWeapons");
+            BasicRangedWeapons  = GetNamedResearchDefWithSubstitution("RR_BasicRangedWeapons");
+            BasicHerbLore       = GetNamedResearchDefWithSubstitution("RR_BasicHerbLore");
+            BasicFurniture      = GetNamedResearchDefWithSubstitution("RR_BasicFurniture");
+            BasicStructures     = GetNamedResearchDefWithSubstitution("RR_BasicStructures");
+            Trapping            = GetNamedResearchDefWithSubstitution("RR_Trapping");
+            Fire                = GetNamedResearchDefWithSubstitution("RR_Fire");
+        }
+
+        static ResearchProjectDef GetNamedResearchDefWithSubstitution(string defName) 
+        {
+            var substitution = GetDefNameOrSub(defName);
+            var def = DefDatabase<ResearchProjectDef>.GetNamedSilentFail(substitution);
+            if (def != null)
+            {
+                return def;
+            }
+            else
+            {
+                if(substitution != defName)
+                {
+                    def = DefDatabase<ResearchProjectDef>.GetNamedSilentFail(defName);
+                    if (def != null)
+                    {
+                        Log.Warning("RR:SS: Something has deleted substitution def " + substitution + ", defaulting to original " + defName);
+                        return def;
+                    }
+                    else
+                    {
+                        Log.Warning("RR:SS: Something has deleted substitution def " + substitution + ", original " + defName + " no longer present. Research prerequisites for this def will not be properly reassigned.");
+                        return null;
+                    }
+                }
+                else 
+                {
+                    Log.Warning("RR:SS: Something has deleted def " + defName + ". Research prerequisites for this def will not be properly reassigned.");
+                    return null;
+                }
+            }
         }
     }
 }

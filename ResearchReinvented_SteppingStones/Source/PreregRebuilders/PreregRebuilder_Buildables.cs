@@ -77,13 +77,15 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                 }
                 if (buildable?.building.isTrap ?? false)
                 {
-                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Manual.Trapping);
+                    if (ResearchProjectDefOf_Manual.Trapping != null)
+                        buildable.researchPrerequisites.Add(ResearchProjectDefOf_Manual.Trapping);
                 }
                 if (buildable.IsFireBased())
                 {
                     if (buildable.defName.ToLowerInvariant().Contains("campfire"))
                         buildable.researchPrerequisites.Clear(); //hack to make campfires only require fire
-                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Manual.Fire);
+                    if (ResearchProjectDefOf_Manual.Fire != null)
+                        buildable.researchPrerequisites.Add(ResearchProjectDefOf_Manual.Fire);
                 }
             }
 
@@ -91,11 +93,13 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             {
                 if (buildable.IsFurniture())
                 {
-                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicFurniture);
+                    if (ResearchProjectDefOf_Manual.BasicFurniture != null)
+                        buildable.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicFurniture);
                 }
                 else if (buildable.IsStructure())
                 {
-                    buildable.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicStructures);
+                    if (ResearchProjectDefOf_Manual.BasicStructures != null)
+                        buildable.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicStructures);
                 }
                 else
                 {
