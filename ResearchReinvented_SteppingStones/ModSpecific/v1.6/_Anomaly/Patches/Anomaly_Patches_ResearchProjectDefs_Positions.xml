@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="TurretPack"]</xpath>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="SecurityDoor"]</xpath>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>2.50</researchViewY>
+	</Operation>
+</Patch>

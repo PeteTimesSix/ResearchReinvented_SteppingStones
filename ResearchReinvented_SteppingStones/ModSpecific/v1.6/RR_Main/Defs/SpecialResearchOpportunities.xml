@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_SS_organization_man</defName>
+		<project>RR_Organization</project>
+		<things>
+			<li>Human</li>
+		</things>
+		<freebie>false</freebie>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+	
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_SS_organization_dirt</defName>
+		<project>RR_Organization</project>
+		<terrains>
+			<li>Soil</li>
+			<li>Sand</li>
+			<li>Ice</li>
+		</terrains>
+		<freebie>false</freebie>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+	
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_LateralThinking_man</defName>
+		<project>RR_LateralThinking</project>
+		<things>
+			<li>Human</li>
+		</things>
+		<freebie>false</freebie>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_LateralThinking_dirt</defName>
+		<project>RR_LateralThinking</project>
+		<terrains>
+			<li>Soil</li>
+			<li>Sand</li>
+			<li>Ice</li>
+		</terrains>
+		<freebie>false</freebie>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+	
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_SS_badForAgriculture</defName>
+		<project>RR_Agriculture</project>
+		<opportunityType>AnalysePlant</opportunityType>
+		<things>
+			<li>Plant_Grass</li>
+			<li>Plant_Bush</li>
+			<li>Plant_Brambles</li>
+		</things>
+		<freebie>false</freebie>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+	
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_SS_goodForAgriculture</defName>
+		<project>RR_Agriculture</project>
+		<things>
+			<li>Plant_Berry</li>
+			<li>Plant_Agave</li>
+		</things>
+		<freebie>false</freebie>
+		<importanceMultiplier>2.0</importanceMultiplier>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+	
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_SS_melee</defName>
+		<project>RR_BasicMeleeWeapons</project>
+		<things>
+			<li>WoodLog</li>
+		</things>
+		<freebie>false</freebie>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+	
+	
+	<PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef ParentName="SpecialResearchOpportunityBase">
+		<defName>RR_SS_fire</defName>
+		<project>RR_Fire</project>
+		<things>
+			<li>Fire</li>
+		</things>
+		<freebie>false</freebie>
+		<importanceMultiplier>2.5</importanceMultiplier>
+	</PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef>
+</Defs>

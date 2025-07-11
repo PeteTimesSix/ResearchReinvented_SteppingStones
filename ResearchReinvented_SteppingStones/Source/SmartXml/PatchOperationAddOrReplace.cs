@@ -17,6 +17,7 @@ namespace RR
         public Type conditionalType = null;
         public string conditionalParam = null;
         public string doesRequire;
+        public bool ignoreAttributesWhenMatching = false;
 
         public XmlContainer value;
 
@@ -54,7 +55,7 @@ namespace RR
                 matched = true;
                 foreach (XmlNode addNode in node.ChildNodes)
                 {
-                    if (!SharedUtils.ContainsNode(xmlNode, addNode, ref foundNode))
+                    if (!SharedUtils.ContainsNode(xmlNode, addNode, ref foundNode, ignoreAttributesWhenMatching))
                     {
                         xmlNode.AppendChild(xmlNode.OwnerDocument.ImportNode(addNode, true));
                     }

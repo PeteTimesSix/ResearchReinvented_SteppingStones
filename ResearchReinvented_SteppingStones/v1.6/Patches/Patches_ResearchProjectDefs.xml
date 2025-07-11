@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Neolithic/Medieval -->
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_Agriculture</li>
+			<li>RR_Fire</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_BasicHerbLore</li>
+			<li>RR_Fire</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="Devilstrand"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_Agriculture</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_Agriculture</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_BasicRangedWeapons</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="Pemmican"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_BasicFoodPrep</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_BasicApparel</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_BasicFurniture</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="Smithing"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_BasicCraftingFacilities</li>
+			<li>RR_BasicMeleeWeapons</li>
+			<li>RR_BasicRangedWeapons</li>
+			<li>RR_Fire</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+		<value>
+			<techLevel>Neolithic</techLevel>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_BasicCraftingFacilities</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_BasicFurniture</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_BasicCraftingFacilities</li>
+		</defNames>
+	</Operation>
+	
+	<!-- Industrial -->
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="DrugProduction"]</xpath>
+		<target>hiddenPrerequisites</target>
+		<defNames>
+			<li>RR_BasicHerbLore</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="IEDs"]</xpath>
+		<target>hiddenPrerequisites</target>
+		<defNames>
+			<li>RR_Trapping</li>
+		</defNames>
+	</Operation>
+    
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="PenoxycylineProduction"]</xpath>
+		<value>
+			<label>penoxycyline</label>
+			<description>Produce penoxycyline, a disease prevention drug which blocks plague, malaria, and more before they start. Trace amounts of penoxycyline are also used to prevent rejection of transplanted and artificial organs or body parts.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Electricity"]</xpath>
+		<value>
+			<baseCost>500</baseCost>
+			<label>circuitry</label>
+			<description>Build devices that require more complex components and circuitry.</description>
+			<prerequisites>
+			  <li>RR_ElectricityBasics</li>
+			</prerequisites>
+			<generalRules>
+			  <rulesStrings>
+				<li>subject->circuitry</li>
+
+				<li>subject_story->became frustrated by the simplicity of common machinery</li>
+				<li>subject_story->created the first logic circuit</li>
+				<li>subject_story->rediscovered the power of computation on a fallen urbworld</li>
+
+				<li>subject_gerund->designing complex circuits</li>
+			  </rulesStrings>
+			</generalRules>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="Electricity"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_ElectricityBasics</li>
+		</defNames>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Electricity"]/discoveredLetterTitle</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/ResearchProjectDef[defName="Electricity"]/discoveredLetterTitle</xpath>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Electricity"]/discoveredLetterText</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/ResearchProjectDef[defName="Electricity"]/discoveredLetterText</xpath>
+		</match>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="WatermillGenerator"]</xpath>
+		<value>
+			<label>renewable energy</label>
+			<description>Build generators that rely on renewable power sources instead of consumable fuel.</description>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="WatermillGenerator"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_PowerGenerators</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="SolarPanels"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>WatermillGenerator</li>
+			  <li>ColoredLights</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="GeothermalPower"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>WatermillGenerator</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ColoredLights"]</xpath>
+		<value>
+			<label>semiconductor lights</label>
+			<description>Build lights using semiconductors that have light emitting properties when subjected to an electric current (commonly known as LEDs), reducing their power draw by half. Unlike incandescent bulbs, LEDs emit light of a specific wavelength, allowing them to be colored. Also unlocks sunlamps, which are a relatively efficient source of high-intensity full-spectrum light that allows plants to grow in roofed conditions.</description>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="ColoredLights"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_ElectricityBasics</li>
+		</defNames>
+	</Operation>
+	
+	
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="SterileMaterials"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Smithing</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="TubeTelevision"]</xpath>
+		<target>prerequisites</target>
+		<defNames><li>RR_ElectricityBasics</li></defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="FlatscreenTelevision"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>MicroelectronicsBasics</li>
+			</prerequisites>
+			<hiddenPrerequisites>
+			  <li>TubeTelevision</li>
+			</hiddenPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Hydroponics"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>NutrientPaste</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="Hydroponics"]</xpath>
+		<target>hiddenPrerequisites</target>
+		<defNames>
+			<li>RR_Agriculture</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="PackagedSurvivalMeal"]</xpath>
+		<value>
+			<label>survival meals</label>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="AirConditioning"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_HeatingElements</li>
+		</defNames>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="BiofuelRefining"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_HeatingElements</li>
+			<li>RR_PowerGenerators</li>
+		</defNames>
+	</Operation>
+	
+	<!-- Advanced industrial -->
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]</xpath>
+		<value>
+			<baseCost>2000</baseCost>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Fabrication"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Machining</li>
+			  <li>MicroelectronicsBasics</li>
+			</prerequisites>
+			<requiredResearchFacilities></requiredResearchFacilities>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="MultiAnalyzer"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Fabrication</li>
+			  <li>MicroelectronicsBasics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="AdvancedFabrication"]</xpath>
+		<value>
+			<techLevel>Spacer</techLevel>
+			<prerequisites>
+			  <li>Fabrication</li>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="MedicineProduction"]</xpath>
+		<value>
+			<requiredResearchBuilding></requiredResearchBuilding>
+			<prerequisites>
+			  <li>Electricity</li>
+			  <li>SterileMaterials</li>
+			  <li>DrugProduction</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Prosthetics"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Machining</li>
+			  <li>SterileMaterials</li>
+			</prerequisites>
+			<hiddenPrerequisites>
+			  <li>ComplexClothing</li>
+			</hiddenPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="VitalsMonitor"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>HospitalBed</li>
+			  <li>Fabrication</li>
+			</prerequisites>
+			<requiredResearchFacilities></requiredResearchFacilities>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>HospitalBed</li>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="LongRangeMineralScanner"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>DeepDrilling</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Fabrication</li>
+			</prerequisites>
+			<requiredResearchFacilities></requiredResearchFacilities>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Fabrication</li>
+			</prerequisites>
+			<requiredResearchFacilities></requiredResearchFacilities>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ChargedShot"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ReconArmor"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="PoweredArmor"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+			<hiddenPrerequisites>
+			  <li>ComplexClothing</li>
+			</hiddenPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Bionics"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>MultiAnalyzer</li>
+			</prerequisites>
+			<hiddenPrerequisites>
+			  <li>Prosthetics</li>
+			  <li>PenoxycylineProduction</li>
+			</hiddenPrerequisites>
+		</value>
+	</Operation>
+</Patch>

@@ -7,6 +7,7 @@
 		<li>1.3</li>
 		<li>1.4</li>
 		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
 	<url>https://github.com/PeteTimesSix/ResearchReinvented_SteppingStones</url>
 	<modDependencies>
@@ -35,6 +36,9 @@
 	  <v1.5>
 		<li>OskarPotocki.VFE.Tribals</li>
 	  </v1.5>
+	  <v1.6>
+		<li>OskarPotocki.VFE.Tribals</li>
+	  </v1.6>
 	</loadAfterByVersion>
 	<description>
 Restructures the vanilla research tree to follow a more logical progression.

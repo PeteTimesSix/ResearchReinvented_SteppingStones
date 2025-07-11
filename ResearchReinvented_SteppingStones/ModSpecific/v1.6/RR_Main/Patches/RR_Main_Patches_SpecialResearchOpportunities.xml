@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef[defName="RR_EMP"]/project</xpath>
+		<value>RR_EMP</value>
+	</Operation>
+</Patch>

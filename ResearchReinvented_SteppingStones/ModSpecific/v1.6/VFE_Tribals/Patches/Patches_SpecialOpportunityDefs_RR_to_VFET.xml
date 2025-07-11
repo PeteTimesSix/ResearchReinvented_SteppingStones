@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/project[text()="RR_Agriculture"]</xpath>
+		<value>
+			<project>VFET_Agriculture</project>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/project[text()="RR_BasicMeleeWeapons"]</xpath>
+		<value>
+			<project>VFET_Weapons</project>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/project[text()="RR_Fire"]</xpath>
+		<value>
+			<project>VFET_Fire</project>
+		</value>
+	</Operation>
+	<!--
+		The following never appear
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/project[text()="RR_BasicRangedWeapons"]</xpath>
+		<value>
+			<project>VFET_Bow</project>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/project[text()="RR_BasicHerbLore"]</xpath>
+		<value>
+			<project>VFET_Medicine</project>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/project[text()="RR_BasicFurniture"]</xpath>
+		<value>
+			<project>VFET_Furniture</project>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/project[text()="RR_BasicStructures"]</xpath>
+		<value>
+			<project>VFET_Construction</project>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/project[text()="RR_Trapping"]</xpath>
+		<value>
+			<project>VFET_Hunting</project>
+		</value>
+	</Operation> -->
+</Patch>

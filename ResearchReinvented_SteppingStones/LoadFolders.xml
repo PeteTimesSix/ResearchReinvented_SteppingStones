@@ -24,4 +24,16 @@
 		<li IfModActive="oskarpotocki.vfe.tribals">ModSpecific/v1.5/VFE_Tribals</li>
 		<li IfModActive="Dubwise.DubsBadHygiene">ModSpecific/v1.5/DubsBadHygiene</li>
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>v1.6</li>
+		<li IfModActive="petetimessix.researchreinvented">ModSpecific/v1.6/RR_Main</li>
+		<li IfModActive="ludeon.rimworld.royalty">ModSpecific/v1.6/_Royalty</li>
+		<li IfModActive="ludeon.rimworld.ideology">ModSpecific/v1.6/_Ideology</li>
+		<li IfModActive="ludeon.rimworld.biotech">ModSpecific/v1.6/_Biotech</li>
+		<li IfModActive="ludeon.rimworld.anomaly">ModSpecific/v1.6/_Anomaly</li>
+		<li IfModActive="ludeon.rimworld.odyssey">ModSpecific/v1.6/_Odyssey</li>
+		<li IfModActive="oskarpotocki.vfe.tribals">ModSpecific/v1.6/VFE_Tribals</li>
+		<li IfModActive="Dubwise.DubsBadHygiene">ModSpecific/v1.6/DubsBadHygiene</li>
+	</v1.6>
 </loadFolders>

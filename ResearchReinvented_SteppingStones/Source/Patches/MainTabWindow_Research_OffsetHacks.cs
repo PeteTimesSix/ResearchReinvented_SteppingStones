@@ -69,15 +69,14 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
 
         private static IEnumerable<CodeInstruction> DoOffsetTranspiler(IEnumerable<CodeInstruction> instructions)
         {
+            //so all this actually does is fix up the values produced by the dev repositioning tool
             var matcher = new CodeMatcher(instructions);
 
             var targetSiteBefore = new CodeMatch[]
             {
-                new CodeMatch(OpCodes.Ldsfld, AccessTools.Field(typeof(TexButton), nameof(TexButton.Copy))),
-                new CodeMatch(OpCodes.Call, AccessTools.Method(typeof(Widgets), nameof(Widgets.ButtonImageFitted), new Type[] { typeof(Rect), typeof(Texture2D) })),
-                new CodeMatch(OpCodes.Brfalse),
-                new CodeMatch(OpCodes.Newobj, AccessTools.Constructor(typeof(StringBuilder), new Type[]{})),
-                new CodeMatch(OpCodes.Stloc_S)
+                new CodeMatch(OpCodes.Ldstr, "  <researchViewX>{0:F2}</researchViewX>"),
+                new CodeMatch(OpCodes.Ldloc_S),
+                new CodeMatch(OpCodes.Callvirt, AccessTools.PropertyGetter(typeof(ResearchProjectDef), nameof(ResearchProjectDef.ResearchViewX)))
             };
 
             var toggleOnInstructions = new CodeInstruction[]
@@ -88,9 +87,9 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
 
             var targetSiteAfter = new CodeMatch[]
             {
+                new CodeMatch(OpCodes.Ldstr, "  <researchViewY>{0:F2}</researchViewY>"),
                 new CodeMatch(OpCodes.Ldloc_S),
-                new CodeMatch(OpCodes.Callvirt, AccessTools.Method(typeof(object), nameof(object.ToString))),
-                new CodeMatch(OpCodes.Call, AccessTools.PropertySetter(typeof(GUIUtility), nameof(GUIUtility.systemCopyBuffer)))
+                new CodeMatch(OpCodes.Callvirt, AccessTools.PropertyGetter(typeof(ResearchProjectDef), nameof(ResearchProjectDef.ResearchViewY)))
             };
 
             var toggleOffInstructions = new CodeInstruction[]
@@ -99,7 +98,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
                 new CodeInstruction(OpCodes.Stsfld, AccessTools.Field(typeof(MainTabWindow_Research_OffsetHacks), nameof(MainTabWindow_Research_OffsetHacks.bypass))),
             };
 
-            matcher.MatchEndForward(targetSiteBefore);
+            matcher.MatchStartForward(targetSiteBefore);
             if (!matcher.IsValid)
             {
                 Log.Error("RR_SS: Failed to apply research window patch for offsets (phase 1)!");
@@ -116,6 +115,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
                 }
                 else
                 {
+                    matcher.Advance(1);
                     matcher.InsertAndAdvance(toggleOffInstructions);
                     return matcher.InstructionEnumeration();
                 }

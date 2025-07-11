@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="SignalJammer"]</xpath>
+		<value>
+			<researchPrerequisites>
+			  <li>StandardGravtech</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+</Patch>

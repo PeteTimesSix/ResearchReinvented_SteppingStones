@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>RR_ElectricityBasics</defName>
+    <label>electricity</label>
+    <description>Harness the power of electricity.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tags>
+      <li>ClassicStart</li>
+    </tags>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+	<prerequisites>
+	  <li>Smithing</li>
+	</prerequisites>
+	<discoveredLetterTitle>About: Electricity</discoveredLetterTitle>
+	<discoveredLetterText>Your colony has harnessed the power which outsiders call "electricity". It has the potential to transform every aspect of your people's way of life.\n\nYou have now unlocked the Power tab in the Architect menu from which you may build electric generators, power conduits, and other mechanisms to control this new force. The Power tab also displays the electric grid which connects electric generators and appliances.</discoveredLetterText>
+	<generalRules>
+	  <rulesStrings>
+		<li>subject->electricity</li>
+
+		<li>subject_story->was struck by lighting and became determined to harness it</li>
+		<li>subject_story->created the first lightbulb on a medieval world</li>
+		<li>subject_story->was executed on a feudal world for the blasphemy of creating light</li>
+
+		<li>subject_gerund->harnessing electricity</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_HeatingElements</defName>
+    <label>heating elements</label>
+    <description>Learn how to effectively use the power of electricity to generate heat.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tags>
+      <li>ClassicStart</li>
+    </tags>
+	<prerequisites>
+	  <li>RR_ElectricityBasics</li>
+	</prerequisites>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+  	<generalRules>
+	  <rulesStrings>
+		<li>subject->heaters</li>
+		<li>subject->heating elements</li>
+
+		<li>subject_story->nearly died of frostbite during the winter</li>
+		<li>subject_story->got burned while replacing an old lightbulb</li>
+		<li>subject_story->decided a safer method of heating was needed after causing a forest fire</li>
+
+		<li>subject_gerund->building heaters</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_PowerGenerators</defName>
+    <label>dynamos</label>
+    <description>Build electricity generators based on the simple principle of converting motive power into electrical power.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tags>
+      <li>ClassicStart</li>
+    </tags>
+	<prerequisites>
+	  <li>RR_ElectricityBasics</li>
+	</prerequisites>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>1.50</researchViewY>
+  	<generalRules>
+	  <rulesStrings>
+		<li>subject->dynamos</li>
+		<li>subject->generators</li>
+
+		<li>subject_story->noticed that motors generated power when spun by hand</li>
+		<li>subject_story->experimented with arrangements of coils and magnets</li>
+		<li>subject_story->understood the relation between magnetism and electricity</li>
+
+		<li>subject_gerund->generating electricity</li>
+		<li>subject_gerund->building generators</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+
+  
+  <ResearchProjectDef>
+    <defName>RR_EMP</defName>
+    <label>EMP weapons</label>
+    <description>Build weaponry that exploits electromagnetic pulses to stun mechanical enemies.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+	<prerequisites>
+	  <li>Machining</li>
+	</prerequisites>
+	<researchViewX>10.00</researchViewX>
+	<researchViewY>4.50</researchViewY>
+  	<generalRules>
+	  <rulesStrings>
+		<li>subject->EMPs</li>
+		<li>subject->elecromagnetic pulses</li>
+
+		<li>subject_story->accidentally caused a city block-wide blackout</li>
+		<li>subject_story->experimented with arrangements of coils and magnets</li>
+		<li>subject_story->raided mechanoid hives through clever use of stun grenades</li>
+
+		<li>subject_gerund->generating electrical pulses</li>
+		<li>subject_gerund->producing pulses</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+  
+</Defs>

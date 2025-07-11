@@ -69,7 +69,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Extensions
                     }
 					catch (RecursiveAncestorLoopException)
 					{
-						Log.Error($"Reached a depth of 1000 while recursively crawling the tech tree (start project: {project.defName})! This almost certainly means there's a loop in it.");
+						Log.Error($"RR:SS: Reached a depth of 1000 while recursively crawling the tech tree (start project: {project.defName})! This almost certainly means there's a loop in it.");
 						continue;
                     }
 				}

@@ -14,8 +14,11 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Utilities
     {
         public static Dictionary<string, string> defNameSubstitutions = new();
 
-        public static string GetDefNameOrSub(string defName) => defNameSubstitutions.GetValueOrDefault(defName, defName);
-
+        public static string GetDefNameOrSub(string defName)
+        { 
+            var sub = defNameSubstitutions.GetWithFallback(defName, defName);
+            return sub;
+        }
 
         static DefNameSubstitutor()
         {
@@ -36,6 +39,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Utilities
                 //VFET_Culture
             }
         }
+
         public static void ReplaceLibCheck()
         {
             if (ReplaceLib.active)

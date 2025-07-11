@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/DesignationCategoryDef[defName="Power"]</xpath>
+		<value>
+			<researchPrerequisites>
+			  <li>RR_ElectricityBasics</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+</Patch>

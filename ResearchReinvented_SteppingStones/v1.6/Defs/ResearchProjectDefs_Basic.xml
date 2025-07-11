@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ResearchProjectDef>
+    <defName>RR_LateralThinking</defName>
+    <label>lateral thinking</label>
+    <description>Consideration and allowances for a more lateral approach.\n(This is a prerequisite to any orphan research tech, including modded ones.)</description>
+    <baseCost>1</baseCost>
+    <techLevel>Neolithic</techLevel>
+  <researchViewX>-2.00</researchViewX>
+  <researchViewY>5.50</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_Organization</defName>
+    <label>organization</label>
+    <description>Fundamentals of organization.</description>
+    <baseCost>1</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-2.00</researchViewX>
+  <researchViewY>3.00</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_Agriculture</defName>
+    <label>agriculture</label>
+    <description>Fundamentals of agriculture.</description>
+    <baseCost>20</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>1.00</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+	<generalRules>
+	  <rulesStrings>
+		<li>subject->agriculture</li>
+
+		<li>subject_story->was enslaved as a manual laborer</li>
+		<li>subject_story->was fascinated by the neolithic revolution at the beginning of history</li>
+		<li>subject_story->applied the simple principles of farming after crashlanding on an uninhabited planet</li>
+
+		<li>subject_gerund->farming</li>
+		<li>subject_gerund->cultivating plants</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicHerbLore</defName>
+    <label>medicinal herbs</label>
+    <description>Utilization of basic medicinal herbs.</description>
+    <baseCost>25</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>0.00</researchViewX>
+  <researchViewY>1.00</researchViewY>
+	<prerequisites>
+	  <li>RR_Agriculture</li>
+	</prerequisites>
+	<generalRules>
+	  <rulesStrings>
+		<li>subject->medicinal herbs</li>
+
+		<li>subject_story->survived a nasty infection with the help of a tribal shaman</li>
+		<li>subject_story->ran a field hospital on a primitive warworld</li>
+		<li>subject_story->learned a few tricks during a jungle world safari gone wrong</li>
+
+		<li>subject_gerund->growing medicinal plants</li>
+		<li>subject_gerund->cultivating herbs</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_Fire</defName>
+    <label>Fire</label>
+    <description>Intentional creation, maintenance and management of combustion, also known as fire.</description>
+    <baseCost>20</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>2.00</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+	<generalRules>
+	  <rulesStrings>
+		<li>subject->combustion</li>
+		<li>subject->fire</li>
+
+		<li>subject_story->decided to apply their pyromania to more useful purposes</li>
+		<li>subject_story->catalogued primitive fire-keeping traditions and techniques</li>
+		<li>subject_story->was always interested in the crackle of a warm fireplace</li>
+
+		<li>subject_gerund->starting fires</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicFoodPrep</defName>
+    <label>food preparation</label>
+    <description>Preparation of food.</description>
+    <baseCost>25</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>0.00</researchViewX>
+  <researchViewY>2.00</researchViewY>
+	<prerequisites>
+	  <li>RR_Fire</li>
+	</prerequisites>
+	<generalRules>
+	  <rulesStrings>
+		<li>subject->food preparation</li>
+
+		<li>subject_story->once spent an entire year vomiting because of an incompetent cook</li>
+		<li>subject_story->collected simple, uncomplicated recipes for a cookbook</li>
+		<li>subject_story->learned to create variety from limited ingredients in college</li>
+
+		<li>subject_gerund->preparing food</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicApparel</defName>
+    <label>simple apparel</label>
+    <description>Crafting of simple apparel.</description>
+    <baseCost>25</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>0.00</researchViewX>
+  <researchViewY>2.50</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+	<generalRules>
+	  <rulesStrings>
+		<li>subject->simple apparel</li>
+		<li>subject->clothing</li>
+
+		<li>subject_story->learned to craft simple garments from furs on a feral world</li>
+		<li>subject_story->was responsible for disposal of tribal raiders clothes on a remote rimworld</li>
+		<li>subject_story->woke up naked inside a drop pod after what was supposed to be a minor surgery</li>
+
+		<li>subject_gerund->crafting simple clothes</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicRangedWeapons</defName>
+    <label>ranged weapons</label>
+    <description>Crafting of simple ranged weapons.</description>
+    <baseCost>25</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>3.00</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+	<generalRules>
+	  <rulesStrings>
+		<li>subject->ranged weapons</li>
+
+		<li>subject_story->relied on improvised weaponry during a time of great strife</li>
+		<li>subject_story->played with sticks as a child</li>
+		<li>subject_story->had an unusual fascination with primitive weaponry employed by tribals</li>
+
+		<li>subject_gerund->crafting ranged weapons</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicMeleeWeapons</defName>
+    <label>melee weapons</label>
+    <description>Crafting of simple melee weapons.</description>
+    <baseCost>25</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>3.50</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+	<generalRules>
+	  <rulesStrings>
+		<li>subject->melee weapons</li>
+
+		<li>subject_story->relied on improvised weaponry during a time of great strife</li>
+		<li>subject_story->played with sticks as a child</li>
+		<li>subject_story->had an unusual fascination with primitive weaponry employed by tribals</li>
+
+		<li>subject_gerund->crafting melee weapons</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicCraftingFacilities</defName>
+    <label>crafting facilities</label>
+    <description>Basic crafting facilities.</description>
+    <baseCost>50</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>0.00</researchViewX>
+  <researchViewY>4.00</researchViewY>
+	<prerequisites>
+	  <li>RR_BasicFurniture</li>
+	</prerequisites>
+	<generalRules>
+	  <rulesStrings>
+		<li>subject->crafting facilities</li>
+
+		<li>subject_story->catalogued the abstract properties shared by workbenches, laboratories, and factories alike</li>
+		<li>subject_story->whittled small toys from wood for their tribe's children</li>
+		<li>subject_story->led a tribe of warriors to victory, wielding only fire-sharpened spears</li>
+
+		<li>subject_gerund->building crafting facilities</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicStructures</defName>
+    <label>structures</label>
+    <description>Stable, solid foundations and reliable walls.</description>
+    <baseCost>20</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>5.00</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+	<generalRules>
+	  <rulesStrings>
+		<li>subject->structures</li>
+		<li>subject->walls</li>
+		<li>subject->doors</li>
+		<li>subject->pillars</li>
+
+		<li>subject_story->learned how important a solid roof is after spending a month under constant rain on an abandoned jungle world</li>
+		<li>subject_story->built the only house that remained standing after a hurricane swept through their village</li>
+		<li>subject_story->was an architect on an urbworld that specialized in cheap, reliable construction</li>
+
+		<li>subject_gerund->constructing structures</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_BasicFurniture</defName>
+    <label>simple furniture</label>
+    <description>Simple, but reliable furniture.</description>
+    <baseCost>20</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>-1.00</researchViewX>
+  <researchViewY>4.50</researchViewY>
+	<prerequisites>
+	  <li>RR_Organization</li>
+	</prerequisites>
+	<generalRules>
+	  <rulesStrings>
+		<li>subject->furniture</li>
+
+		<li>subject_story->furnished their home using only scrap wood and cinderblocks from a nearby scrapyard</li>
+		<li>subject_story->was the tenth member of a tribe that built a village around a circle of nine stumps</li>
+		<li>subject_story->worked in an urbworld factory mass-producing lawn chairs</li>
+
+		<li>subject_gerund->constructing furniture</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RR_Trapping</defName>
+    <label>trapping</label>
+    <description>Construction of simplistic traps for the purposes of hunting or defense.</description>
+    <baseCost>50</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>0.00</researchViewX>
+  <researchViewY>5.50</researchViewY>
+	<prerequisites>
+	  <li>RR_BasicFurniture</li>
+	</prerequisites>
+	<generalRules>
+	  <rulesStrings>
+		<li>subject->traps</li>
+		<li>subject->snares</li>
+
+		<li>subject_story->learned the dangers of simple traps when an IED blew their foot off</li>
+		<li>subject_story->fed a family of three despite being too injured to use a bow</li>
+		<li>subject_story->enjoyed devising deadly scenarios in a virtual reality sim of a rimworld</li>
+
+		<li>subject_gerund->trapping</li>
+		<li>subject_gerund->snaring</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+</Defs>

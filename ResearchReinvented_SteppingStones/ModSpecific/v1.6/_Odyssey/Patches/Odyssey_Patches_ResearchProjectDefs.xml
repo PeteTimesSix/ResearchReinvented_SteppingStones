@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="HeavyBridges"]</xpath>
+		<value>
+			<techLevel>Medieval</techLevel>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="HeavyBridges"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>ComplexFurniture</li>
+		</defNames>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Fishing"]</xpath>
+		<value>
+			<baseCost>100</baseCost>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="Fishing"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_Trapping</li>
+		</defNames>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="HunterDrones"]</xpath>
+		<value>
+			<hiddenPrerequisites>
+			  <li>IEDs</li>
+			</hiddenPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="BasicGravtech"]</xpath>
+		<ignoreAttributesWhenMatching>True</ignoreAttributesWhenMatching>
+		<value>
+			<prerequisites>
+			  <li>Machining</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="OrbitalTech"]</xpath>
+		<value>
+			<techLevel>Spacer</techLevel>
+			<hiddenPrerequisites>
+			  <li>AirConditioning</li>
+			</hiddenPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="StandardGravtech"]</xpath>
+		<value>
+			<techLevel>Spacer</techLevel>
+			<baseCost>1500</baseCost>
+			<prerequisites>
+			  <li>BasicGravtech</li>
+			  <li>OrbitalTech</li>
+			  <li>Fabrication</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Shuttles"]</xpath>
+		<value>
+			<baseCost>1500</baseCost>
+			<prerequisites>
+			  <li>TransportPod</li>
+			  <li>OrbitalTech</li>
+			  <li>Fabrication</li>
+			</prerequisites>    
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="Shuttles"]/requiredResearchFacilities</xpath>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="AdvancedGravtech"]</xpath>
+		<value>
+			<techLevel>Ultra</techLevel>
+			<baseCost>2500</baseCost>
+			<prerequisites>
+			  <li>StandardGravtech</li>
+			  <li>AdvancedFabrication</li>
+			</prerequisites>
+		   <requiredResearchFacilities>
+			  <li>MultiAnalyzer</li>
+			</requiredResearchFacilities>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="BeamWeapons"]</xpath>
+		<value>
+			<techLevel>Ultra</techLevel>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="RR.PatchOperationAddIfMissing">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorLocust"]</xpath>
+        <value><equippedStatOffsets/></value>
+    </Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorLocust"]/equippedStatOffsets</xpath>
+        <value>
+            <MoveSpeed>0.3</MoveSpeed>
+        </value>
+	</Operation>
+</Patch>

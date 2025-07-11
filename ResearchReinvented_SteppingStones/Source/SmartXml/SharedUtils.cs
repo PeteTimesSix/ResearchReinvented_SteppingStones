@@ -10,19 +10,24 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.SmartXml
     public static class SharedUtils
     {
 
-        public static bool ContainsNode(XmlNode parent, XmlNode node)
+        public static bool ContainsNode(XmlNode parent, XmlNode node, bool ignoreAttributesWhenMatching)
         {
             XmlNode temp = null;
-            return ContainsNode(parent, node, ref temp);
+            return ContainsNode(parent, node, ref temp, ignoreAttributesWhenMatching);
         }
 
-        public static bool ContainsNode(XmlNode parent, XmlNode node, ref XmlNode foundNode)
+        public static bool ContainsNode(XmlNode parent, XmlNode node, ref XmlNode foundNode, bool ignoreAttributesWhenMatching)
         {
             XmlAttributeCollection attrs = node.Attributes;
             foreach (XmlNode childNode in parent.ChildNodes)
             {
                 if (childNode.Name == node.Name)
                 {
+                    if (ignoreAttributesWhenMatching)
+                    {
+                        foundNode = childNode;
+                        return true;
+                    }
                     XmlAttributeCollection attrsChild = childNode.Attributes;
                     if (attrs == null && attrsChild == null)
                     {

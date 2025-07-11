@@ -54,7 +54,7 @@ namespace RR
                 matched = true;
                 foreach (XmlNode addNode in node.ChildNodes)
                 {
-                    if (!SharedUtils.ContainsNode(xmlNode, addNode, ref foundNode))
+                    if (!SharedUtils.ContainsNode(xmlNode, addNode, ref foundNode, false))
                     {
                         xmlNode.AppendChild(xmlNode.OwnerDocument.ImportNode(addNode, true));
                     }

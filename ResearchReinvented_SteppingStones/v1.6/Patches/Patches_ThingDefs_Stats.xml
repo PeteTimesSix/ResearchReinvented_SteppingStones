@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="RR.PatchOperationAddIfMissing">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorRecon"]</xpath>
+        <value><equippedStatOffsets/></value>
+    </Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorRecon"]/equippedStatOffsets</xpath>
+        <value>
+            <MoveSpeed>0.3</MoveSpeed>
+        </value>
+	</Operation>
+    
+    <Operation Class="RR.PatchOperationAddIfMissing">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorRecon"]</xpath>
+        <value><equippedStatOffsets/></value>
+    </Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_ArmorRecon"]/equippedStatOffsets</xpath>
+        <value>
+            <MoveSpeed>0.3</MoveSpeed>
+        </value>
+	</Operation>
+</Patch>

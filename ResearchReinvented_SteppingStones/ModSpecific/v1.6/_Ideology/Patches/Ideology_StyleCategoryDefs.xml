@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StyleCategoryDef[defName="Totemic"]/thingDefStyles</xpath>
+		<value>
+			<li>
+				<thingDef>RR_VoltaicPile</thingDef>
+				<styleDef>RR_VoltaicPile_Totemic</styleDef>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StyleCategoryDef[defName="Rustic"]/thingDefStyles</xpath>
+		<value>
+			<li>
+				<thingDef>RR_VoltaicPile</thingDef>
+				<styleDef>RR_VoltaicPile_Rustic</styleDef>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StyleCategoryDef[defName="Techist"]/thingDefStyles</xpath>
+		<value>
+			<li>
+				<thingDef>RR_VoltaicPile</thingDef>
+				<styleDef>RR_VoltaicPile_Techist</styleDef>
+			</li>
+		</value>
+	</Operation>
+</Patch>

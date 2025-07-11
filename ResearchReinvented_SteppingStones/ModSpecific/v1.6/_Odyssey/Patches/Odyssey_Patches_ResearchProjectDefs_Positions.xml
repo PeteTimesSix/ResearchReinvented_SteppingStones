@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Fishing"]</xpath>
+  <researchViewX>1.00</researchViewX>
+  <researchViewY>5.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="HeavyBridges"]</xpath>
+  <researchViewX>2.00</researchViewX>
+  <researchViewY>5.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="BasicGravtech"]</xpath>
+  <researchViewX>7.00</researchViewX>
+  <researchViewY>0.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="StandardGravtech"]</xpath>
+  <researchViewX>14.00</researchViewX>
+  <researchViewY>0.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="AdvancedGravtech"]</xpath>
+  <researchViewX>16.00</researchViewX>
+  <researchViewY>0.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="OrbitalTech"]</xpath>
+  <researchViewX>13.00</researchViewX>
+  <researchViewY>1.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="Shuttles"]</xpath>
+  <researchViewX>14.00</researchViewX>
+  <researchViewY>1.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="HunterDrones"]</xpath>
+  <researchViewX>12.00</researchViewX>
+  <researchViewY>4.50</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="BeamWeapons"]</xpath>
+  <researchViewX>16.00</researchViewX>
+  <researchViewY>3.50</researchViewY>
+	</Operation>
+</Patch>
