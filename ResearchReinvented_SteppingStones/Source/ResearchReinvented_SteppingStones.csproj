@@ -84,7 +84,7 @@
     <Compile Include="Extensions\ThingDefExtensions.cs" />
     <Compile Include="ModCompat\ReplaceLib.cs" />
     <Compile Include="Patches\MainTabWindow_Research_OffsetHacks.cs" />
-    <Compile Include="Patches\QuickTestHack.cs" />
+    <Compile Include="Patches\MainTabWindow_Research_DrawRightRect_Patches.cs" />
     <Compile Include="Patches\ResearchProjectDef_Patches.cs" />
     <Compile Include="Patches\Zone_Growing_Patches.cs" />
     <Compile Include="SmartXml\Conditionals\Cond_ModNotLoaded.cs" />

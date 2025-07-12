@@ -13,7 +13,7 @@ using Verse;
 namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
 {
     [HarmonyPatch(typeof(MainTabWindow_Research), "DrawStartButton")]
-    public static class QuickTestHack
+    public static class MainTabWindow_Research_DrawRightRect_Patches
     {
 
         [HarmonyTranspiler]
@@ -38,12 +38,11 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Patches
             matcher.MatchEndForward(target);
             if (!matcher.IsValid)
             {
-                Log.Error("RR_SS: Failed to apply hack!");
+                Log.Error("RR_SS: Failed to apply research unavailable button resize hack!");
                 return instructions;
             }
             else
             {
-                Log.Message("instr: "+matcher.Instruction.ToString());  
                 var clone = matcher.Instruction.Clone();
                 matcher.RemoveInstruction();
                 clone.operand = 0.0f;
