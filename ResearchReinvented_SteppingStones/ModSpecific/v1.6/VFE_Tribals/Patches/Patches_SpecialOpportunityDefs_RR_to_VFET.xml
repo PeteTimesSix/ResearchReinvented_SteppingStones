@@ -3,23 +3,17 @@
 	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/project[text()="RR_Agriculture"]</xpath>
 		<doesRequire>PeteTimesSix.ResearchReinvented</doesRequire>
-		<value>
-			<project>VFET_Agriculture</project>
-		</value>
+		<value>VFET_Agriculture</value>
 	</Operation>
 	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/project[text()="RR_BasicMeleeWeapons"]</xpath>
 		<doesRequire>PeteTimesSix.ResearchReinvented</doesRequire>
-		<value>
-			<project>VFET_Weapons</project>
-		</value>
+		<value>VFET_Weapons</value>
 	</Operation>
 	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef/project[text()="RR_Fire"]</xpath>
 		<doesRequire>PeteTimesSix.ResearchReinvented</doesRequire>
-		<value>
-			<project>VFET_Fire</project>
-		</value>
+		<value>VFET_Fire</value>
 	</Operation>
 	<!--
 		The following never appear
