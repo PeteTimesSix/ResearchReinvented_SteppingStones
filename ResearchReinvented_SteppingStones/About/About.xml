@@ -34,9 +34,13 @@
 	</loadAfter>
 	<loadAfterByVersion>
 	  <v1.5>
+		<li>brrainz.harmony</li>
+		<li>petetimessix.researchreinvented</li>
 		<li>OskarPotocki.VFE.Tribals</li>
 	  </v1.5>
 	  <v1.6>
+		<li>brrainz.harmony</li>
+		<li>petetimessix.researchreinvented</li>
 		<li>OskarPotocki.VFE.Tribals</li>
 	  </v1.6>
 	</loadAfterByVersion>
