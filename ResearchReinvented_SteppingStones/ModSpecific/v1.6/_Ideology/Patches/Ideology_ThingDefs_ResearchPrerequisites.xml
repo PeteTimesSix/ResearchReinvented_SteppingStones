@@ -1,5 +1,85 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ThingDef[@Name="BuildingFloorCoveringBase"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>RR_BasicStructures</li>
+		</defNames>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ThingDef[defName="RusticRug_Medium"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>CarpetMaking</li>
+		</defNames>
+	</Operation>
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ThingDef[defName="RusticRug_Broad"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>CarpetMaking</li>
+		</defNames>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/TerrainDef[defName="Boards_Totemic"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>RR_BasicStructures</li>
+		</defNames>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/TerrainDef[defName="Plates_Spikecore"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>Smithing</li>
+		</defNames>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/TerrainDef[defName="Tile_Transhumanist"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>Smithing</li>
+		</defNames>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ThingDef[defName="Lectern"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>RR_BasicFurniture</li>
+		</defNames>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ThingDef[defName="Drum"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>RR_BasicFurniture</li>
+		</defNames>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ThingDef[defName="Skullspike"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>RR_BasicFurniture</li>
+		</defNames>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ThingDef[defName="GibbetCage"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>Smithing</li>
+		</defNames>
+	</Operation>
+
 	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ThingDef[defName="LightBall"]</xpath>
 		<value>

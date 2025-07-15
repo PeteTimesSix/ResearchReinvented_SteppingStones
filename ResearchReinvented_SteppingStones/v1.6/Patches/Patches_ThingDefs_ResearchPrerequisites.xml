@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ThingDef[defName="EggBox"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>RR_BasicFurniture</li>
+		</defNames>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ThingDef[defName="PlantPot"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>RR_Agriculture</li>
+			<li>RR_BasicFurniture</li>
+		</defNames>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
 		<xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant</xpath>
 		<target>sowResearchPrerequisites</target>
 		<defNames>
@@ -8,12 +25,20 @@
 		</defNames>
 	</Operation>
 
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/TerrainDef[defName="WoodPlankFloor"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>RR_BasicStructures</li>
+		</defNames>
+	</Operation>
+
     	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ThingDef[defName="PowerConduit"]</xpath>
 		<value>
-    <researchPrerequisites>
-      <li>RR_ElectricityBasics</li>
-    </researchPrerequisites>
+	<researchPrerequisites>
+		<li>RR_ElectricityBasics</li>
+	</researchPrerequisites>
 		</value>
 	</Operation>
 	

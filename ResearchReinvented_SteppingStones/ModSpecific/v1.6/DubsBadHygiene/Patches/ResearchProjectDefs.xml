@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="RR.PatchOperationAddOrReplace">
+	<!-- Reposition due to space not taken up by removed RR:SS projects -->
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="RR_LateralThinking"]</xpath>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>5.50</researchViewY>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
 		<xpath>Defs/ResearchProjectDef[defName="LogBoilers"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>RR_Fire</li>
-			</prerequisites>
-		</value>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_Fire</li>
+		</defNames>
 	</Operation>
-	<Operation Class="RR.PatchOperationAddOrReplace">
-		<xpath>/Defs/ResearchProjectDef[defName="SewageSludgeComposting"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>RR_Agriculture</li>
-			</prerequisites>
-		</value>
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="SewageSludgeComposting"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>RR_Agriculture</li>
+		</defNames>
 	</Operation>
-	<Operation Class="RR.PatchOperationAddOrReplace">
+	<Operation Class="RR.PatchOperationResearchPrereg">
 		<xpath>Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
-		<value>
-			<prerequisites>
-			  <li>Smithing</li>
-			</prerequisites>
-		</value>
+		<target>prerequisites</target>
+		<defNames>
+			<li>Smithing</li>
+		</defNames>
 	</Operation>
 </Patch>
