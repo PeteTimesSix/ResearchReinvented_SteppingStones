@@ -56,11 +56,30 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             }
         }
 
-        private static HashSet<ResearchProjectDef> FilterOutSuperEarlyTechs(HashSet<ResearchProjectDef> projects)
+        private static HashSet<ResearchProjectDef> _blacklistTechs;
+        public static HashSet<ResearchProjectDef> BlacklistTechs
+        {
+            get
+            {
+                if (_blacklistTechs == null)
+                    _blacklistTechs = new HashSet<ResearchProjectDef>();
+
+                var techBlockStarterTech = DefDatabase<ResearchProjectDef>.GetNamed("TB_NeolithicTechLock", false);
+                if(techBlockStarterTech != null)
+                    _blacklistTechs.Add(techBlockStarterTech);
+
+                if (_blacklistTechs.Contains(null))
+                    _blacklistTechs.Remove(null);
+
+                return _blacklistTechs;
+            }
+        }
+
+        private static HashSet<ResearchProjectDef> FilterOutUnwantedTechs(HashSet<ResearchProjectDef> projects)
         {
             if (projects == null)
                 return null;
-            return projects.Except(SuperEarlyTechs).ToHashSet();
+            return projects.Except(SuperEarlyTechs).Except(BlacklistTechs).ToHashSet();
         }
     }
 }

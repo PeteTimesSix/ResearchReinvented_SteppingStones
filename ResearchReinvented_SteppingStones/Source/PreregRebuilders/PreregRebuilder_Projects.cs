@@ -19,6 +19,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             {
                 noProjectProjects.Add(projectDef);
             }
+            noProjectProjects = FilterOutUnwantedTechs(noProjectProjects);
             noProjectProjects = noProjectProjects.Except(SuperEarlyTechs).ToHashSet();
 
             foreach (var project in noProjectProjects)
@@ -47,8 +48,10 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                 var newPreregs = unlockPoints.Where(kv => kv.Value == maxPoints).Select(kv => kv.Key); //in case of equal amounts
                 project.prerequisites.AddRange(newPreregs);
             }
-
-            project.prerequisites.Add(ResearchProjectDefOf_Custom.RR_LateralThinking);
+            else
+            {
+                project.prerequisites.Add(ResearchProjectDefOf_Custom.RR_LateralThinking);
+            }
         }
 
         private static void TotalUnlockPoints(ResearchProjectDef project, Dictionary<ResearchProjectDef, int> unlockPoints)

@@ -107,7 +107,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                 recipe.researchPrerequisites = new List<ResearchProjectDef>();
 
             var firstProjects = recipe.FindEarliestPrerequisiteProjects();
-            firstProjects = FilterOutSuperEarlyTechs(firstProjects);
+            firstProjects = FilterOutUnwantedTechs(firstProjects);
             if (firstProjects != null && firstProjects.Any())
             {
                 recipe.researchPrerequisites.AddRange(firstProjects);
@@ -165,7 +165,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
 				return;
 
 			var firstProjects = recipe.FindEarliestPrerequisiteProjects();
-            firstProjects = FilterOutSuperEarlyTechs(firstProjects);
+            firstProjects = FilterOutUnwantedTechs(firstProjects);
             if (firstProjects != null && firstProjects.Any())
 			{
 				recipe.researchPrerequisites.AddRange(firstProjects);

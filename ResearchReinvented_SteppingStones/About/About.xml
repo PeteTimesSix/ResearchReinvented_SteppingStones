@@ -44,6 +44,9 @@
 		<li>OskarPotocki.VFE.Tribals</li>
 	  </v1.6>
 	</loadAfterByVersion>
+	<loadBefore>
+		<li>fridgeBaron.TechBlock</li>
+	</loadBefore>
 	<description>
 Restructures the vanilla research tree to follow a more logical progression.
 	</description>
