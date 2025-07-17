@@ -19,11 +19,8 @@ namespace RR
         SowResearchPrerequisites
     }
 
-    public class PatchOperationResearchPrereg : PatchOperationPathed
+    public class PatchOperationResearchPrereg : PatchOperationCustomBase
     {
-        public Type conditionalType = null;
-        public string conditionalParam = null;
-        public string doesRequire;
 
         public string target;
         public List<string> defNames;
@@ -37,24 +34,8 @@ namespace RR
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
-            if (!string.IsNullOrWhiteSpace(doesRequire)) 
-            {
-                var split = doesRequire.Split(',');
-                foreach(var mod in split)
-                {
-                    if (!ModsConfig.IsActive(mod.Trim()))
-                    {
-                        return true; //a required mod isnt loaded, so we dont apply the patch
-                    }
-                }
-            }
-
-            if(conditionalType != null)
-            {
-                var conditional = SmartXmlConditionalMaker.MakeConditional(conditionalType);
-                if(!conditional.ShouldExecute(conditionalParam))
-                    return true; //specific condition (probably a settings value) not met
-			}
+            if (Skip())
+                return true;
 
             bool matched = false;
             foreach (XmlNode xmlNode in xml.SelectNodes(xpath).Cast<XmlNode>().ToArray())

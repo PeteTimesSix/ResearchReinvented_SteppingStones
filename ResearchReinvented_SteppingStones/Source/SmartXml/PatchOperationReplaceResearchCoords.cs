@@ -8,28 +8,22 @@ using Verse;
 
 namespace RR
 {
-    public class PatchOperationReplaceResearchCoords : PatchOperationPathed
+    public class PatchOperationReplaceResearchCoords : PatchOperationCustomBase
 	{
-		public string doesRequire;
 
 		public XmlContainer researchViewX;
 		public XmlContainer researchViewY;
 
-		protected override bool ApplyWorker(XmlDocument xml)
-		{
-			if (!string.IsNullOrWhiteSpace(doesRequire))
-			{
-				var split = doesRequire.Split(',');
-				foreach (var mod in split)
-				{
-					if (!ModsConfig.IsActive(mod.Trim()))
-					{
-						return true; //a required mod isnt loaded, so we dont apply the patch
-					}
-				}
-			}
+        public PatchOperationReplaceResearchCoords()
+        {
+        }
 
-			string valueX = researchViewX.node.InnerText;
+        protected override bool ApplyWorker(XmlDocument xml)
+        {
+            if (Skip())
+                return true;
+
+            string valueX = researchViewX.node.InnerText;
 			string valueY = researchViewY.node.InnerText;
 			//Log.Message($"running research coord replace patch on {xpath}, values: {valueX} {valueY}");
 			bool matched = false;
@@ -58,10 +52,6 @@ namespace RR
 				}
 			}
 			return matched;
-		}
-
-		public PatchOperationReplaceResearchCoords()
-		{
 		}
 	}
 }

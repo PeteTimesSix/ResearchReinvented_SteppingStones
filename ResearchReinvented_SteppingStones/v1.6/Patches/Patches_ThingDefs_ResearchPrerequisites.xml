@@ -20,6 +20,8 @@
 	<Operation Class="RR.PatchOperationResearchPrereg">
 		<xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant</xpath>
 		<target>sowResearchPrerequisites</target>
+		<conditionalType>RR.SmartXml.Conditionals.Cond_ModsNotLoaded</conditionalType>
+		<conditionalParam>ferny.progressionagriculture</conditionalParam>
 		<defNames>
 			<li>RR_BasicHerbLore</li>
 		</defNames>

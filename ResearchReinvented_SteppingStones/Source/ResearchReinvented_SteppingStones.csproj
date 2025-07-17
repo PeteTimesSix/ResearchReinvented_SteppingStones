@@ -97,6 +97,7 @@
     <Compile Include="SmartXml\PatchOperationAddIfMissing.cs" />
     <Compile Include="SmartXml\PatchOperationAddOrReplace.cs" />
     <Compile Include="SmartXml\PatchOperationCompactResearchCoords.cs" />
+    <Compile Include="SmartXml\_PatchOperationCustomBase.cs" />
     <Compile Include="SmartXml\PatchOperationReplaceResearchCoords.cs" />
     <Compile Include="PreregRebuilders\PreregRebuilder_Buildables.cs" />
     <Compile Include="PreregRebuilders\PreregRebuilder_Plants.cs" />

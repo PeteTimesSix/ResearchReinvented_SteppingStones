@@ -11,17 +11,30 @@
 		</defNames>
 	</Operation>
 	
+
 	<Operation Class="RR.PatchOperationResearchPrereg">
 		<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
 		<target>prerequisites</target>
 		<defNames>
-			<li>RR_BasicHerbLore</li>
 			<li>RR_Fire</li>
+		</defNames>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
+		<target>prerequisites</target>
+		<conditionalType>RR.SmartXml.Conditionals.Cond_ModsNotLoaded</conditionalType>
+		<conditionalParam>ferny.progressionagriculture</conditionalParam>
+		<clearFirst>false</clearFirst>
+		<defNames>
+			<li>RR_BasicHerbLore</li>
 		</defNames>
 	</Operation>
 	
 	<Operation Class="RR.PatchOperationResearchPrereg">
 		<xpath>Defs/ResearchProjectDef[defName="Devilstrand"]</xpath>
+		<conditionalType>RR.SmartXml.Conditionals.Cond_ModsNotLoaded</conditionalType>
+		<conditionalParam>ferny.progressionagriculture</conditionalParam>
 		<target>prerequisites</target>
 		<defNames>
 			<li>RR_Agriculture</li>
@@ -30,6 +43,8 @@
 	
 	<Operation Class="RR.PatchOperationResearchPrereg">
 		<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
+		<conditionalType>RR.SmartXml.Conditionals.Cond_ModsNotLoaded</conditionalType>
+		<conditionalParam>ferny.progressionagriculture</conditionalParam>
 		<target>prerequisites</target>
 		<defNames>
 			<li>RR_Agriculture</li>
@@ -114,6 +129,8 @@
 	<Operation Class="RR.PatchOperationResearchPrereg">
 		<xpath>Defs/ResearchProjectDef[defName="DrugProduction"]</xpath>
 		<target>hiddenPrerequisites</target>
+		<conditionalType>RR.SmartXml.Conditionals.Cond_ModsNotLoaded</conditionalType>
+		<conditionalParam>ferny.progressionagriculture</conditionalParam>
 		<defNames>
 			<li>RR_BasicHerbLore</li>
 		</defNames>

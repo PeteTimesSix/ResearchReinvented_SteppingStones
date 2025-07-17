@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!-- Reposition due to space not taken up by removed RR:SS projects -->
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<xpath>Defs/ResearchProjectDef[defName="RR_LateralThinking"]</xpath>
-		<researchViewX>0.00</researchViewX>
-		<researchViewY>5.50</researchViewY>
-	</Operation>
 	
 	<Operation Class="RR.PatchOperationResearchPrereg">
 		<xpath>Defs/ResearchProjectDef[defName="LogBoilers"]</xpath>

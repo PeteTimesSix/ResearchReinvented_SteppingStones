@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!-- RR:SS or VFET -->
+	<!-- Reposition due to space not taken up by removed RR:SS projects -->
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="RR_LateralThinking"]</xpath>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>5.50</researchViewY>
+	</Operation>
 
 	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ResearchProjectDef[defName="RR_Organization"]</xpath>

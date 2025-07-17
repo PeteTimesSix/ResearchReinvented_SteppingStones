@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PeteTimesSix.ResearchReinvented_SteppingStones.SmartXml;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,16 +9,20 @@ using Verse;
 
 namespace RR
 {
-    public class PatchOperationCompactResearchCoords : PatchOperationPathed
+    public class PatchOperationCompactResearchCoords : PatchOperationCustomBase
 	{
 
 #pragma warning disable CS0649 // Filled from xml
 		private XmlContainer dividerX;
 		private XmlContainer dividerY;
 #pragma warning restore CS0649
+
 		protected override bool ApplyWorker(XmlDocument xml)
-		{
-			bool hasDivX = float.TryParse(dividerX?.node?.InnerText ?? "", out float divX);
+        {
+            if (Skip())
+                return true;
+
+            bool hasDivX = float.TryParse(dividerX?.node?.InnerText ?? "", out float divX);
 			bool hasDivY = float.TryParse(dividerY?.node?.InnerText ?? "", out float divY);
 
 			if (!hasDivX && !hasDivY)

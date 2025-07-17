@@ -12,12 +12,8 @@ namespace RR
 {
     //code taken with permission from https://github.com/15adhami/XmlExtensions/blob/main/Source/PatchOperations/PatchOperations/PatchOperationAddOrReplace.cs
 
-    public class PatchOperationAddIfEmpty : PatchOperationPathed
+    public class PatchOperationAddIfEmpty : PatchOperationCustomBase
     {
-        public Type conditionalType = null;
-        public string conditionalParam = null;
-        public string doesRequire;
-
         public XmlContainer value;
 
         public override void Complete(string modIdentifier)
@@ -27,24 +23,8 @@ namespace RR
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
-            if (!string.IsNullOrWhiteSpace(doesRequire)) 
-            {
-                var split = doesRequire.Split(',');
-                foreach(var mod in split)
-                {
-                    if (!ModsConfig.IsActive(mod.Trim()))
-                    {
-                        return true; //a required mod isnt loaded, so we dont apply the patch
-                    }
-                }
-            }
-
-            if(conditionalType != null)
-            {
-                var conditional = SmartXmlConditionalMaker.MakeConditional(conditionalType);
-                if(!conditional.ShouldExecute(conditionalParam))
-                    return true; //specific condition (probably a settings value) not met
-			}
+            if (Skip())
+                return true;
 
             XmlNode node = value.node;
             bool matched = false;
