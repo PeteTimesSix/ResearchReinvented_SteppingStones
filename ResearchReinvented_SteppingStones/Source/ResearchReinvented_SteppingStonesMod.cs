@@ -49,6 +49,9 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones
     {
         static ResearchReinventedSteppingStones_PostInit()
         {
+            //remove any preregs other mods snuck onto organization
+            ResearchProjectDefOf_Custom.RR_Organization.prerequisites = null;
+            ResearchProjectDefOf_Custom.RR_Organization.hiddenPrerequisites = null;
             PreregRebuilder.SetPrerequisitesOnOrphans();
             MainTabWindow_Research_OffsetHacks.BuildTabOffsets();
         }

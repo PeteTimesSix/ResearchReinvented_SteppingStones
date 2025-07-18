@@ -57,8 +57,8 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Extensions
 			foreach(var userProjects in allPrereqOptions) 
 			{
 				foreach (var project in userProjects)
-				{
-					if (ancestorMapping.ContainsKey(project))
+                {
+                    if (ancestorMapping.ContainsKey(project))
 						continue;
 
 					var projectCrawler = project;
@@ -67,10 +67,11 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Extensions
                         var ancestor = RecursiveAncestorFind(project, allPrereqOptionsSquashed.Except(project), 0);
                         ancestorMapping[project] = ancestor;
                     }
-					catch (RecursiveAncestorLoopException)
-					{
-						Log.Error($"RR:SS: Reached a depth of 1000 while recursively crawling the tech tree (start project: {project.defName})! This almost certainly means there's a loop in it.");
-						continue;
+					catch (RecursiveAncestorLoopException ex)
+                    {
+                        ex.list.Reverse();
+                        Log.Error($"RR:SS: Reached a depth of 500 while recursively crawling the tech tree! This almost certainly means there's a loop in it. Looped projects: " + string.Join(" -> ", ex.list.Select(def => $"{def.label} ({def.defName})")));
+                        continue;
                     }
 				}
 			}
@@ -85,24 +86,44 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Extensions
 			return null;
 		}
 
-		private class RecursiveAncestorLoopException : InvalidOperationException { }
-
-		private static ResearchProjectDef RecursiveAncestorFind(ResearchProjectDef node, IEnumerable<ResearchProjectDef> possibleAncestors, int depth)
+        private class RecursiveAncestorLoopException : InvalidOperationException
         {
-			if(possibleAncestors.Contains(node))
-				return node;
+            public List<ResearchProjectDef> list = new();
 
-			if (depth > 1000)
-				throw new RecursiveAncestorLoopException();
+            public RecursiveAncestorLoopException() { }
+            public RecursiveAncestorLoopException(ResearchProjectDef project)
+            {
+                list.Add(project);
+            }
+        }
 
-			foreach (var ancestorNode in node.AllPrerequisiteProjects())
-			{
-				var returnedAncestor = RecursiveAncestorFind(ancestorNode, possibleAncestors, depth + 1);
-				if(returnedAncestor != null)
-					return returnedAncestor;
-			}
+        private static ResearchProjectDef RecursiveAncestorFind(ResearchProjectDef project, IEnumerable<ResearchProjectDef> possibleAncestors, int depth)
+        {
+			if(possibleAncestors.Contains(project))
+				return project;
 
-			return null;
+			if (depth > 500)
+				throw new RecursiveAncestorLoopException(project);
+
+			try
+            {
+                foreach (var ancestorNode in project.AllPrerequisiteProjects())
+                {
+					if (ancestorNode == project)
+						continue;
+
+                    var returnedAncestor = RecursiveAncestorFind(ancestorNode, possibleAncestors, depth + 1);
+                    if (returnedAncestor != null)
+                        return returnedAncestor;
+                }
+            }
+            catch (RecursiveAncestorLoopException ex)
+            {
+                ex.list.Add(project);
+                throw;
+            }
+
+            return null;
         }
     }
 }

@@ -28,6 +28,13 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                 if (spot.researchPrerequisites.Count == 0)
                     spot.researchPrerequisites = null;
             }
+
+            /*{ 
+                //remove lateral thinking entirely if its not used
+                if(!DefDatabase<ResearchProjectDef>.AllDefs.Any(r => r.AllPrerequisiteProjects().Contains(ResearchProjectDefOf_Custom.RR_LateralThinking)))
+                {
+                }
+            }*/
         }
 
         private static HashSet<ResearchProjectDef> _superEarlyTechs;
