@@ -7,8 +7,8 @@
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="ToxGas"]</xpath>
-		<researchViewX>8.00</researchViewX>
-		<researchViewY>4.50</researchViewY>
+  <researchViewX>9.00</researchViewX>
+  <researchViewY>5.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="GrowthVats"]</xpath>
@@ -23,7 +23,7 @@
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Deathrest"]</xpath>
 		<researchViewX>9.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
+		<researchViewY>1.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="BasicMechtech"]</xpath>

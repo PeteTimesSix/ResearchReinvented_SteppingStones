@@ -222,7 +222,9 @@
 	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ResearchProjectDef[defName="GeothermalPower"]</xpath>
 		<value>
-			<prerequisites>
+			<label>passive generators</label>
+			<description>Build power plants that passively generate power from energy gradients already present in the environment, such as steam geysers or gravity waves.</description>
+    		<prerequisites>
 			  <li>WatermillGenerator</li>
 			</prerequisites>
 		</value>
@@ -379,12 +381,26 @@
 	</Operation>
 	
 	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="HospitalBed"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>SterileMaterials</li>
+			  <li>Machining</li>
+			</prerequisites>
+			<hiddenPrerequisites IsNull="True"/>
+			<requiredResearchFacilities></requiredResearchFacilities>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ResearchProjectDef[defName="VitalsMonitor"]</xpath>
 		<value>
 			<prerequisites>
-			  <li>HospitalBed</li>
 			  <li>Fabrication</li>
 			</prerequisites>
+			<hiddenPrerequisites>
+			  <li>HospitalBed</li>
+			</hiddenPrerequisites>
 			<requiredResearchFacilities></requiredResearchFacilities>
 		</value>
 	</Operation>
@@ -393,8 +409,8 @@
 		<xpath>Defs/ResearchProjectDef[defName="Cryptosleep"]</xpath>
 		<value>
 			<prerequisites>
-			  <li>HospitalBed</li>
 			  <li>MultiAnalyzer</li>
+			  <li>VitalsMonitor</li>
 			</prerequisites>
 		</value>
 	</Operation>
@@ -402,8 +418,9 @@
 	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ResearchProjectDef[defName="LongRangeMineralScanner"]</xpath>
 		<value>
+			<label>long-range scanners</label>
 			<prerequisites>
-			  <li>DeepDrilling</li>
+			  <li>MicroelectronicsBasics</li>
 			</prerequisites>
 		</value>
 	</Operation>
@@ -414,6 +431,9 @@
 			<prerequisites>
 			  <li>Fabrication</li>
 			</prerequisites>
+			<hiddenPrerequisites>
+			  <li>GunTurrets</li>
+			</hiddenPrerequisites>
 			<requiredResearchFacilities></requiredResearchFacilities>
 		</value>
 	</Operation>
@@ -424,6 +444,9 @@
 			<prerequisites>
 			  <li>Fabrication</li>
 			</prerequisites>
+			<hiddenPrerequisites>
+			  <li>GunTurrets</li>
+			</hiddenPrerequisites>
 			<requiredResearchFacilities></requiredResearchFacilities>
 		</value>
 	</Operation>

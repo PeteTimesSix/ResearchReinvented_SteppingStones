@@ -28,7 +28,7 @@
 		<xpath>Defs/ResearchProjectDef[defName="ToxGas"]</xpath>
 		<value>
 			<prerequisites>
-			  <li>Gunsmithing</li>
+			  <li>SmokepopBelt</li>
 			</prerequisites>
 		</value>
 	</Operation>

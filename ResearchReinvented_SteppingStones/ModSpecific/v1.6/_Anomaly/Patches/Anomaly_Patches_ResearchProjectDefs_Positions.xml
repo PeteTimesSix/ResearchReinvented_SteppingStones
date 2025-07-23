@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="TurretPack"]</xpath>
-		<researchViewX>11.00</researchViewX>
+		<researchViewX>12.00</researchViewX>
 		<researchViewY>5.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">

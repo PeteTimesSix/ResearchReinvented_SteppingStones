@@ -5,7 +5,7 @@
 		<value>
 			<techLevel>Spacer</techLevel>
 			<prerequisites>
-			  <li>HospitalBed</li>
+			  <li>VitalsMonitor</li>
 			  <li>MultiAnalyzer</li>
 			</prerequisites>
 			<hiddenPrerequisites>

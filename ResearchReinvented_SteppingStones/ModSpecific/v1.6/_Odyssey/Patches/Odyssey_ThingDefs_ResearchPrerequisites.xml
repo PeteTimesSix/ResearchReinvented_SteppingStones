@@ -1,10 +1,46 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="OxygenPump"]</xpath>
+		<value>
+			<researchPrerequisites>
+			  <li>OrbitalTech</li>
+			  <li>AirConditioning</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="VacBarrier"]</xpath>
+		<value>
+			<researchPrerequisites>
+			  <li>OrbitalTech</li>
+			  <li>ShieldBelt</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="OrbitalScanner"]</xpath>
+		<value>
+			<researchPrerequisites>
+			  <li>OrbitalTech</li>
+			  <li>LongRangeMineralScanner</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ThingDef[defName="SignalJammer"]</xpath>
 		<value>
 			<researchPrerequisites>
 			  <li>StandardGravtech</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="GravcorePowerCell"]</xpath>
+		<value>
+			<researchPrerequisites>
+			  <li>GeothermalPower</li>
+			  <li>AdvancedGravtech</li>
 			</researchPrerequisites>
 		</value>
 	</Operation>

@@ -44,15 +44,6 @@
 		</value>
 	</Operation>
 	<Operation Class="RR.PatchOperationAddOrReplace">
-		<xpath>Defs/ResearchProjectDef[defName="OrbitalTech"]</xpath>
-		<value>
-			<techLevel>Spacer</techLevel>
-			<hiddenPrerequisites>
-			  <li>AirConditioning</li>
-			</hiddenPrerequisites>
-		</value>
-	</Operation>
-	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ResearchProjectDef[defName="StandardGravtech"]</xpath>
 		<value>
 			<techLevel>Spacer</techLevel>

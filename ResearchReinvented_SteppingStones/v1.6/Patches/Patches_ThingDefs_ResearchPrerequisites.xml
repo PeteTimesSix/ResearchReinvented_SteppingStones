@@ -175,6 +175,16 @@
     </researchPrerequisites>
 		</value>
 	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="LongRangeMineralScanner"]</xpath>
+		<value>
+    <researchPrerequisites>
+      <li>LongRangeMineralScanner</li>
+      <li>DeepDrilling</li>
+    </researchPrerequisites>
+		</value>
+	</Operation>
 	
 	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ThingDef[defName="SimpleProstheticHeart"]</xpath>
@@ -197,6 +207,30 @@
       <li>Prosthetics</li>
       <li>PenoxycylineProduction</li>
     </researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Shell_Firefoam"]/recipeMaker</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisite IsNull="True"/>
+			<researchPrerequisites>
+				<li>Firefoam</li>
+				<li>Mortars</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Shell_Smoke"]/recipeMaker</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisite IsNull="True"/>
+			<researchPrerequisites>
+				<li>SmokepopBelt</li>
+				<li>Mortars</li>
+			</researchPrerequisites>
 		</value>
 	</Operation>
 

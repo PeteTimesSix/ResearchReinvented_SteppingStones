@@ -38,7 +38,7 @@
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="BrainWiring"]</xpath>
 		<researchViewX>13.00</researchViewX>
-		<researchViewY>4.00</researchViewY>
+		<researchViewY>5.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="SpecializedLimbs"]</xpath>
@@ -47,13 +47,13 @@
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="CompactWeaponry"]</xpath>
-		<researchViewX>12.00</researchViewX>
-		<researchViewY>5.00</researchViewY>
+		<researchViewX>13.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="VenomSynthesis"]</xpath>
-		<researchViewX>13.00</researchViewX>
-		<researchViewY>5.00</researchViewY>
+		<researchViewX>14.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Gunlink"]</xpath>

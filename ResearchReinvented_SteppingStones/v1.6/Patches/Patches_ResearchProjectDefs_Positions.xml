@@ -212,13 +212,13 @@
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Gunsmithing"]</xpath>
-		<researchViewX>7.00</researchViewX>
+		<researchViewX>8.00</researchViewX>
 		<researchViewY>4.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="FlakArmor"]</xpath>
 		<researchViewX>7.00</researchViewX>
-		<researchViewY>4.50</researchViewY>
+		<researchViewY>4.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="Mortars"]</xpath>
@@ -227,22 +227,22 @@
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="BlowbackOperation"]</xpath>
-		<researchViewX>8.00</researchViewX>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="GasOperation"]</xpath>
+		<researchViewX>10.00</researchViewX>
 		<researchViewY>4.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="GunTurrets"]</xpath>
-		<researchViewX>9.00</researchViewX>
+		<researchViewX>10.00</researchViewX>
 		<researchViewY>5.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
-		<xpath>Defs/ResearchProjectDef[defName="GasOperation"]</xpath>
-		<researchViewX>9.00</researchViewX>
-		<researchViewY>4.00</researchViewY>
-	</Operation>
-	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="FoamTurret"]</xpath>
-		<researchViewX>10.00</researchViewX>
+		<researchViewX>11.00</researchViewX>
 		<researchViewY>5.00</researchViewY>
 	</Operation>
 	
@@ -280,13 +280,13 @@
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="HospitalBed"]</xpath>
-  <researchViewX>13.00</researchViewX>
-  <researchViewY>1.50</researchViewY>
+  <researchViewX>7.00</researchViewX>
+  <researchViewY>4.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="GroundPenetratingScanner"]</xpath>
-	  <researchViewX>13.00</researchViewX>
-	  <researchViewY>2.60</researchViewY>
+  <researchViewX>13.00</researchViewX>
+  <researchViewY>2.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="TransportPod"]</xpath>
@@ -359,12 +359,12 @@
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="SniperTurret"]</xpath>
 		<researchViewX>14.00</researchViewX>
-		<researchViewY>4.00</researchViewY>
+		<researchViewY>4.50</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="RocketswarmLauncher"]</xpath>
 		<researchViewX>14.00</researchViewX>
-		<researchViewY>4.50</researchViewY>
+		<researchViewY>5.00</researchViewY>
 	</Operation>
 	<Operation Class="RR.PatchOperationReplaceResearchCoords">
 		<xpath>Defs/ResearchProjectDef[defName="ShipBasics"]</xpath>
