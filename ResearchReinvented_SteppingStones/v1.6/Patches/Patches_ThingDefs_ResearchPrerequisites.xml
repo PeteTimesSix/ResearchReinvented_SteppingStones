@@ -223,6 +223,18 @@
 	</Operation>
 
 	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Gun_SmokeLauncher"]/recipeMaker</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisite IsNull="True"/>
+			<researchPrerequisites>
+				<li>Gunsmithing</li>
+				<li>SmokepopBelt</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ThingDef[defName="Shell_Smoke"]/recipeMaker</xpath>
 		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
 		<value>
