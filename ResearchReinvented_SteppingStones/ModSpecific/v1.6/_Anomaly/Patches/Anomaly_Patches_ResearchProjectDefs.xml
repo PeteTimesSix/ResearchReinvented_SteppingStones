@@ -26,16 +26,15 @@
 			</prerequisites>
 		</value>
 	</Operation>
-
-	<Operation Class="RR.PatchOperationAddOrReplace">
+	
+	<Operation Class="RR.PatchOperationResearchPrereg">
 		<xpath>Defs/ResearchProjectDef[defName="VoidSculptures"]</xpath>
-		<value>
-			<prerequisites>
+		<target>prerequisites</target>
+		<defNames>
 			  <li>BasicPsychicRituals</li>
 			  <li>BioferriteExtraction</li>
 			  <li>RR_BasicFurniture</li>
-			</prerequisites>
-		</value>
+		</defNames>
 	</Operation>
 
 	<Operation Class="RR.PatchOperationAddOrReplace">
