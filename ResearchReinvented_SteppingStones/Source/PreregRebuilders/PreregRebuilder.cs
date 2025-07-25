@@ -48,6 +48,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                         ResearchProjectDefOf_Custom.RR_LateralThinking,
                         ResearchProjectDefOf_Manual.Agriculture,
                         ResearchProjectDefOf_Manual.BasicMeleeWeapons,
+                        ResearchProjectDefOf_Custom.RR_IncendiaryWeapons,
                         ResearchProjectDefOf_Manual.BasicRangedWeapons,
                         ResearchProjectDefOf_Custom.RR_BasicApparel,
                         ResearchProjectDefOf_Custom.RR_BasicCraftingFacilities,

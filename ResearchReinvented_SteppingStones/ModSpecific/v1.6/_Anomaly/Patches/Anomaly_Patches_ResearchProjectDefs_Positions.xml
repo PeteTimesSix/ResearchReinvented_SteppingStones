@@ -10,4 +10,35 @@
 		<researchViewX>7.00</researchViewX>
 		<researchViewY>2.50</researchViewY>
 	</Operation>
+	
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="BioferriteHarvesting"]</xpath>
+  <researchViewX>1.00</researchViewX>
+  <researchViewY>4.60</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="BioferriteGenerator"]</xpath>
+  <researchViewX>5.50</researchViewX>
+  <researchViewY>5.20</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="AtmosphericHeater"]</xpath>
+  <researchViewX>6.50</researchViewX>
+  <researchViewY>5.20</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="EntityContainment"]</xpath>
+  <researchViewX>0.00</researchViewX>
+  <researchViewY>5.20</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="DisruptorFlares"]</xpath>
+  <researchViewX>2.00</researchViewX>
+  <researchViewY>4.60</researchViewY>
+	</Operation>
+	<Operation Class="RR.PatchOperationReplaceResearchCoords">
+		<xpath>Defs/ResearchProjectDef[defName="RevenantInvisibility"]</xpath>
+  <researchViewX>5.50</researchViewX>
+  <researchViewY>4.60</researchViewY>
+	</Operation>
 </Patch>

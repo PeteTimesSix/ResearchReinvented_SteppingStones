@@ -22,13 +22,11 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
 
             var indeterminateSurgeries = new HashSet<RecipeDef>();
 
-            foreach (var recipeDef in DefDatabase<RecipeDef>.AllDefsListForReading.Where(r =>
-                !r.AnyResearchPrerequisites())
-                )
+            foreach (var recipeDef in DefDatabase<RecipeDef>.AllDefsListForReading.Where(r => !r.AnyResearchPrerequisites()))
             {
                 if (recipeDef.IsSurgery)
                 {
-                    if(recipeDef.IsDefinitelyASurgery())
+                    if (recipeDef.IsDefinitelyASurgery())
                     {
                         if (recipeDef.targetsBodyPart)
                         {
@@ -50,9 +48,9 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                 }
             }
 
-            if (indeterminateSurgeries.Any()) 
+            if (indeterminateSurgeries.Any())
             {
-                if(indeterminateSurgeries.Count > 1 || indeterminateSurgeries.First() != RecipeDefOf.RemoveBodyPart)
+                if (indeterminateSurgeries.Count > 1 || indeterminateSurgeries.First() != RecipeDefOf.RemoveBodyPart)
                 {
                     Log.Warning($"RR.SS: Detected recipe(s) that both are and arent surgeries: {string.Join(",", indeterminateSurgeries)} - this is usually the result of invalid animal prosthetic patches.");
                 }
@@ -70,20 +68,20 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                 }
             }
 
-            if(ResearchReinvented_SteppingStonesMod.Settings.surgeryPreregsMode != SurgeryPreregsMode.Off)
-			{
-				foreach (var recipe in noProjectSurgeryRecipeDefs)
-				{
-					try
-					{
-						GivePrerequisitesToSurgery(recipe);
-					}
-					catch (Exception e)
-					{
-						Log.Warning($"RR.SS: Error during research project assingment: {e}");
-					}
-				}
-			}
+            if (ResearchReinvented_SteppingStonesMod.Settings.surgeryPreregsMode != SurgeryPreregsMode.Off)
+            {
+                foreach (var recipe in noProjectSurgeryRecipeDefs)
+                {
+                    try
+                    {
+                        GivePrerequisitesToSurgery(recipe);
+                    }
+                    catch (Exception e)
+                    {
+                        Log.Warning($"RR.SS: Error during research project assingment: {e}");
+                    }
+                }
+            }
 
             /*foreach (var recipe in noProjectFullBodySurgeryRecipeDefs)
             {
@@ -101,15 +99,22 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             bodyPartRecordCache = null;
         }
 
-        private static void GivePrerequisitesToRecipe(RecipeDef recipe) 
+        private static void GivePrerequisitesToRecipe(RecipeDef recipe)
         {
             if (recipe.researchPrerequisites == null)
                 recipe.researchPrerequisites = new List<ResearchProjectDef>();
+
+            if (!(recipe.ProducedThingDef != null && (recipe.ProducedThingDef.IsWeapon || recipe.ProducedThingDef.IsApparel || recipe.ProducedThingDef.IsIngestible)))
+            {
+                //unhandled recipes, such as burning or making stone bricks
+                return;
+            }
 
             var firstProjects = recipe.FindEarliestPrerequisiteProjects();
             firstProjects = FilterOutUnwantedTechs(firstProjects);
             if (firstProjects != null && firstProjects.Any())
             {
+                //Log.Warning($"Adding first projects {string.Join(",", firstProjects.Select(p => p.defName))} to {recipe.defName}");
                 recipe.researchPrerequisites.AddRange(firstProjects);
                 return;
             }
@@ -167,8 +172,10 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
 			var firstProjects = recipe.FindEarliestPrerequisiteProjects();
             firstProjects = FilterOutUnwantedTechs(firstProjects);
             if (firstProjects != null && firstProjects.Any())
-			{
-				recipe.researchPrerequisites.AddRange(firstProjects);
+            {
+                //Log.Warning($"Adding first projects {string.Join(",", firstProjects.Select(p => p.defName))} to surgery {recipe.defName}");
+                recipe.researchPrerequisites.AddRange(firstProjects);
+                return;
             }
 
             if(recipe.workerClass.IsAssignableFrom(typeof(Recipe_InstallNaturalBodyPart)))

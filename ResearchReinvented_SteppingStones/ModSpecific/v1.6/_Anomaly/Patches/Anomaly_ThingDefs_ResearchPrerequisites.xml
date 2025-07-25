@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="BioferriteShaper"]</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisites>
+				<li>BioferriteShaping</li>
+				<li>RR_HeatingElements</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="ShardInhibitor"]</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisites>
+				<li>EntityContainment</li>
+				<li>Electricity</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="ElectricInhibitor"]</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisites>
+				<li>EntityContainment</li>
+				<li>Electricity</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_CeremonialCultistMask"]/recipeMaker</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisite IsNull="True"/>
+			<researchPrerequisites>
+				<li>BioferriteExtraction</li>
+				<li>RR_BasicApparel</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_CultistMask"]/recipeMaker</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisite IsNull="True"/>
+			<researchPrerequisites>
+				<li>BioferriteExtraction</li>
+				<li>ComplexClothing</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="NerveSpiker"]/recipeMaker</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisite IsNull="True"/>
+			<researchPrerequisites>
+				<li>BioferriteExtraction</li>
+				<li>RecurveBow</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Shell_Deadlife"]/recipeMaker</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisite IsNull="True"/>
+			<researchPrerequisites>
+				<li>DeadlifeDust</li>
+				<li>Mortars</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+</Patch>

@@ -64,4 +64,77 @@
     <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
   </ThingDef>
 
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt">
+    <defName>RR_Weapon_Torch</defName>
+    <label>torch</label>
+    <description>Wood from trees or other fibrous plants, wrapped in cloth and soaked in a flammable substance. Can be used as a weapon in a pinch.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/TorchLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>1200</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedAngleOffset>-10</equippedAngleOffset>
+    <costList>
+      <WoodLog>1</WoodLog>
+      <Cloth>10</Cloth>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    <researchPrerequisites>
+      <li>RR_IncendiaryWeapons</li>
+    </researchPrerequisites>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>2</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+		<tickerType>Normal</tickerType>
+    <comps>
+      <li Class="PeteTimesSix.ResearchReinvented_SteppingStones.Comps.CompProperties_CarriedGlower">
+        <glowerProps>
+          <glowColor>(255,136,83,0)</glowColor>
+          <glowRadius>4.49</glowRadius>
+          <overlightRadius>1.49</overlightRadius>
+        </glowerProps>
+      </li>
+    </comps>
+  </ThingDef>
+
 </Defs>

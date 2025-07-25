@@ -20,7 +20,6 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
                 noProjectProjects.Add(projectDef);
             }
             noProjectProjects = FilterOutUnwantedTechs(noProjectProjects);
-            noProjectProjects = noProjectProjects.Except(SuperEarlyTechs).ToHashSet();
 
             foreach (var project in noProjectProjects)
             {

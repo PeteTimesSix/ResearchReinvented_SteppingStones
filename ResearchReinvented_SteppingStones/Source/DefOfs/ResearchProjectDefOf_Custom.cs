@@ -21,6 +21,8 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.DefOfs
         public static ResearchProjectDef RR_BasicCraftingFacilities;
         public static ResearchProjectDef RR_BasicFoodPrep;
 
+        public static ResearchProjectDef RR_IncendiaryWeapons;
+
         public static ResearchProjectDef RR_ElectricityBasics;
 
         //vanilla

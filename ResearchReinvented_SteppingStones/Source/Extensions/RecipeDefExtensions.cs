@@ -28,11 +28,11 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Extensions
 
 		public static bool AnyResearchPrerequisites(this RecipeDef recipe)
 		{
-			HashSet<ResearchProjectDef> prerequisites = new HashSet<ResearchProjectDef>();
+			//HashSet<ResearchProjectDef> prerequisites = new HashSet<ResearchProjectDef>();
 			if (recipe.researchPrerequisite != null)
 				return true;
 			if (recipe.researchPrerequisites != null)
-				return recipe.researchPrerequisites.Any();
+				return recipe.researchPrerequisites.Count > 0;
 			return false;
 		}
 

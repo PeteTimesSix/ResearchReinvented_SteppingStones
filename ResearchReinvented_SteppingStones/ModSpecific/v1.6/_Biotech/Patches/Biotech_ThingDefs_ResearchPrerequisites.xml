@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Flamebow"]</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>   
+			 <costList>
+				<WoodLog>30</WoodLog>
+				<Chemfuel>20</Chemfuel>
+			 </costList>   
+			 <recipeMaker>
+				<recipeUsers>
+					<li>CraftingSpot</li>
+				</recipeUsers>
+				<skillRequirements>
+					<Crafting>4</Crafting>
+				</skillRequirements>
+				<displayPriority>520</displayPriority>
+				<researchPrerequisites>
+					<li>RR_IncendiaryWeapons</li>
+				</researchPrerequisites>
+			</recipeMaker>
+		</value>
+	</Operation>
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Flamebow"]/statBases</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>   
+      		<WorkToMake>3000</WorkToMake>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Gun_ToxbombLauncher"]/recipeMaker</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisite IsNull="True"/>
+			<researchPrerequisites>
+				<li>Gunsmithing</li>
+				<li>ToxGas</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ThingDef[defName="Shell_Toxic"]/recipeMaker</xpath>
 		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
 		<value>

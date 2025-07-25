@@ -74,6 +74,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comps\CompMobileGlower.cs" />
     <Compile Include="Debug\Autotests_ColonyMakerCustom.cs" />
     <Compile Include="Debug\DebugAutotestsCustom.cs" />
     <Compile Include="DefOfs\ConceptDefOf_Custom.cs" />

@@ -10,7 +10,7 @@
 		<xpath>Defs/ResearchProjectDef[defName="HeavyBridges"]</xpath>
 		<target>prerequisites</target>
 		<defNames>
-			<li>ComplexFurniture</li>
+			<li>RR_BasicStructures</li>
 		</defNames>
 	</Operation>
 	<Operation Class="RR.PatchOperationAddOrReplace">

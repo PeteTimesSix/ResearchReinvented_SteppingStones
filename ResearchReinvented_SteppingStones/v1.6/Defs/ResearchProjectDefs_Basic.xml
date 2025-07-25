@@ -208,7 +208,7 @@
       <li>ClassicStart</li>
     </tags>
   <researchViewX>-1.00</researchViewX>
-  <researchViewY>3.50</researchViewY>
+  <researchViewY>4.00</researchViewY>
 	<prerequisites>
 	  <li>RR_Organization</li>
 	</prerequisites>
@@ -221,6 +221,36 @@
 		<li>subject_story->had an unusual fascination with primitive weaponry employed by tribals</li>
 
 		<li>subject_gerund->crafting melee weapons</li>
+	  </rulesStrings>
+	</generalRules>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>RR_IncendiaryWeapons</defName>
+    <label>incendiary weapons</label>
+    <description>Crafting of incendiary weaponry.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+    </tags>
+  <researchViewX>0.00</researchViewX>
+  <researchViewY>3.50</researchViewY>
+	<prerequisites>
+	  <li>RR_BasicRangedWeapons</li>
+	  <li>RR_Fire</li>
+	</prerequisites>
+	<generalRules>
+	  <rulesStrings>
+		<li>subject->incendiary weapons</li>
+		<li>subject->flaming weapons</li>
+
+		<li>subject_story->threw burning bundles of sticks</li>
+		<li>subject_story->set a forest on fire</li>
+		<li>subject_story->operated a furnace for ten years</li>
+
+		<li>subject_gerund->crafting incendiary weapons</li>
 	  </rulesStrings>
 	</generalRules>
   </ResearchProjectDef>

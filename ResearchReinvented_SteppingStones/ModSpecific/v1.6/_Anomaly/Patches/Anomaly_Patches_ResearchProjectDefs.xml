@@ -8,4 +8,165 @@
 			</prerequisites>
 		</value>
 	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="BioferriteExtraction"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>RR_Organization</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="EntityContainment"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>Smithing</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="VoidSculptures"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>BasicPsychicRituals</li>
+			  <li>BioferriteExtraction</li>
+			  <li>RR_BasicFurniture</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="BlissLobotomy"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>BioferriteExtraction</li>
+			  <li>SterileMaterials</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="BioferriteShaping"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>BioferriteExtraction</li>
+			  <li>Smithing</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="SleepSuppressor"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>BioferriteExtraction</li>
+			  <li>EntityContainment</li>
+			  <li>Electricity</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="DeadlifeDust"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>BioferriteShaping</li>
+			  <li>SmokepopBelt</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="BioferriteHarvesting"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>EntityContainment</li>
+			  <li>Electricity</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ProximityDetector"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>EntityContainment</li>
+			  <li>Electricity</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Electroharvester"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>EntityContainment</li>
+			  <li>GeothermalPower</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="BioferriteIgnition"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>BioferriteShaping</li>
+			  <li>RR_IncendiaryWeapons</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="GhoulEnhancements"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>GhoulInfusion</li>
+			  <li>Prosthetics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="SerumSynthesis"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>BioferriteShaping</li>
+			  <li>DrugProduction</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="BioferriteGenerator"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>EntityContainment</li>
+			  <li>RR_PowerGenerators</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RevenantInvisibility"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>DisruptorFlares</li>
+			  <li>Bionics</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ResearchProjectDef[defName="AtmosphericHeater"]</xpath>
+		<value>
+			<prerequisites>
+			  <li>BioferriteGenerator</li>
+			  <li>RR_HeatingElements</li>
+			</prerequisites>
+		</value>
+	</Operation>
 </Patch>

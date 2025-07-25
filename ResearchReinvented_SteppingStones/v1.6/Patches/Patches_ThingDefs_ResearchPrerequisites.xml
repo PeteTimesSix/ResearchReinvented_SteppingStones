@@ -223,6 +223,42 @@
 	</Operation>
 
 	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Weapon_GrenadeMolotov"]/recipeMaker</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisite IsNull="True"/>
+			<researchPrerequisites>
+				<li>Machining</li>
+				<li>RR_IncendiaryWeapons</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Gun_IncendiaryLauncher"]/recipeMaker</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisite IsNull="True"/>
+			<researchPrerequisites>
+				<li>Gunsmithing</li>
+				<li>RR_IncendiaryWeapons</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
+		<xpath>Defs/ThingDef[defName="Shell_Incendiary"]/recipeMaker</xpath>
+		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
+		<value>
+			<researchPrerequisite IsNull="True"/>
+			<researchPrerequisites>
+				<li>RR_IncendiaryWeapons</li>
+				<li>Mortars</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationAddOrReplace">
 		<xpath>Defs/ThingDef[defName="Gun_SmokeLauncher"]/recipeMaker</xpath>
 		<ignoreAttributesWhenMatching>true</ignoreAttributesWhenMatching>
 		<value>

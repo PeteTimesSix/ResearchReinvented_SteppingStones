@@ -26,6 +26,15 @@
 	</Operation>
 	
 	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ResearchProjectDef[defName="RR_IncendiaryWeapons"]</xpath>
+		<target>prerequisites</target>
+		<defNames>
+			<li>VFET_Fire</li>
+			<li>VFET_Bow</li>
+		</defNames>
+	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
 		<xpath>Defs/ResearchProjectDef[defName="RR_BasicApparel"]</xpath>
 		<target>prerequisites</target>
 		<defNames>
