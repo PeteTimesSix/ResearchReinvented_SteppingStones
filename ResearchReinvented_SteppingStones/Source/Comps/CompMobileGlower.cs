@@ -31,17 +31,6 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Comps
         public CompGlower glower;
         public Map glowerMap;
 
-        public override void PostDraw()
-        {
-            base.PostDraw();
-            Log.Message("post draw");
-            if (Wearer != null && Wearer.Spawned && PawnRenderUtility.CarryWeaponOpenly(Wearer))
-            {
-                Log.Message("post draw inner");
-                CompFireOverlay.FireGraphic.Draw(glowerPosition.ToVector3(), Wearer.Rotation, Wearer);
-            }
-        }
-
         public override void CompTickInterval(int delta)
         {
             if (glower != null && glowerMap != null && (Wearer == null || !Wearer.Spawned || !PawnRenderUtility.CarryWeaponOpenly(Wearer)))
@@ -66,9 +55,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Comps
 
         private void UpdateGlower()
         {
-            Log.Message($"Updating glower on {Wearer?.LabelCap ?? "NULL"}");
-            //RemoveGlower();
-            //AddGlower();
+            //Log.Message($"Updating glower on {Wearer?.LabelCap ?? "NULL"}");
             glowerMap.glowGrid.DeRegisterGlower(glower);
             glowerMap.mapDrawer.MapMeshDirty(glowerPosition, MapMeshFlagDefOf.Things);
             glowerPosition = Wearer.Position;
