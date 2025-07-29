@@ -31,6 +31,24 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Comps
         public CompGlower glower;
         public Map glowerMap;
 
+        public override void Notify_Unequipped(Pawn pawn)
+        {
+            RemoveGlower();
+            base.Notify_Unequipped(pawn);
+        }
+
+        public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
+        {
+            RemoveGlower();
+            base.PostDeSpawn(map, mode);
+        }
+
+        public override void PostDestroy(DestroyMode mode, Map previousMap)
+        {
+            RemoveGlower();
+            base.PostDestroy(mode, previousMap);
+        }
+
         public override void CompTickInterval(int delta)
         {
             if (glower != null && glowerMap != null && (Wearer == null || !Wearer.Spawned || !PawnRenderUtility.CarryWeaponOpenly(Wearer)))
@@ -55,6 +73,9 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Comps
 
         private void UpdateGlower()
         {
+            if (glower == null)
+                return;
+
             //Log.Message($"Updating glower on {Wearer?.LabelCap ?? "NULL"}");
             glowerMap.glowGrid.DeRegisterGlower(glower);
             glowerMap.mapDrawer.MapMeshDirty(glowerPosition, MapMeshFlagDefOf.Things);
@@ -65,6 +86,9 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Comps
 
         private void AddGlower()
         {
+            if (glower != null)
+                RemoveGlower();
+
             glower = new CompGlower();
             glower.parent = Wearer;
             glower.Initialize(Props.glowerProps);
@@ -76,6 +100,9 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Comps
 
         private void RemoveGlower()
         {
+            if(glower == null) 
+                return;
+
             glowerMap.glowGrid.DeRegisterGlower(glower);
             glowerMap.mapDrawer.MapMeshDirty(glowerPosition, MapMeshFlagDefOf.Things);
             glower = null;
