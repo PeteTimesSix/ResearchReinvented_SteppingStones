@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/ThingDef[defName="CraftingSpot"]</xpath>
+        <attribute>Name</attribute>
+		<value>CraftingSpot</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs//recipeUsers/li[text()="CraftingSpot"]</xpath>
+        <order>Append</order>
+		<value>
+			  <li>RR_CraftingTable</li>
+		</value>
+	</Operation>
+</Patch>

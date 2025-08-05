@@ -26,4 +26,12 @@
 			<li>RR_BasicCraftingFacilities</li>
 		</defNames>
 	</Operation>
+
+	<Operation Class="RR.PatchOperationResearchPrereg">
+		<xpath>Defs/ThingDef[defName="RR_CraftingTable"]</xpath>
+		<target>researchPrerequisites</target>
+		<defNames>
+			<li>VFET_Furniture</li>
+		</defNames>
+	</Operation>
 </Patch>

@@ -232,8 +232,6 @@
     <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <tags>
-      <li>TribalStart</li>
-      <li>ClassicStart</li>
     </tags>
   <researchViewX>0.00</researchViewX>
   <researchViewY>3.50</researchViewY>

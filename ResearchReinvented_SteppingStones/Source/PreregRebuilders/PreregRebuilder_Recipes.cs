@@ -206,7 +206,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
 					{
 						if (ResearchReinvented_SteppingStonesMod.Settings.surgeryPreregsMode == SurgeryPreregsMode.Easy)
 						{
-							recipe.researchPrerequisites.Add(ResearchProjectDefOf_Custom.ComplexClothing);
+							recipe.researchPrerequisites.Add(ResearchProjectDefOf_Custom.RR_BasicApparel);
                             if (ResearchProjectDefOf_Manual.BasicHerbLore != null)
                                 recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicHerbLore);
 						}
@@ -232,7 +232,8 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
 				{
                     if (ResearchReinvented_SteppingStonesMod.Settings.surgeryPreregsMode == SurgeryPreregsMode.Easy)
                     {
-                        recipe.researchPrerequisites.Add(ResearchProjectDefOf_Custom.DrugProduction);
+                        if (ResearchProjectDefOf_Manual.BasicHerbLore != null)
+                            recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicHerbLore);
                     }
                     else
                     {
@@ -243,9 +244,10 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.PreregRebuilders
             else if (recipe.workerClass.IsAssignableFrom(typeof(Recipe_InstallImplant)))
 			{
 				if (ResearchReinvented_SteppingStonesMod.Settings.surgeryPreregsMode == SurgeryPreregsMode.Easy)
-				{
-					recipe.researchPrerequisites.Add(ResearchProjectDefOf_Custom.DrugProduction);
-				}
+                {
+                    if (ResearchProjectDefOf_Manual.BasicHerbLore != null)
+                        recipe.researchPrerequisites.Add(ResearchProjectDefOf_Manual.BasicHerbLore);
+                }
 				else
 				{
 					recipe.researchPrerequisites.Add(ResearchProjectDefOf_Custom.PenoxycylineProduction);

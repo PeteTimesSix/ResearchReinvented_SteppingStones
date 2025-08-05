@@ -4,14 +4,14 @@
 	<RR_SS_setting_doPowerPreregs_tooltip>Ensures powered buildings require electricity to invent.</RR_SS_setting_doPowerPreregs_tooltip>
 	
 	<RR_SS_setting_doSurgeryPreregs>Gate advanced surgery</RR_SS_setting_doSurgeryPreregs>
-	<RR_SS_setting_doSurgeryPreregs_tooltip>Ensures installation of advanced artifical bodyparts requires an appropriate understanding of medicine and prosthetics. For example, installing a simple wooden peg leg only requires the most basic understanding of apparel, while installing a bionic leg requires understanding the inner workings of basic prosthetics.</RR_SS_setting_doSurgeryPreregs_tooltip>
+	<RR_SS_setting_doSurgeryPreregs_tooltip>Ensures installation of natural and artificial bodyparts requires an appropriate understanding of medicine and prosthetics. For example, installing a peg leg only requires knowledge of form-fitting clothing, while installing a bionic leg requires solid knowledge of basic prosthetics and anti-rejection drugs.</RR_SS_setting_doSurgeryPreregs_tooltip>
 	<RR_SS_setting_doSurgeryPreregs_option_Off>Off</RR_SS_setting_doSurgeryPreregs_option_Off>
 	<RR_SS_setting_doSurgeryPreregs_option_Easy>Easy</RR_SS_setting_doSurgeryPreregs_option_Easy>
 	<RR_SS_setting_doSurgeryPreregs_option_Normal>Normal</RR_SS_setting_doSurgeryPreregs_option_Normal>
 	
 	<RR_SS_setting_doSurgeryPreregs_option_Off_tooltip>Disable entirely.</RR_SS_setting_doSurgeryPreregs_option_Off_tooltip>
-	<RR_SS_setting_doSurgeryPreregs_option_Easy_tooltip>Assign prerequisites from earlier in the tech tree.</RR_SS_setting_doSurgeryPreregs_option_Easy_tooltip>
-	<RR_SS_setting_doSurgeryPreregs_option_Normal_tooltip>Assign prerequisites as normal.</RR_SS_setting_doSurgeryPreregs_option_Normal_tooltip>
+	<RR_SS_setting_doSurgeryPreregs_option_Easy_tooltip>Assign prerequisites of neolithic projects.\nProjects involved:\n\n    Simple apparel\n    Medicinal herbs</RR_SS_setting_doSurgeryPreregs_option_Easy_tooltip>
+	<RR_SS_setting_doSurgeryPreregs_option_Normal_tooltip>Assign prerequisites of medieval and early game industrial projects.\nProjects involved:\n\n    Simple apparel\n    Complex clothing\n    Prosthetics\n    Penoxycyline</RR_SS_setting_doSurgeryPreregs_option_Normal_tooltip>
 	
 	<RR_settings_restartWarning>Restarting the game is required for the above to apply.</RR_settings_restartWarning>
 </LanguageData>

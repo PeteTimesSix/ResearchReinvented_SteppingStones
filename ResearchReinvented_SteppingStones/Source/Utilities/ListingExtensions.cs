@@ -75,7 +75,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Utilities
                 {
                     Widgets.DrawHighlight(wholeRect);
                 }
-                TooltipHandler.TipRegion(wholeRect, tooltip);
+                TooltipHandler.TipRegion(wholeRect, () => tooltip, 5000);
             }
 
             if (!string.IsNullOrEmpty(label))
@@ -108,7 +108,7 @@ namespace PeteTimesSix.ResearchReinvented_SteppingStones.Utilities
                 GUI.color = value.Equals(enumValue) ? SelectedButtonColor : Color.white;
                 var buttonRect = new Rect(buttonsRect.x + x, buttonsRect.y + y, buttonsWidth, lineHeight);
                 if (valueTooltipPostfix != null)
-                    TooltipHandler.TipRegion(buttonRect, (valueLabelPrefix + name + valueTooltipPostfix).Translate());
+                    TooltipHandler.TipRegion(buttonRect, () => (valueLabelPrefix + name + valueTooltipPostfix).Translate(), 6000 + value.ToString().GetHashCode());
                 bool clicked = Widgets.ButtonText(buttonRect, buttonText);
                 if (clicked && !value.Equals(enumValue))
                 {

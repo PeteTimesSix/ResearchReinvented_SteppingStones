@@ -1,5 +1,80 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  <ThingDef ParentName="CraftingSpot">
+    <defName>RR_CraftingTable</defName>
+    <label>crafting table</label>
+    <description>A place for crafting simple items like knives or bows. Production here is slow because of the lack of tools, but having a solid working surface still helps.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>RRSS/Things/TableCrafting</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <useHitPoints>true</useHitPoints>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.4</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <interactionCellIcon>DiningChair</interactionCellIcon>
+    <noRightClickDraftAttack>true</noRightClickDraftAttack>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <uiOrder>2300</uiOrder>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+      <WorkTableWorkSpeedFactor>0.65</WorkTableWorkSpeedFactor>
+    </statBases>
+    <scatterableOnMapGen>true</scatterableOnMapGen>
+    <replaceTags>
+      <li>Table</li>
+    </replaceTags>
+    <size>(2,1)</size>
+    <costStuffCount>28</costStuffCount>
+    <designationCategory>Production</designationCategory>
+    <uiOrder>2000</uiOrder>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <paintable>true</paintable>
+      <ai_chillDestination>false</ai_chillDestination>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+      <workTableRoomRole>Workshop</workTableRoomRole>
+    </building>
+    <comps></comps>
+    <designationHotKey>Misc1</designationHotKey>
+    <placeWorkers></placeWorkers>
+    <researchPrerequisites>
+      <li>RR_BasicFurniture</li>
+    </researchPrerequisites>
+  </ThingDef>
+
 
   <ThingDef ParentName="BuildingBase">
     <defName>RR_VoltaicPile</defName>

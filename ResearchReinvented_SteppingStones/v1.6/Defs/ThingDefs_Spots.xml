@@ -24,6 +24,7 @@
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
+    <uiOrder>2599</uiOrder>
     <drawGUIOverlay>true</drawGUIOverlay>
     <building>
       <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
